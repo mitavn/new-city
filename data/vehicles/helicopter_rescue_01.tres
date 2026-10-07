@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="VehicleData" format=3 uid="uid://v77942c251ba60"]
+
+[ext_resource type="Script" uid="uid://dijugjd2akk5r" path="res://scripts/vehicles/VehicleData.gd" id="1_vehdata"]
+[ext_resource type="Texture2D" uid="uid://cwg6w8dn3hjip" path="res://assets/spritesheets/vehicles/Helicopter sheet1.png" id="2_helico"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_heli_fly_right_0"]
+atlas = ExtResource("2_helico")
+region = Rect2(0, 0, 192, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_heli_fly_right_1"]
+atlas = ExtResource("2_helico")
+region = Rect2(192, 0, 192, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_heli_fly_right_2"]
+atlas = ExtResource("2_helico")
+region = Rect2(384, 0, 192, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_heli_fly_right_3"]
+atlas = ExtResource("2_helico")
+region = Rect2(576, 0, 192, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_heli_fly_left_0"]
+atlas = ExtResource("2_helico")
+region = Rect2(0, 128, 192, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_heli_fly_left_1"]
+atlas = ExtResource("2_helico")
+region = Rect2(192, 128, 192, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_heli_fly_left_2"]
+atlas = ExtResource("2_helico")
+region = Rect2(384, 128, 192, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_heli_fly_left_3"]
+atlas = ExtResource("2_helico")
+region = Rect2(576, 128, 192, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_helico"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_heli_fly_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_heli_fly_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_heli_fly_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_heli_fly_left_3")
+}],
+"loop": 1,
+"name": &"fly_left",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_heli_fly_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_heli_fly_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_heli_fly_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_heli_fly_right_3")
+}],
+"loop": 1,
+"name": &"fly_right",
+"speed": 10.0
+}]
+
+[resource]
+script = ExtResource("1_vehdata")
+id = &"veh_021"
+display_name = "Trực Thăng Cứu Hộ / Tuần Tra"
+vehicle_type = &"air"
+category = &"air"
+description = "Trực thăng chuyên dụng tuần tra bầu trời và cứu nạn khẩn cấp."
+frame_size = Vector2i(192, 128)
+visual_offset = Vector2(0, -44.8)
+sprite_frames = SubResource("SpriteFrames_helico")
+spritesheet_path = "res://assets/spritesheets/vehicles/Helicopter sheet1.png"
+collision_size = Vector2(50, 30)
+max_speed = 210.0
+acceleration = 80.0
+has_siren = true
+passenger_capacity = 6
+tags = PackedStringArray("air", "air", "vehicle")
+metadata/_custom_type_script = "uid://dijugjd2akk5r"

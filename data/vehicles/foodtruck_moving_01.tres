@@ -1,0 +1,154 @@
+[gd_resource type="Resource" script_class="VehicleData" format=3 uid="uid://d1s307nvy86rg"]
+
+[ext_resource type="Script" uid="uid://dijugjd2akk5r" path="res://scripts/vehicles/VehicleData.gd" id="1_vehdata"]
+[ext_resource type="Texture2D" uid="uid://s6gv82y3ctlt" path="res://assets/spritesheets/vehicles/Foodtruck-Sheet.png" id="2_foodtr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_drive_back_0"]
+atlas = ExtResource("2_foodtr")
+region = Rect2(0, 320, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_drive_back_1"]
+atlas = ExtResource("2_foodtr")
+region = Rect2(160, 320, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_drive_back_2"]
+atlas = ExtResource("2_foodtr")
+region = Rect2(320, 320, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_drive_back_3"]
+atlas = ExtResource("2_foodtr")
+region = Rect2(480, 320, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_drive_front_0"]
+atlas = ExtResource("2_foodtr")
+region = Rect2(0, 480, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_drive_front_1"]
+atlas = ExtResource("2_foodtr")
+region = Rect2(160, 480, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_drive_front_2"]
+atlas = ExtResource("2_foodtr")
+region = Rect2(320, 480, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_drive_front_3"]
+atlas = ExtResource("2_foodtr")
+region = Rect2(480, 480, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_drive_front_left_0"]
+atlas = ExtResource("2_foodtr")
+region = Rect2(0, 160, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_drive_front_left_1"]
+atlas = ExtResource("2_foodtr")
+region = Rect2(160, 160, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_drive_front_left_2"]
+atlas = ExtResource("2_foodtr")
+region = Rect2(320, 160, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_drive_front_left_3"]
+atlas = ExtResource("2_foodtr")
+region = Rect2(480, 160, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_drive_front_right_0"]
+atlas = ExtResource("2_foodtr")
+region = Rect2(0, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_drive_front_right_1"]
+atlas = ExtResource("2_foodtr")
+region = Rect2(160, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_drive_front_right_2"]
+atlas = ExtResource("2_foodtr")
+region = Rect2(320, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_drive_front_right_3"]
+atlas = ExtResource("2_foodtr")
+region = Rect2(480, 0, 160, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_foodtr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_drive_back_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_drive_back_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_drive_back_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_drive_back_3")
+}],
+"loop": 1,
+"name": &"drive_back",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_drive_front_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_drive_front_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_drive_front_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_drive_front_3")
+}],
+"loop": 1,
+"name": &"drive_front",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_drive_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_drive_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_drive_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_drive_front_left_3")
+}],
+"loop": 1,
+"name": &"drive_front_left",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_drive_front_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_drive_front_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_drive_front_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_drive_front_right_3")
+}],
+"loop": 1,
+"name": &"drive_front_right",
+"speed": 6.0
+}]
+
+[resource]
+script = ExtResource("1_vehdata")
+id = &"veh_018"
+display_name = "Xe Tải Ẩm Thực Lưu Động"
+vehicle_type = &"truck"
+description = "Xe tải phục vụ đồ ăn lưu động trên các tuyến phố."
+frame_size = Vector2i(160, 160)
+visual_offset = Vector2(0, -56)
+sprite_frames = SubResource("SpriteFrames_foodtr")
+spritesheet_path = "res://assets/spritesheets/vehicles/Foodtruck-Sheet.png"
+collision_size = Vector2(62, 32)
+max_speed = 90.0
+passenger_capacity = 2
+metadata/_custom_type_script = "uid://dijugjd2akk5r"

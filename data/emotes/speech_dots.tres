@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="EmoteData" format=3]
+
+[ext_resource type="Script" path="res://scripts/emotes/EmoteData.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/spritesheets/characters/Character Emoteicon-Sheet.png" id="2_tex"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_speech_dots_0"]
+atlas = ExtResource("2_tex")
+region = Rect2(0, 112, 32, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_speech_dots_1"]
+atlas = ExtResource("2_tex")
+region = Rect2(32, 112, 32, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_speech_dots_2"]
+atlas = ExtResource("2_tex")
+region = Rect2(64, 112, 32, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_speech_dots_3"]
+atlas = ExtResource("2_tex")
+region = Rect2(96, 112, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_speech_dots"]
+animations = [{
+"frames": [{"duration": 1.0, "texture": SubResource("AtlasTexture_speech_dots_0")}, {"duration": 1.0, "texture": SubResource("AtlasTexture_speech_dots_1")}, {"duration": 1.0, "texture": SubResource("AtlasTexture_speech_dots_2")}, {"duration": 1.0, "texture": SubResource("AtlasTexture_speech_dots_3")}],
+"loop": true,
+"name": &"play",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("1_script")
+id = &"speech_dots"
+display_name = "Đang Nói / Suy Nghĩ"
+category = &"action"
+row_index = 7
+description = "Ba dấu chấm thoại thể hiện đang trao đổi hoặc suy nghĩ."
+frame_size = Vector2i(32, 16)
+frame_count = 4
+fps = 5.0
+loop = true
+offset_y = -42.0
+default_duration = 2.2
+sprite_frames = SubResource("SpriteFrames_speech_dots")
+spritesheet_path = "res://assets/spritesheets/characters/Character Emoteicon-Sheet.png"
+tags = PackedStringArray("talk", "wait", "dots")

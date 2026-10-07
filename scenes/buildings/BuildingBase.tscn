@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://c5q3xrvq8bl4v"]
+
+[ext_resource type="Script" path="res://scenes/buildings/building_base.gd" id="1_buildbase"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bcol"]
+size = Vector2(96, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door0"]
+size = Vector2(36, 36)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door1"]
+size = Vector2(36, 36)
+
+[node name="BuildingBase" type="StaticBody2D"]
+y_sort_enabled = true
+collision_layer = 17
+collision_mask = 3
+script = ExtResource("1_buildbase")
+
+[node name="Visual" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -64)
+
+[node name="BodyCollision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -10)
+shape = SubResource("RectangleShape2D_bcol")
+
+[node name="Door0Area" type="Area2D" parent="."]
+position = Vector2(0, 0)
+collision_layer = 32
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door0Area"]
+shape = SubResource("RectangleShape2D_door0")
+
+[node name="Door1Area" type="Area2D" parent="."]
+position = Vector2(40, 0)
+collision_layer = 32
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door1Area"]
+shape = SubResource("RectangleShape2D_door1")

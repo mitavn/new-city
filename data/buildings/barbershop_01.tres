@@ -1,0 +1,155 @@
+[gd_resource type="Resource" script_class="BuildingData" format=3 uid="uid://g7g87msts58e"]
+
+[ext_resource type="Script" uid="uid://dxjuftm48ae7a" path="res://scripts/buildings/BuildingData.gd" id="1_builddata"]
+[ext_resource type="Texture2D" uid="uid://csjbxb2p24gks" path="res://assets/spritesheets/buildings/Building Door Animations/Barbershop Animation.png" id="2_barber"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_barb_d_cl_3"]
+atlas = ExtResource("2_barber")
+region = Rect2(432, 0, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_barb_d_cl_4"]
+atlas = ExtResource("2_barber")
+region = Rect2(576, 0, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_barb_d_cl_5"]
+atlas = ExtResource("2_barber")
+region = Rect2(720, 0, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_barb_d_cl_0"]
+atlas = ExtResource("2_barber")
+region = Rect2(0, 0, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_barb_d_closed"]
+atlas = ExtResource("2_barber")
+region = Rect2(0, 0, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_barb_d_cy_0"]
+atlas = ExtResource("2_barber")
+region = Rect2(0, 0, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_barb_d_cy_1"]
+atlas = ExtResource("2_barber")
+region = Rect2(144, 0, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_barb_d_cy_2"]
+atlas = ExtResource("2_barber")
+region = Rect2(288, 0, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_barb_d_cy_3"]
+atlas = ExtResource("2_barber")
+region = Rect2(432, 0, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_barb_d_cy_4"]
+atlas = ExtResource("2_barber")
+region = Rect2(576, 0, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_barb_d_cy_5"]
+atlas = ExtResource("2_barber")
+region = Rect2(720, 0, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_barb_d_op_0"]
+atlas = ExtResource("2_barber")
+region = Rect2(0, 0, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_barb_d_op_1"]
+atlas = ExtResource("2_barber")
+region = Rect2(144, 0, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_barb_d_op_2"]
+atlas = ExtResource("2_barber")
+region = Rect2(288, 0, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_barb_d_op_3"]
+atlas = ExtResource("2_barber")
+region = Rect2(432, 0, 144, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_barb_d_opened"]
+atlas = ExtResource("2_barber")
+region = Rect2(432, 0, 144, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_barber"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_barb_d_cl_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_barb_d_cl_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_barb_d_cl_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_barb_d_cl_0")
+}],
+"loop": 0,
+"name": &"door_close",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_barb_d_closed")
+}],
+"loop": 0,
+"name": &"door_closed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_barb_d_cy_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_barb_d_cy_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_barb_d_cy_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_barb_d_cy_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_barb_d_cy_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_barb_d_cy_5")
+}],
+"loop": 1,
+"name": &"door_cycle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_barb_d_op_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_barb_d_op_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_barb_d_op_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_barb_d_op_3")
+}],
+"loop": 0,
+"name": &"door_open",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_barb_d_opened")
+}],
+"loop": 0,
+"name": &"door_opened",
+"speed": 1.0
+}]
+
+[resource]
+script = ExtResource("1_builddata")
+id = &"bld_017"
+display_name = "Tiệm Cắt Tóc Barbershop"
+description = "Tiệm cắt tóc quý ông cổ điển với cột xoay sọc màu đặc trưng."
+frame_size = Vector2i(144, 128)
+sprite_frames = SubResource("SpriteFrames_barber")
+spritesheet_path = "res://assets/spritesheets/buildings/Building Door Animations/Barbershop Animation.png"
+collision_size = Vector2(122, 44)
+tags = PackedStringArray("commercial", "building", "default")

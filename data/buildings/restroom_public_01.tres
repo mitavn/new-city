@@ -1,0 +1,220 @@
+[gd_resource type="Resource" script_class="BuildingData" format=3 uid="uid://bci8qjuv0keic"]
+
+[ext_resource type="Script" path="res://scripts/buildings/BuildingData.gd" id="1_builddata"]
+[ext_resource type="Texture2D" uid="uid://db1xafmfybxhn" path="res://assets/spritesheets/buildings/Building Door Animations/Restroom Animation.png" id="2_restro"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dl_closed"]
+atlas = ExtResource("2_restro")
+region = Rect2(0, 0, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dl_opened"]
+atlas = ExtResource("2_restro")
+region = Rect2(336, 0, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dl_op_0"]
+atlas = ExtResource("2_restro")
+region = Rect2(0, 0, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dl_op_1"]
+atlas = ExtResource("2_restro")
+region = Rect2(112, 0, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dl_op_2"]
+atlas = ExtResource("2_restro")
+region = Rect2(224, 0, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dl_op_3"]
+atlas = ExtResource("2_restro")
+region = Rect2(336, 0, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dl_cl_3"]
+atlas = ExtResource("2_restro")
+region = Rect2(336, 0, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dl_cl_4"]
+atlas = ExtResource("2_restro")
+region = Rect2(448, 0, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dl_cl_5"]
+atlas = ExtResource("2_restro")
+region = Rect2(560, 0, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dl_cl_0"]
+atlas = ExtResource("2_restro")
+region = Rect2(0, 0, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dr_closed"]
+atlas = ExtResource("2_restro")
+region = Rect2(0, 96, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dr_opened"]
+atlas = ExtResource("2_restro")
+region = Rect2(336, 96, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dr_op_0"]
+atlas = ExtResource("2_restro")
+region = Rect2(0, 96, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dr_op_1"]
+atlas = ExtResource("2_restro")
+region = Rect2(112, 96, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dr_op_2"]
+atlas = ExtResource("2_restro")
+region = Rect2(224, 96, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dr_op_3"]
+atlas = ExtResource("2_restro")
+region = Rect2(336, 96, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dr_cl_3"]
+atlas = ExtResource("2_restro")
+region = Rect2(336, 96, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dr_cl_4"]
+atlas = ExtResource("2_restro")
+region = Rect2(448, 96, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dr_cl_5"]
+atlas = ExtResource("2_restro")
+region = Rect2(560, 96, 112, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rest_dr_cl_0"]
+atlas = ExtResource("2_restro")
+region = Rect2(0, 96, 112, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_restro"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dl_closed")
+}],
+"loop": 0,
+"name": &"door_closed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dl_cl_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dl_cl_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dl_cl_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dl_cl_0")
+}],
+"loop": 0,
+"name": &"door_left_close",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dl_closed")
+}],
+"loop": 0,
+"name": &"door_left_closed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dl_op_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dl_op_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dl_op_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dl_op_3")
+}],
+"loop": 0,
+"name": &"door_left_open",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dl_opened")
+}],
+"loop": 0,
+"name": &"door_left_opened",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dl_opened")
+}],
+"loop": 0,
+"name": &"door_opened",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dr_cl_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dr_cl_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dr_cl_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dr_cl_0")
+}],
+"loop": 0,
+"name": &"door_right_close",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dr_closed")
+}],
+"loop": 0,
+"name": &"door_right_closed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dr_op_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dr_op_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dr_op_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dr_op_3")
+}],
+"loop": 0,
+"name": &"door_right_open",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rest_dr_opened")
+}],
+"loop": 0,
+"name": &"door_right_opened",
+"speed": 1.0
+}]
+
+[resource]
+script = ExtResource("1_builddata")
+id = &"bld_005"
+display_name = "Nhà Vệ Sinh Công Cộng"
+building_type = &"amenity"
+description = "Nhà vệ sinh công cộng đô thị với 2 cửa riêng biệt cho Nam (trái) và Nữ (phải)."
+frame_size = Vector2i(112, 96)
+door_count = 2
+door_names = ["Cửa Nam (Trái)", "Cửa Nữ (Phải)"]
+color_variant = "default"
+sprite_frames = SubResource("SpriteFrames_restro")
+spritesheet_path = "res://assets/spritesheets/buildings/Building Door Animations/Restroom Animation.png"
+collision_size = Vector2(100, 36)
+collision_offset = Vector2(0, -10)
+door_positions = [Vector2(-28, -6), Vector2(28, -6)]
+tags = PackedStringArray("amenity", "building", "default", "two_door")

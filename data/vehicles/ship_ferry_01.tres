@@ -1,0 +1,156 @@
+[gd_resource type="Resource" script_class="VehicleData" format=3 uid="uid://b8221gjxs7apg"]
+
+[ext_resource type="Script" uid="uid://dijugjd2akk5r" path="res://scripts/vehicles/VehicleData.gd" id="1_vehdata"]
+[ext_resource type="Texture2D" uid="uid://dpqxjcp1a3ntc" path="res://assets/spritesheets/vehicles/Ferry(352x352)-Sheet.png" id="2_ship_f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_back_0"]
+atlas = ExtResource("2_ship_f")
+region = Rect2(0, 704, 352, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_back_1"]
+atlas = ExtResource("2_ship_f")
+region = Rect2(352, 704, 352, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_back_2"]
+atlas = ExtResource("2_ship_f")
+region = Rect2(704, 704, 352, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_back_3"]
+atlas = ExtResource("2_ship_f")
+region = Rect2(1056, 704, 352, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_0"]
+atlas = ExtResource("2_ship_f")
+region = Rect2(0, 1056, 352, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_1"]
+atlas = ExtResource("2_ship_f")
+region = Rect2(352, 1056, 352, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_2"]
+atlas = ExtResource("2_ship_f")
+region = Rect2(704, 1056, 352, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_3"]
+atlas = ExtResource("2_ship_f")
+region = Rect2(1056, 1056, 352, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_left_0"]
+atlas = ExtResource("2_ship_f")
+region = Rect2(0, 352, 352, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_left_1"]
+atlas = ExtResource("2_ship_f")
+region = Rect2(352, 352, 352, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_left_2"]
+atlas = ExtResource("2_ship_f")
+region = Rect2(704, 352, 352, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_left_3"]
+atlas = ExtResource("2_ship_f")
+region = Rect2(1056, 352, 352, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_right_0"]
+atlas = ExtResource("2_ship_f")
+region = Rect2(0, 0, 352, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_right_1"]
+atlas = ExtResource("2_ship_f")
+region = Rect2(352, 0, 352, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_right_2"]
+atlas = ExtResource("2_ship_f")
+region = Rect2(704, 0, 352, 352)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_right_3"]
+atlas = ExtResource("2_ship_f")
+region = Rect2(1056, 0, 352, 352)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ship_f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_back_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_back_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_back_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_back_3")
+}],
+"loop": 1,
+"name": &"drive_back",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_3")
+}],
+"loop": 1,
+"name": &"drive_front",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_left_3")
+}],
+"loop": 1,
+"name": &"drive_front_left",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_right_3")
+}],
+"loop": 1,
+"name": &"drive_front_right",
+"speed": 4.0
+}]
+
+[resource]
+script = ExtResource("1_vehdata")
+id = &"veh_024"
+display_name = "Phà Lớn Chở Khách"
+vehicle_type = &"water"
+category = &"water"
+description = "Phà lớn kết nối giao thông hai bờ sông, vận chuyển người và xe cộ."
+frame_size = Vector2i(352, 352)
+visual_offset = Vector2(0, -123.2)
+sprite_frames = SubResource("SpriteFrames_ship_f")
+spritesheet_path = "res://assets/spritesheets/vehicles/Ferry(352x352)-Sheet.png"
+collision_size = Vector2(160, 75)
+max_speed = 65.0
+has_siren = true
+passenger_capacity = 100
+metadata/_custom_type_script = "uid://dijugjd2akk5r"

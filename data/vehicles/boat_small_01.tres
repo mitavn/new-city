@@ -1,0 +1,154 @@
+[gd_resource type="Resource" script_class="VehicleData" format=3 uid="uid://b1u28v3gmu32m"]
+
+[ext_resource type="Script" uid="uid://dijugjd2akk5r" path="res://scripts/vehicles/VehicleData.gd" id="1_vehdata"]
+[ext_resource type="Texture2D" uid="uid://dptb1i6aq6o0u" path="res://assets/spritesheets/vehicles/Small Boat(80x80)-Sheet.png" id="2_boat_s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boat_drive_back_0"]
+atlas = ExtResource("2_boat_s")
+region = Rect2(0, 160, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boat_drive_back_1"]
+atlas = ExtResource("2_boat_s")
+region = Rect2(80, 160, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boat_drive_back_2"]
+atlas = ExtResource("2_boat_s")
+region = Rect2(160, 160, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boat_drive_back_3"]
+atlas = ExtResource("2_boat_s")
+region = Rect2(240, 160, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boat_drive_front_0"]
+atlas = ExtResource("2_boat_s")
+region = Rect2(0, 240, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boat_drive_front_1"]
+atlas = ExtResource("2_boat_s")
+region = Rect2(80, 240, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boat_drive_front_2"]
+atlas = ExtResource("2_boat_s")
+region = Rect2(160, 240, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boat_drive_front_3"]
+atlas = ExtResource("2_boat_s")
+region = Rect2(240, 240, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boat_drive_front_left_0"]
+atlas = ExtResource("2_boat_s")
+region = Rect2(0, 80, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boat_drive_front_left_1"]
+atlas = ExtResource("2_boat_s")
+region = Rect2(80, 80, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boat_drive_front_left_2"]
+atlas = ExtResource("2_boat_s")
+region = Rect2(160, 80, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boat_drive_front_left_3"]
+atlas = ExtResource("2_boat_s")
+region = Rect2(240, 80, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boat_drive_front_right_0"]
+atlas = ExtResource("2_boat_s")
+region = Rect2(0, 0, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boat_drive_front_right_1"]
+atlas = ExtResource("2_boat_s")
+region = Rect2(80, 0, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boat_drive_front_right_2"]
+atlas = ExtResource("2_boat_s")
+region = Rect2(160, 0, 80, 80)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_boat_drive_front_right_3"]
+atlas = ExtResource("2_boat_s")
+region = Rect2(240, 0, 80, 80)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_boat_s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boat_drive_back_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boat_drive_back_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boat_drive_back_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boat_drive_back_3")
+}],
+"loop": 1,
+"name": &"drive_back",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boat_drive_front_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boat_drive_front_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boat_drive_front_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boat_drive_front_3")
+}],
+"loop": 1,
+"name": &"drive_front",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boat_drive_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boat_drive_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boat_drive_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boat_drive_front_left_3")
+}],
+"loop": 1,
+"name": &"drive_front_left",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boat_drive_front_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boat_drive_front_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boat_drive_front_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_boat_drive_front_right_3")
+}],
+"loop": 1,
+"name": &"drive_front_right",
+"speed": 6.0
+}]
+
+[resource]
+script = ExtResource("1_vehdata")
+id = &"veh_022"
+display_name = "Thuyền Nhỏ Đường Sông"
+vehicle_type = &"water"
+category = &"water"
+description = "Thuyền máy cỡ nhỏ di chuyển linh hoạt trên các kênh rạch."
+frame_size = Vector2i(80, 80)
+visual_offset = Vector2(0, -28)
+sprite_frames = SubResource("SpriteFrames_boat_s")
+spritesheet_path = "res://assets/spritesheets/vehicles/Small Boat(80x80)-Sheet.png"
+collision_size = Vector2(36, 20)
+max_speed = 85.0
+metadata/_custom_type_script = "uid://dijugjd2akk5r"

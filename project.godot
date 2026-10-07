@@ -1,0 +1,53 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="12 Years Later - Mộc Thành"
+run/main_scene="res://scenes/main/moc_thanh_game.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+boot_splash/show_image=false
+config/icon="res://icon.svg"
+
+[autoload]
+
+NPCRegistry="*res://scripts/npcs/npc_registry.gd"
+VehicleRegistry="*res://scripts/vehicles/vehicle_registry.gd"
+BuildingRegistry="*res://scripts/buildings/building_registry.gd"
+EmoteRegistry="*res://scripts/emotes/emote_registry.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[gui]
+
+theme/custom_font="res://assets/fonts/LiberationSans.ttf"
+
+[layer_names]
+
+2d_physics/layer_1="World"
+2d_physics/layer_2="NPC"
+2d_physics/layer_3="Interaction"
+2d_physics/layer_4="Vehicle"
+2d_physics/layer_5="Building"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

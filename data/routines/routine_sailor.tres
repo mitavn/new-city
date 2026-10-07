@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="NPCRoutineData" format=3]
+
+[ext_resource type="Script" path="res://scripts/ai/tasks/NPCRoutineData.gd" id="1_n8f43"]
+[ext_resource type="Script" path="res://scripts/ai/tasks/NPCTaskData.gd" id="2_3igrh"]
+
+[sub_resource type="Resource" id="Resource_ncbrr"]
+script = ExtResource("2_3igrh")
+task_id = &"sailor_pier"
+task_name = "Ra Cầu Tàu Bến Phà"
+poi_tag = &"ferry_pier"
+arrival_distance = 24.0
+duration = 0.0
+
+[sub_resource type="Resource" id="Resource_21uji"]
+script = ExtResource("2_3igrh")
+task_id = &"sailor_watch_river"
+task_name = "Ngắm Mặt Sông"
+type = 2
+arrival_distance = 20.0
+duration = 3.5
+emote_id = &"happy"
+dialogue_text = "Mặt sông Hoàng Phố hôm nay êm đềm, gió thổi lồng lộng!"
+
+[sub_resource type="Resource" id="Resource_7phdv"]
+script = ExtResource("2_3igrh")
+task_id = &"sailor_lighthouse"
+task_name = "Đến Ngọn Hải Đăng"
+poi_tag = &"lighthouse"
+arrival_distance = 24.0
+duration = 0.0
+
+[sub_resource type="Resource" id="Resource_5rw2l"]
+script = ExtResource("2_3igrh")
+task_id = &"sailor_sing"
+task_name = "Hát Điệu Hò Biển"
+type = 2
+arrival_distance = 20.0
+emote_id = &"sing"
+dialogue_text = "Biển khơi xa ngút ngàn, tàu về bến bình an..."
+
+[sub_resource type="Resource" id="Resource_2rjqb"]
+script = ExtResource("2_3igrh")
+task_id = &"sailor_pub"
+task_name = "Đến Quán Rượu Thủy Thủ"
+poi_tag = &"pub"
+arrival_distance = 20.0
+duration = 0.0
+
+[sub_resource type="Resource" id="Resource_tx6v0"]
+script = ExtResource("2_3igrh")
+task_id = &"sailor_toast"
+task_name = "Nâng Ly Cùng Bạn Hữu"
+type = 2
+arrival_distance = 20.0
+duration = 4.0
+emote_id = &"music"
+dialogue_text = "Chúc chuyến hải trình thuận buồm xuôi gió!"
+
+[resource]
+script = ExtResource("1_n8f43")
+routine_id = &"routine_sailor"
+routine_name = "Hành Trình Thủy Thủ Cảng"
+category = &"sailor"
+description = "Lộ trình ngắm phà Hoàng Phố, đi dạo ngọn hải đăng và ghé quán rượu thủy thủ."
+tasks = Array[ExtResource("2_3igrh")]([SubResource("Resource_ncbrr"), SubResource("Resource_21uji"), SubResource("Resource_7phdv"), SubResource("Resource_5rw2l"), SubResource("Resource_2rjqb"), SubResource("Resource_tx6v0")])

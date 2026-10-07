@@ -1,0 +1,218 @@
+[gd_resource type="Resource" script_class="BuildingData" format=3 uid="uid://d3r5dsu0we2c5"]
+
+[ext_resource type="Script" uid="uid://dxjuftm48ae7a" path="res://scripts/buildings/BuildingData.gd" id="1_builddata"]
+[ext_resource type="Texture2D" uid="uid://cec4y1ik2ssgg" path="res://assets/spritesheets/buildings/Building Door Animations/Prison-Sheet.png" id="2_prison"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dl_closed"]
+atlas = ExtResource("2_prison")
+region = Rect2(0, 0, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dl_cl_3"]
+atlas = ExtResource("2_prison")
+region = Rect2(816, 0, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dl_cl_4"]
+atlas = ExtResource("2_prison")
+region = Rect2(1088, 0, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dl_cl_5"]
+atlas = ExtResource("2_prison")
+region = Rect2(1360, 0, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dl_cl_0"]
+atlas = ExtResource("2_prison")
+region = Rect2(0, 0, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dl_op_0"]
+atlas = ExtResource("2_prison")
+region = Rect2(0, 0, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dl_op_1"]
+atlas = ExtResource("2_prison")
+region = Rect2(272, 0, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dl_op_2"]
+atlas = ExtResource("2_prison")
+region = Rect2(544, 0, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dl_op_3"]
+atlas = ExtResource("2_prison")
+region = Rect2(816, 0, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dl_opened"]
+atlas = ExtResource("2_prison")
+region = Rect2(816, 0, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dr_cl_3"]
+atlas = ExtResource("2_prison")
+region = Rect2(816, 176, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dr_cl_4"]
+atlas = ExtResource("2_prison")
+region = Rect2(1088, 176, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dr_cl_5"]
+atlas = ExtResource("2_prison")
+region = Rect2(1360, 176, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dr_cl_0"]
+atlas = ExtResource("2_prison")
+region = Rect2(0, 176, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dr_closed"]
+atlas = ExtResource("2_prison")
+region = Rect2(0, 176, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dr_op_0"]
+atlas = ExtResource("2_prison")
+region = Rect2(0, 176, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dr_op_1"]
+atlas = ExtResource("2_prison")
+region = Rect2(272, 176, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dr_op_2"]
+atlas = ExtResource("2_prison")
+region = Rect2(544, 176, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dr_op_3"]
+atlas = ExtResource("2_prison")
+region = Rect2(816, 176, 272, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pris_dr_opened"]
+atlas = ExtResource("2_prison")
+region = Rect2(816, 176, 272, 176)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_prison"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dl_closed")
+}],
+"loop": 0,
+"name": &"door_closed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dl_cl_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dl_cl_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dl_cl_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dl_cl_0")
+}],
+"loop": 0,
+"name": &"door_left_close",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dl_closed")
+}],
+"loop": 0,
+"name": &"door_left_closed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dl_op_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dl_op_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dl_op_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dl_op_3")
+}],
+"loop": 0,
+"name": &"door_left_open",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dl_opened")
+}],
+"loop": 0,
+"name": &"door_left_opened",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dl_opened")
+}],
+"loop": 0,
+"name": &"door_opened",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dr_cl_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dr_cl_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dr_cl_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dr_cl_0")
+}],
+"loop": 0,
+"name": &"door_right_close",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dr_closed")
+}],
+"loop": 0,
+"name": &"door_right_closed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dr_op_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dr_op_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dr_op_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dr_op_3")
+}],
+"loop": 0,
+"name": &"door_right_open",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pris_dr_opened")
+}],
+"loop": 0,
+"name": &"door_right_opened",
+"speed": 1.0
+}]
+
+[resource]
+script = ExtResource("1_builddata")
+id = &"bld_004"
+display_name = "Trại Giam / Nhà Tù"
+building_type = &"public"
+description = "Trại giam kiên cố với 2 cổng an ninh bằng thép bảo vệ nghiêm ngặt."
+frame_size = Vector2i(272, 176)
+door_count = 2
+door_names = Array[String](["Cổng Sắt Trái", "Cổng Sắt Phải"])
+sprite_frames = SubResource("SpriteFrames_prison")
+spritesheet_path = "res://assets/spritesheets/buildings/Building Door Animations/Prison-Sheet.png"
+collision_size = Vector2(245, 60)
+door_positions = Array[Vector2]([Vector2(-90, -10), Vector2(90, -10)])
+tags = PackedStringArray("public", "building", "default", "two_door")

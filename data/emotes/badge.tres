@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="EmoteData" format=3]
+
+[ext_resource type="Script" path="res://scripts/emotes/EmoteData.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/spritesheets/characters/Character Emoteicon-Sheet.png" id="2_tex"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_badge_0"]
+atlas = ExtResource("2_tex")
+region = Rect2(0, 208, 32, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_badge_1"]
+atlas = ExtResource("2_tex")
+region = Rect2(32, 208, 32, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_badge_2"]
+atlas = ExtResource("2_tex")
+region = Rect2(64, 208, 32, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_badge_3"]
+atlas = ExtResource("2_tex")
+region = Rect2(96, 208, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_badge"]
+animations = [{
+"frames": [{"duration": 1.0, "texture": SubResource("AtlasTexture_badge_0")}, {"duration": 1.0, "texture": SubResource("AtlasTexture_badge_1")}, {"duration": 1.0, "texture": SubResource("AtlasTexture_badge_2")}, {"duration": 1.0, "texture": SubResource("AtlasTexture_badge_3")}],
+"loop": true,
+"name": &"play",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("1_script")
+id = &"badge"
+display_name = "Huy Hiệu"
+category = &"quest"
+row_index = 13
+description = "Biểu tượng danh dự, quân hàm cảnh sát cảng."
+frame_size = Vector2i(32, 16)
+frame_count = 4
+fps = 5.0
+loop = true
+offset_y = -42.0
+default_duration = 2.2
+sprite_frames = SubResource("SpriteFrames_badge")
+spritesheet_path = "res://assets/spritesheets/characters/Character Emoteicon-Sheet.png"
+tags = PackedStringArray("badge", "rank")

@@ -1,0 +1,156 @@
+[gd_resource type="Resource" script_class="BuildingData" format=3 uid="uid://dgj4pbba6vdy2"]
+
+[ext_resource type="Script" uid="uid://dxjuftm48ae7a" path="res://scripts/buildings/BuildingData.gd" id="1_builddata"]
+[ext_resource type="Texture2D" uid="uid://dme3s37rw3dxf" path="res://assets/spritesheets/buildings/Building Door Animations/Hospital-Sheet.png" id="2_hospit"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hosp_d_cl_3"]
+atlas = ExtResource("2_hospit")
+region = Rect2(432, 0, 144, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hosp_d_cl_4"]
+atlas = ExtResource("2_hospit")
+region = Rect2(576, 0, 144, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hosp_d_cl_5"]
+atlas = ExtResource("2_hospit")
+region = Rect2(720, 0, 144, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hosp_d_cl_0"]
+atlas = ExtResource("2_hospit")
+region = Rect2(0, 0, 144, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hosp_d_closed"]
+atlas = ExtResource("2_hospit")
+region = Rect2(0, 0, 144, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hosp_d_cy_0"]
+atlas = ExtResource("2_hospit")
+region = Rect2(0, 0, 144, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hosp_d_cy_1"]
+atlas = ExtResource("2_hospit")
+region = Rect2(144, 0, 144, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hosp_d_cy_2"]
+atlas = ExtResource("2_hospit")
+region = Rect2(288, 0, 144, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hosp_d_cy_3"]
+atlas = ExtResource("2_hospit")
+region = Rect2(432, 0, 144, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hosp_d_cy_4"]
+atlas = ExtResource("2_hospit")
+region = Rect2(576, 0, 144, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hosp_d_cy_5"]
+atlas = ExtResource("2_hospit")
+region = Rect2(720, 0, 144, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hosp_d_op_0"]
+atlas = ExtResource("2_hospit")
+region = Rect2(0, 0, 144, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hosp_d_op_1"]
+atlas = ExtResource("2_hospit")
+region = Rect2(144, 0, 144, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hosp_d_op_2"]
+atlas = ExtResource("2_hospit")
+region = Rect2(288, 0, 144, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hosp_d_op_3"]
+atlas = ExtResource("2_hospit")
+region = Rect2(432, 0, 144, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hosp_d_opened"]
+atlas = ExtResource("2_hospit")
+region = Rect2(432, 0, 144, 320)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hospit"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hosp_d_cl_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hosp_d_cl_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hosp_d_cl_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hosp_d_cl_0")
+}],
+"loop": 0,
+"name": &"door_close",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hosp_d_closed")
+}],
+"loop": 0,
+"name": &"door_closed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hosp_d_cy_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hosp_d_cy_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hosp_d_cy_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hosp_d_cy_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hosp_d_cy_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hosp_d_cy_5")
+}],
+"loop": 1,
+"name": &"door_cycle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hosp_d_op_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hosp_d_op_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hosp_d_op_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hosp_d_op_3")
+}],
+"loop": 0,
+"name": &"door_open",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hosp_d_opened")
+}],
+"loop": 0,
+"name": &"door_opened",
+"speed": 1.0
+}]
+
+[resource]
+script = ExtResource("1_builddata")
+id = &"bld_030"
+display_name = "Bệnh Viện Đa Khoa"
+building_type = &"emergency"
+description = "Bệnh viện đa khoa cao tầng với sân bay trực thăng y tế trên mái nhà."
+frame_size = Vector2i(144, 320)
+sprite_frames = SubResource("SpriteFrames_hospit")
+spritesheet_path = "res://assets/spritesheets/buildings/Building Door Animations/Hospital-Sheet.png"
+collision_size = Vector2(122, 112)
+tags = PackedStringArray("emergency", "building", "default")

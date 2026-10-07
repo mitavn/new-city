@@ -1,0 +1,263 @@
+[gd_resource type="Resource" script_class="NPCData" format=3 uid="uid://dm8ipkhag13pb"]
+
+[ext_resource type="Script" uid="uid://1jm7l62oqmyb" path="res://scripts/npcs/NPCData.gd" id="1_npcdata"]
+[ext_resource type="Texture2D" uid="uid://cbny01aiuf3mw" path="res://assets/spritesheets/characters/City-Characters_26.png" id="2_firef"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_idle_back_left_0"]
+atlas = ExtResource("2_firef")
+region = Rect2(384, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_idle_back_left_1"]
+atlas = ExtResource("2_firef")
+region = Rect2(416, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_idle_back_left_2"]
+atlas = ExtResource("2_firef")
+region = Rect2(448, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_idle_back_left_3"]
+atlas = ExtResource("2_firef")
+region = Rect2(480, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_idle_back_right_0"]
+atlas = ExtResource("2_firef")
+region = Rect2(256, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_idle_back_right_1"]
+atlas = ExtResource("2_firef")
+region = Rect2(288, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_idle_back_right_2"]
+atlas = ExtResource("2_firef")
+region = Rect2(320, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_idle_back_right_3"]
+atlas = ExtResource("2_firef")
+region = Rect2(352, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_idle_front_left_0"]
+atlas = ExtResource("2_firef")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_idle_front_left_1"]
+atlas = ExtResource("2_firef")
+region = Rect2(32, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_idle_front_left_2"]
+atlas = ExtResource("2_firef")
+region = Rect2(64, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_idle_front_left_3"]
+atlas = ExtResource("2_firef")
+region = Rect2(96, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f817i"]
+atlas = ExtResource("2_firef")
+region = Rect2(160, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0egiy"]
+atlas = ExtResource("2_firef")
+region = Rect2(192, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0g54"]
+atlas = ExtResource("2_firef")
+region = Rect2(224, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_walk_back_left_0"]
+atlas = ExtResource("2_firef")
+region = Rect2(384, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_walk_back_left_1"]
+atlas = ExtResource("2_firef")
+region = Rect2(416, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_walk_back_left_2"]
+atlas = ExtResource("2_firef")
+region = Rect2(448, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_walk_back_left_3"]
+atlas = ExtResource("2_firef")
+region = Rect2(480, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_walk_back_right_1"]
+atlas = ExtResource("2_firef")
+region = Rect2(288, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_walk_back_right_2"]
+atlas = ExtResource("2_firef")
+region = Rect2(320, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_walk_back_right_3"]
+atlas = ExtResource("2_firef")
+region = Rect2(352, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_walk_front_left_0"]
+atlas = ExtResource("2_firef")
+region = Rect2(0, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_walk_front_left_1"]
+atlas = ExtResource("2_firef")
+region = Rect2(32, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_walk_front_left_2"]
+atlas = ExtResource("2_firef")
+region = Rect2(64, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_walk_front_left_3"]
+atlas = ExtResource("2_firef")
+region = Rect2(96, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_walk_front_right_1"]
+atlas = ExtResource("2_firef")
+region = Rect2(160, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_walk_front_right_2"]
+atlas = ExtResource("2_firef")
+region = Rect2(192, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_walk_front_right_3"]
+atlas = ExtResource("2_firef")
+region = Rect2(224, 48, 32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_firef"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_idle_back_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_idle_back_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_idle_back_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_idle_back_left_3")
+}],
+"loop": 1,
+"name": &"idle_back_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_idle_back_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_idle_back_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_idle_back_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_idle_back_right_3")
+}],
+"loop": 1,
+"name": &"idle_back_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_idle_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_idle_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_idle_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_idle_front_left_3")
+}],
+"loop": 1,
+"name": &"idle_front_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f817i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0egiy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d0g54")
+}],
+"loop": 1,
+"name": &"idle_front_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_walk_back_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_walk_back_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_walk_back_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_walk_back_left_3")
+}],
+"loop": 1,
+"name": &"walk_back_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_walk_back_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_walk_back_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_walk_back_right_3")
+}],
+"loop": 1,
+"name": &"walk_back_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_walk_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_walk_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_walk_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_walk_front_left_3")
+}],
+"loop": 1,
+"name": &"walk_front_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_walk_front_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_walk_front_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_walk_front_right_3")
+}],
+"loop": 1,
+"name": &"walk_front_right",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("1_npcdata")
+id = &"018"
+display_name = "ID18-Chị Yến"
+role = &"firefighter"
+gender = &"female"
+description = "Nữ chiến sĩ cứu hỏa kiên cường, trang phục phòng cháy chữa cháy đỏ rực."
+sprite_frames = SubResource("SpriteFrames_firef")
+spritesheet_path = "res://assets/spritesheets/characters/City-Characters_26.png"
+move_speed = 65.0
+dialogues = Array[String](["Chúng tôi vừa hoàn thành buổi diễn tập cứu hộ định kỳ tại tòa nhà.", "Hãy ghi nhớ số điện thoại khẩn cấp để gọi ngay khi gặp nguy hiểm.", "Bình tĩnh là yếu tố quan trọng nhất khi xử lý sự cố."])
+metadata/_custom_type_script = "uid://1jm7l62oqmyb"

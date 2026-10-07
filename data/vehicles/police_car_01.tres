@@ -1,0 +1,284 @@
+[gd_resource type="Resource" script_class="VehicleData" format=3 uid="uid://d01xvatqra4lj"]
+
+[ext_resource type="Script" uid="uid://dijugjd2akk5r" path="res://scripts/vehicles/VehicleData.gd" id="1_vehdata"]
+[ext_resource type="Texture2D" uid="uid://ccasghblpcoxk" path="res://assets/spritesheets/vehicles/Police car-Sheet(112x112).png" id="2_police"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_drive_back_0"]
+atlas = ExtResource("2_police")
+region = Rect2(0, 224, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_drive_back_1"]
+atlas = ExtResource("2_police")
+region = Rect2(112, 224, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_drive_back_2"]
+atlas = ExtResource("2_police")
+region = Rect2(224, 224, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_drive_back_3"]
+atlas = ExtResource("2_police")
+region = Rect2(336, 224, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_drive_front_0"]
+atlas = ExtResource("2_police")
+region = Rect2(0, 336, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_drive_front_1"]
+atlas = ExtResource("2_police")
+region = Rect2(112, 336, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_drive_front_2"]
+atlas = ExtResource("2_police")
+region = Rect2(224, 336, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_drive_front_3"]
+atlas = ExtResource("2_police")
+region = Rect2(336, 336, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_drive_front_right_0"]
+atlas = ExtResource("2_police")
+region = Rect2(0, 0, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_drive_front_right_1"]
+atlas = ExtResource("2_police")
+region = Rect2(112, 0, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_drive_front_right_2"]
+atlas = ExtResource("2_police")
+region = Rect2(224, 0, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_drive_front_right_3"]
+atlas = ExtResource("2_police")
+region = Rect2(336, 0, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_drive_front_left_0"]
+atlas = ExtResource("2_police")
+region = Rect2(0, 112, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_drive_front_left_1"]
+atlas = ExtResource("2_police")
+region = Rect2(112, 112, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_drive_front_left_2"]
+atlas = ExtResource("2_police")
+region = Rect2(224, 112, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_drive_front_left_3"]
+atlas = ExtResource("2_police")
+region = Rect2(336, 112, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_siren_back_0"]
+atlas = ExtResource("2_police")
+region = Rect2(0, 672, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_siren_back_1"]
+atlas = ExtResource("2_police")
+region = Rect2(112, 672, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_siren_back_2"]
+atlas = ExtResource("2_police")
+region = Rect2(224, 672, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_siren_back_3"]
+atlas = ExtResource("2_police")
+region = Rect2(336, 672, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_siren_front_0"]
+atlas = ExtResource("2_police")
+region = Rect2(0, 784, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_siren_front_1"]
+atlas = ExtResource("2_police")
+region = Rect2(112, 784, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_siren_front_2"]
+atlas = ExtResource("2_police")
+region = Rect2(224, 784, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_siren_front_3"]
+atlas = ExtResource("2_police")
+region = Rect2(336, 784, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_siren_front_right_0"]
+atlas = ExtResource("2_police")
+region = Rect2(0, 448, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_siren_front_right_1"]
+atlas = ExtResource("2_police")
+region = Rect2(112, 448, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_siren_front_right_2"]
+atlas = ExtResource("2_police")
+region = Rect2(224, 448, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_siren_front_right_3"]
+atlas = ExtResource("2_police")
+region = Rect2(336, 448, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_siren_front_left_0"]
+atlas = ExtResource("2_police")
+region = Rect2(0, 560, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_siren_front_left_1"]
+atlas = ExtResource("2_police")
+region = Rect2(112, 560, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_siren_front_left_2"]
+atlas = ExtResource("2_police")
+region = Rect2(224, 560, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_poli_siren_front_left_3"]
+atlas = ExtResource("2_police")
+region = Rect2(336, 560, 112, 112)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_police"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_drive_back_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_drive_back_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_drive_back_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_drive_back_3")
+}],
+"loop": 1,
+"name": &"drive_back",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_drive_front_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_drive_front_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_drive_front_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_drive_front_3")
+}],
+"loop": 1,
+"name": &"drive_front",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_drive_front_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_drive_front_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_drive_front_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_drive_front_right_3")
+}],
+"loop": 1,
+"name": &"drive_front_left",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_drive_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_drive_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_drive_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_drive_front_left_3")
+}],
+"loop": 1,
+"name": &"drive_front_right",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_siren_back_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_siren_back_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_siren_back_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_siren_back_3")
+}],
+"loop": 1,
+"name": &"siren_back",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_siren_front_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_siren_front_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_siren_front_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_siren_front_3")
+}],
+"loop": 1,
+"name": &"siren_front",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_siren_front_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_siren_front_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_siren_front_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_siren_front_right_3")
+}],
+"loop": 1,
+"name": &"siren_front_left",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_siren_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_siren_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_siren_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_poli_siren_front_left_3")
+}],
+"loop": 1,
+"name": &"siren_front_right",
+"speed": 6.0
+}]
+
+[resource]
+script = ExtResource("1_vehdata")
+id = &"veh_013"
+display_name = "Xe Cảnh Sát Tuần Tra"
+vehicle_type = &"emergency"
+description = "Xe cảnh sát tuần tra trang bị còi hú và đèn chớp xanh đỏ."
+visual_offset = Vector2(0, -39.2)
+sprite_frames = SubResource("SpriteFrames_police")
+spritesheet_path = "res://assets/spritesheets/vehicles/Police car-Sheet(112x112).png"
+max_speed = 150.0
+has_siren = true
+metadata/_custom_type_script = "uid://dijugjd2akk5r"

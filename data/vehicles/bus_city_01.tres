@@ -1,0 +1,154 @@
+[gd_resource type="Resource" script_class="VehicleData" format=3 uid="uid://6ke6gvi7375m"]
+
+[ext_resource type="Script" uid="uid://dijugjd2akk5r" path="res://scripts/vehicles/VehicleData.gd" id="1_vehdata"]
+[ext_resource type="Texture2D" uid="uid://da6eui823ejyr" path="res://assets/spritesheets/vehicles/Bus-Sheet(176x176).png" id="2_bus_ci"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus__drive_back_0"]
+atlas = ExtResource("2_bus_ci")
+region = Rect2(0, 352, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus__drive_back_1"]
+atlas = ExtResource("2_bus_ci")
+region = Rect2(176, 352, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus__drive_back_2"]
+atlas = ExtResource("2_bus_ci")
+region = Rect2(352, 352, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus__drive_back_3"]
+atlas = ExtResource("2_bus_ci")
+region = Rect2(528, 352, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus__drive_front_0"]
+atlas = ExtResource("2_bus_ci")
+region = Rect2(0, 528, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus__drive_front_1"]
+atlas = ExtResource("2_bus_ci")
+region = Rect2(176, 528, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus__drive_front_2"]
+atlas = ExtResource("2_bus_ci")
+region = Rect2(352, 528, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus__drive_front_3"]
+atlas = ExtResource("2_bus_ci")
+region = Rect2(528, 528, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus__drive_front_left_0"]
+atlas = ExtResource("2_bus_ci")
+region = Rect2(0, 176, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus__drive_front_left_1"]
+atlas = ExtResource("2_bus_ci")
+region = Rect2(176, 176, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus__drive_front_left_2"]
+atlas = ExtResource("2_bus_ci")
+region = Rect2(352, 176, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus__drive_front_left_3"]
+atlas = ExtResource("2_bus_ci")
+region = Rect2(528, 176, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus__drive_front_right_0"]
+atlas = ExtResource("2_bus_ci")
+region = Rect2(0, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus__drive_front_right_1"]
+atlas = ExtResource("2_bus_ci")
+region = Rect2(176, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus__drive_front_right_2"]
+atlas = ExtResource("2_bus_ci")
+region = Rect2(352, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bus__drive_front_right_3"]
+atlas = ExtResource("2_bus_ci")
+region = Rect2(528, 0, 176, 176)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bus_ci"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus__drive_back_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus__drive_back_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus__drive_back_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus__drive_back_3")
+}],
+"loop": 1,
+"name": &"drive_back",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus__drive_front_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus__drive_front_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus__drive_front_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus__drive_front_3")
+}],
+"loop": 1,
+"name": &"drive_front",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus__drive_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus__drive_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus__drive_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus__drive_front_left_3")
+}],
+"loop": 1,
+"name": &"drive_front_left",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus__drive_front_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus__drive_front_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus__drive_front_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bus__drive_front_right_3")
+}],
+"loop": 1,
+"name": &"drive_front_right",
+"speed": 6.0
+}]
+
+[resource]
+script = ExtResource("1_vehdata")
+id = &"veh_016"
+display_name = "Xe Buýt Công Cộng"
+vehicle_type = &"bus"
+description = "Xe buýt vận chuyển hành khách công cộng tuyến nội đô."
+frame_size = Vector2i(176, 176)
+visual_offset = Vector2(0, -61.6)
+sprite_frames = SubResource("SpriteFrames_bus_ci")
+spritesheet_path = "res://assets/spritesheets/vehicles/Bus-Sheet(176x176).png"
+collision_size = Vector2(80, 36)
+max_speed = 95.0
+passenger_capacity = 30
+metadata/_custom_type_script = "uid://dijugjd2akk5r"

@@ -1,0 +1,155 @@
+[gd_resource type="Resource" script_class="VehicleData" format=3 uid="uid://7yw0ivuokdi8"]
+
+[ext_resource type="Script" uid="uid://dijugjd2akk5r" path="res://scripts/vehicles/VehicleData.gd" id="1_vehdata"]
+[ext_resource type="Texture2D" uid="uid://utt8m8rqa0h4" path="res://assets/spritesheets/vehicles/Trade Ship-Sheet(192x192).png" id="2_ship_t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_back_0"]
+atlas = ExtResource("2_ship_t")
+region = Rect2(0, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_back_1"]
+atlas = ExtResource("2_ship_t")
+region = Rect2(192, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_back_2"]
+atlas = ExtResource("2_ship_t")
+region = Rect2(384, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_back_3"]
+atlas = ExtResource("2_ship_t")
+region = Rect2(576, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_0"]
+atlas = ExtResource("2_ship_t")
+region = Rect2(0, 576, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_1"]
+atlas = ExtResource("2_ship_t")
+region = Rect2(192, 576, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_2"]
+atlas = ExtResource("2_ship_t")
+region = Rect2(384, 576, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_3"]
+atlas = ExtResource("2_ship_t")
+region = Rect2(576, 576, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_left_0"]
+atlas = ExtResource("2_ship_t")
+region = Rect2(0, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_left_1"]
+atlas = ExtResource("2_ship_t")
+region = Rect2(192, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_left_2"]
+atlas = ExtResource("2_ship_t")
+region = Rect2(384, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_left_3"]
+atlas = ExtResource("2_ship_t")
+region = Rect2(576, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_right_0"]
+atlas = ExtResource("2_ship_t")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_right_1"]
+atlas = ExtResource("2_ship_t")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_right_2"]
+atlas = ExtResource("2_ship_t")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ship_drive_front_right_3"]
+atlas = ExtResource("2_ship_t")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ship_t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_back_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_back_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_back_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_back_3")
+}],
+"loop": 1,
+"name": &"drive_back",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_3")
+}],
+"loop": 1,
+"name": &"drive_front",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_left_3")
+}],
+"loop": 1,
+"name": &"drive_front_left",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ship_drive_front_right_3")
+}],
+"loop": 1,
+"name": &"drive_front_right",
+"speed": 6.0
+}]
+
+[resource]
+script = ExtResource("1_vehdata")
+id = &"veh_023"
+display_name = "Tàu Chở Hàng Thương Mại"
+vehicle_type = &"water"
+category = &"water"
+description = "Tàu vận tải thương mại đường thủy chuyên chở hàng hóa bến cảng."
+frame_size = Vector2i(192, 192)
+visual_offset = Vector2(0, -67.2)
+sprite_frames = SubResource("SpriteFrames_ship_t")
+spritesheet_path = "res://assets/spritesheets/vehicles/Trade Ship-Sheet(192x192).png"
+collision_size = Vector2(90, 42)
+max_speed = 70.0
+passenger_capacity = 12
+metadata/_custom_type_script = "uid://dijugjd2akk5r"

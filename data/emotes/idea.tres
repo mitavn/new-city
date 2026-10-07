@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="EmoteData" format=3]
+
+[ext_resource type="Script" path="res://scripts/emotes/EmoteData.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/spritesheets/characters/Character Emoteicon-Sheet.png" id="2_tex"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_idea_0"]
+atlas = ExtResource("2_tex")
+region = Rect2(0, 320, 32, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_idea_1"]
+atlas = ExtResource("2_tex")
+region = Rect2(32, 320, 32, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_idea_2"]
+atlas = ExtResource("2_tex")
+region = Rect2(64, 320, 32, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_idea_3"]
+atlas = ExtResource("2_tex")
+region = Rect2(96, 320, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_idea"]
+animations = [{
+"frames": [{"duration": 1.0, "texture": SubResource("AtlasTexture_idea_0")}, {"duration": 1.0, "texture": SubResource("AtlasTexture_idea_1")}, {"duration": 1.0, "texture": SubResource("AtlasTexture_idea_2")}, {"duration": 1.0, "texture": SubResource("AtlasTexture_idea_3")}],
+"loop": true,
+"name": &"play",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("1_script")
+id = &"idea"
+display_name = "Ý Tưởng / Sáng Kiến"
+category = &"quest"
+row_index = 20
+description = "Bóng đèn vàng khi nảy ra ý tưởng hoặc nhận cuốc xe."
+frame_size = Vector2i(32, 16)
+frame_count = 4
+fps = 5.0
+loop = true
+offset_y = -42.0
+default_duration = 2.2
+sprite_frames = SubResource("SpriteFrames_idea")
+spritesheet_path = "res://assets/spritesheets/characters/Character Emoteicon-Sheet.png"
+tags = PackedStringArray("lightbulb", "plan", "patrol")

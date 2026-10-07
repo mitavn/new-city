@@ -1,0 +1,161 @@
+[gd_resource type="Resource" script_class="BuildingData" format=3 uid="uid://d34gmswaqra7b"]
+
+[ext_resource type="Script" path="res://scripts/buildings/BuildingData.gd" id="1_builddata"]
+[ext_resource type="Texture2D" uid="uid://c7c6hmn7cds4a" path="res://assets/spritesheets/buildings/Building Door Animations/Bakery Clean Animation.png" id="2_bakery"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bake_d_closed"]
+atlas = ExtResource("2_bakery")
+region = Rect2(0, 0, 112, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bake_d_opened"]
+atlas = ExtResource("2_bakery")
+region = Rect2(336, 0, 112, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bake_d_op_0"]
+atlas = ExtResource("2_bakery")
+region = Rect2(0, 0, 112, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bake_d_op_1"]
+atlas = ExtResource("2_bakery")
+region = Rect2(112, 0, 112, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bake_d_op_2"]
+atlas = ExtResource("2_bakery")
+region = Rect2(224, 0, 112, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bake_d_op_3"]
+atlas = ExtResource("2_bakery")
+region = Rect2(336, 0, 112, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bake_d_cl_3"]
+atlas = ExtResource("2_bakery")
+region = Rect2(336, 0, 112, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bake_d_cl_4"]
+atlas = ExtResource("2_bakery")
+region = Rect2(448, 0, 112, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bake_d_cl_5"]
+atlas = ExtResource("2_bakery")
+region = Rect2(560, 0, 112, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bake_d_cl_0"]
+atlas = ExtResource("2_bakery")
+region = Rect2(0, 0, 112, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bake_d_cy_0"]
+atlas = ExtResource("2_bakery")
+region = Rect2(0, 0, 112, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bake_d_cy_1"]
+atlas = ExtResource("2_bakery")
+region = Rect2(112, 0, 112, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bake_d_cy_2"]
+atlas = ExtResource("2_bakery")
+region = Rect2(224, 0, 112, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bake_d_cy_3"]
+atlas = ExtResource("2_bakery")
+region = Rect2(336, 0, 112, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bake_d_cy_4"]
+atlas = ExtResource("2_bakery")
+region = Rect2(448, 0, 112, 144)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bake_d_cy_5"]
+atlas = ExtResource("2_bakery")
+region = Rect2(560, 0, 112, 144)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bakery"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bake_d_cl_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bake_d_cl_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bake_d_cl_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bake_d_cl_0")
+}],
+"loop": 0,
+"name": &"door_close",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bake_d_closed")
+}],
+"loop": 0,
+"name": &"door_closed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bake_d_cy_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bake_d_cy_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bake_d_cy_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bake_d_cy_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bake_d_cy_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bake_d_cy_5")
+}],
+"loop": 1,
+"name": &"door_cycle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bake_d_op_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bake_d_op_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bake_d_op_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bake_d_op_3")
+}],
+"loop": 0,
+"name": &"door_open",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bake_d_opened")
+}],
+"loop": 0,
+"name": &"door_opened",
+"speed": 1.0
+}]
+
+[resource]
+script = ExtResource("1_builddata")
+id = &"bld_013"
+display_name = "Tiệm Bánh Mì Hiện Đại"
+building_type = &"commercial"
+description = "Tiệm bánh mì phong cách hiện đại tối giản với cửa kính trong suốt."
+frame_size = Vector2i(112, 144)
+door_count = 1
+door_names = ["Cửa Chính"]
+color_variant = "default"
+sprite_frames = SubResource("SpriteFrames_bakery")
+spritesheet_path = "res://assets/spritesheets/buildings/Building Door Animations/Bakery Clean Animation.png"
+collision_size = Vector2(95, 50)
+collision_offset = Vector2(0, -10)
+door_positions = [Vector2(0, 0)]
+tags = PackedStringArray("commercial", "building", "default")

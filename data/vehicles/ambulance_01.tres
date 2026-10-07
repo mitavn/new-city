@@ -1,0 +1,287 @@
+[gd_resource type="Resource" script_class="VehicleData" format=3 uid="uid://6eapngfap7d2"]
+
+[ext_resource type="Script" uid="uid://dijugjd2akk5r" path="res://scripts/vehicles/VehicleData.gd" id="1_vehdata"]
+[ext_resource type="Texture2D" uid="uid://biq7sj5iscwwb" path="res://assets/spritesheets/vehicles/Ambulance-Sheet(160x160).png" id="2_ambula"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_drive_back_0"]
+atlas = ExtResource("2_ambula")
+region = Rect2(0, 320, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_drive_back_1"]
+atlas = ExtResource("2_ambula")
+region = Rect2(160, 320, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_drive_back_2"]
+atlas = ExtResource("2_ambula")
+region = Rect2(320, 320, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_drive_back_3"]
+atlas = ExtResource("2_ambula")
+region = Rect2(480, 320, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_drive_front_0"]
+atlas = ExtResource("2_ambula")
+region = Rect2(0, 480, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_drive_front_1"]
+atlas = ExtResource("2_ambula")
+region = Rect2(160, 480, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_drive_front_2"]
+atlas = ExtResource("2_ambula")
+region = Rect2(320, 480, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_drive_front_3"]
+atlas = ExtResource("2_ambula")
+region = Rect2(480, 480, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_drive_front_left_0"]
+atlas = ExtResource("2_ambula")
+region = Rect2(0, 160, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_drive_front_left_1"]
+atlas = ExtResource("2_ambula")
+region = Rect2(160, 160, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_drive_front_left_2"]
+atlas = ExtResource("2_ambula")
+region = Rect2(320, 160, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_drive_front_left_3"]
+atlas = ExtResource("2_ambula")
+region = Rect2(480, 160, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_drive_front_right_0"]
+atlas = ExtResource("2_ambula")
+region = Rect2(0, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_drive_front_right_1"]
+atlas = ExtResource("2_ambula")
+region = Rect2(160, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_drive_front_right_2"]
+atlas = ExtResource("2_ambula")
+region = Rect2(320, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_drive_front_right_3"]
+atlas = ExtResource("2_ambula")
+region = Rect2(480, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_siren_back_0"]
+atlas = ExtResource("2_ambula")
+region = Rect2(0, 960, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_siren_back_1"]
+atlas = ExtResource("2_ambula")
+region = Rect2(160, 960, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_siren_back_2"]
+atlas = ExtResource("2_ambula")
+region = Rect2(320, 960, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_siren_back_3"]
+atlas = ExtResource("2_ambula")
+region = Rect2(480, 960, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_siren_front_0"]
+atlas = ExtResource("2_ambula")
+region = Rect2(0, 1120, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_siren_front_1"]
+atlas = ExtResource("2_ambula")
+region = Rect2(160, 1120, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_siren_front_2"]
+atlas = ExtResource("2_ambula")
+region = Rect2(320, 1120, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_siren_front_3"]
+atlas = ExtResource("2_ambula")
+region = Rect2(480, 1120, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_siren_front_left_0"]
+atlas = ExtResource("2_ambula")
+region = Rect2(0, 800, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_siren_front_left_1"]
+atlas = ExtResource("2_ambula")
+region = Rect2(160, 800, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_siren_front_left_2"]
+atlas = ExtResource("2_ambula")
+region = Rect2(320, 800, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_siren_front_left_3"]
+atlas = ExtResource("2_ambula")
+region = Rect2(480, 800, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_siren_front_right_0"]
+atlas = ExtResource("2_ambula")
+region = Rect2(0, 640, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_siren_front_right_1"]
+atlas = ExtResource("2_ambula")
+region = Rect2(160, 640, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_siren_front_right_2"]
+atlas = ExtResource("2_ambula")
+region = Rect2(320, 640, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ambu_siren_front_right_3"]
+atlas = ExtResource("2_ambula")
+region = Rect2(480, 640, 160, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ambula"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_drive_back_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_drive_back_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_drive_back_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_drive_back_3")
+}],
+"loop": 1,
+"name": &"drive_back",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_drive_front_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_drive_front_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_drive_front_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_drive_front_3")
+}],
+"loop": 1,
+"name": &"drive_front",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_drive_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_drive_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_drive_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_drive_front_left_3")
+}],
+"loop": 1,
+"name": &"drive_front_left",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_drive_front_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_drive_front_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_drive_front_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_drive_front_right_3")
+}],
+"loop": 1,
+"name": &"drive_front_right",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_siren_back_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_siren_back_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_siren_back_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_siren_back_3")
+}],
+"loop": 1,
+"name": &"siren_back",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_siren_front_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_siren_front_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_siren_front_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_siren_front_3")
+}],
+"loop": 1,
+"name": &"siren_front",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_siren_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_siren_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_siren_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_siren_front_left_3")
+}],
+"loop": 1,
+"name": &"siren_front_left",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_siren_front_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_siren_front_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_siren_front_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ambu_siren_front_right_3")
+}],
+"loop": 1,
+"name": &"siren_front_right",
+"speed": 6.0
+}]
+
+[resource]
+script = ExtResource("1_vehdata")
+id = &"veh_014"
+display_name = "Xe Cứu Thương Y Tế"
+vehicle_type = &"emergency"
+description = "Xe cấp cứu y tế trang bị đèn còi khẩn cấp và thiết bị y khoa."
+frame_size = Vector2i(160, 160)
+visual_offset = Vector2(0, -56)
+sprite_frames = SubResource("SpriteFrames_ambula")
+spritesheet_path = "res://assets/spritesheets/vehicles/Ambulance-Sheet(160x160).png"
+collision_size = Vector2(64, 32)
+max_speed = 140.0
+has_siren = true
+passenger_capacity = 6
+metadata/_custom_type_script = "uid://dijugjd2akk5r"

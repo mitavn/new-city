@@ -1,0 +1,155 @@
+[gd_resource type="Resource" script_class="BuildingData" format=3 uid="uid://dkh8qec2y35xy"]
+
+[ext_resource type="Script" uid="uid://dxjuftm48ae7a" path="res://scripts/buildings/BuildingData.gd" id="1_builddata"]
+[ext_resource type="Texture2D" uid="uid://bv5566kveucux" path="res://assets/spritesheets/buildings/Building Door Animations/Bank Animation.png" id="2_bank_c"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bank_d_cl_3"]
+atlas = ExtResource("2_bank_c")
+region = Rect2(624, 0, 208, 208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bank_d_cl_4"]
+atlas = ExtResource("2_bank_c")
+region = Rect2(832, 0, 208, 208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bank_d_cl_5"]
+atlas = ExtResource("2_bank_c")
+region = Rect2(1040, 0, 208, 208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bank_d_cl_0"]
+atlas = ExtResource("2_bank_c")
+region = Rect2(0, 0, 208, 208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bank_d_closed"]
+atlas = ExtResource("2_bank_c")
+region = Rect2(0, 0, 208, 208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bank_d_cy_0"]
+atlas = ExtResource("2_bank_c")
+region = Rect2(0, 0, 208, 208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bank_d_cy_1"]
+atlas = ExtResource("2_bank_c")
+region = Rect2(208, 0, 208, 208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bank_d_cy_2"]
+atlas = ExtResource("2_bank_c")
+region = Rect2(416, 0, 208, 208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bank_d_cy_3"]
+atlas = ExtResource("2_bank_c")
+region = Rect2(624, 0, 208, 208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bank_d_cy_4"]
+atlas = ExtResource("2_bank_c")
+region = Rect2(832, 0, 208, 208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bank_d_cy_5"]
+atlas = ExtResource("2_bank_c")
+region = Rect2(1040, 0, 208, 208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bank_d_op_0"]
+atlas = ExtResource("2_bank_c")
+region = Rect2(0, 0, 208, 208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bank_d_op_1"]
+atlas = ExtResource("2_bank_c")
+region = Rect2(208, 0, 208, 208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bank_d_op_2"]
+atlas = ExtResource("2_bank_c")
+region = Rect2(416, 0, 208, 208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bank_d_op_3"]
+atlas = ExtResource("2_bank_c")
+region = Rect2(624, 0, 208, 208)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bank_d_opened"]
+atlas = ExtResource("2_bank_c")
+region = Rect2(624, 0, 208, 208)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bank_c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bank_d_cl_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bank_d_cl_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bank_d_cl_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bank_d_cl_0")
+}],
+"loop": 0,
+"name": &"door_close",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bank_d_closed")
+}],
+"loop": 0,
+"name": &"door_closed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bank_d_cy_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bank_d_cy_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bank_d_cy_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bank_d_cy_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bank_d_cy_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bank_d_cy_5")
+}],
+"loop": 1,
+"name": &"door_cycle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bank_d_op_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bank_d_op_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bank_d_op_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bank_d_op_3")
+}],
+"loop": 0,
+"name": &"door_open",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bank_d_opened")
+}],
+"loop": 0,
+"name": &"door_opened",
+"speed": 1.0
+}]
+
+[resource]
+script = ExtResource("1_builddata")
+id = &"bld_014"
+display_name = "Ngân Hàng Trung Tâm"
+description = "Trụ sở ngân hàng đồ sộ với mái vòm và cửa kính sang trọng an toàn."
+frame_size = Vector2i(208, 208)
+sprite_frames = SubResource("SpriteFrames_bank_c")
+spritesheet_path = "res://assets/spritesheets/buildings/Building Door Animations/Bank Animation.png"
+collision_size = Vector2(176, 72)
+tags = PackedStringArray("commercial", "building", "default")

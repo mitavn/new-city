@@ -1,0 +1,155 @@
+[gd_resource type="Resource" script_class="BuildingData" format=3 uid="uid://lq8rlxvcgf77"]
+
+[ext_resource type="Script" uid="uid://dxjuftm48ae7a" path="res://scripts/buildings/BuildingData.gd" id="1_builddata"]
+[ext_resource type="Texture2D" uid="uid://bf86xvt8dc1xc" path="res://assets/spritesheets/buildings/Building Door Animations/Convenient Store Clean Animation.png" id="2_conven"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_conv_d_cl_3"]
+atlas = ExtResource("2_conven")
+region = Rect2(480, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_conv_d_cl_4"]
+atlas = ExtResource("2_conven")
+region = Rect2(640, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_conv_d_cl_5"]
+atlas = ExtResource("2_conven")
+region = Rect2(800, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_conv_d_cl_0"]
+atlas = ExtResource("2_conven")
+region = Rect2(0, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_conv_d_closed"]
+atlas = ExtResource("2_conven")
+region = Rect2(0, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_conv_d_cy_0"]
+atlas = ExtResource("2_conven")
+region = Rect2(0, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_conv_d_cy_1"]
+atlas = ExtResource("2_conven")
+region = Rect2(160, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_conv_d_cy_2"]
+atlas = ExtResource("2_conven")
+region = Rect2(320, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_conv_d_cy_3"]
+atlas = ExtResource("2_conven")
+region = Rect2(480, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_conv_d_cy_4"]
+atlas = ExtResource("2_conven")
+region = Rect2(640, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_conv_d_cy_5"]
+atlas = ExtResource("2_conven")
+region = Rect2(800, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_conv_d_op_0"]
+atlas = ExtResource("2_conven")
+region = Rect2(0, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_conv_d_op_1"]
+atlas = ExtResource("2_conven")
+region = Rect2(160, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_conv_d_op_2"]
+atlas = ExtResource("2_conven")
+region = Rect2(320, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_conv_d_op_3"]
+atlas = ExtResource("2_conven")
+region = Rect2(480, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_conv_d_opened"]
+atlas = ExtResource("2_conven")
+region = Rect2(480, 0, 160, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_conven"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_conv_d_cl_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_conv_d_cl_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_conv_d_cl_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_conv_d_cl_0")
+}],
+"loop": 0,
+"name": &"door_close",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_conv_d_closed")
+}],
+"loop": 0,
+"name": &"door_closed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_conv_d_cy_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_conv_d_cy_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_conv_d_cy_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_conv_d_cy_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_conv_d_cy_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_conv_d_cy_5")
+}],
+"loop": 1,
+"name": &"door_cycle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_conv_d_op_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_conv_d_op_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_conv_d_op_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_conv_d_op_3")
+}],
+"loop": 0,
+"name": &"door_open",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_conv_d_opened")
+}],
+"loop": 0,
+"name": &"door_opened",
+"speed": 1.0
+}]
+
+[resource]
+script = ExtResource("1_builddata")
+id = &"bld_026"
+display_name = "Cửa Hàng Tiện Lợi Clean"
+description = "Cửa hàng tiện lợi hiện đại phiên bản sạch sẽ tinh tế."
+frame_size = Vector2i(160, 160)
+sprite_frames = SubResource("SpriteFrames_conven")
+spritesheet_path = "res://assets/spritesheets/buildings/Building Door Animations/Convenient Store Clean Animation.png"
+collision_size = Vector2(136, 56)
+tags = PackedStringArray("commercial", "building", "default")

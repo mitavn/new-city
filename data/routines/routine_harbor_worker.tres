@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="NPCRoutineData" format=3]
+
+[ext_resource type="Script" path="res://scripts/ai/tasks/NPCRoutineData.gd" id="1_qs037"]
+[ext_resource type="Script" path="res://scripts/ai/tasks/NPCTaskData.gd" id="2_3j5cw"]
+
+[sub_resource type="Resource" id="Resource_rvf18"]
+script = ExtResource("2_3j5cw")
+task_id = &"work_goto_warehouse"
+task_name = "Đến Kho Hàng"
+poi_tag = &"warehouse"
+arrival_distance = 20.0
+duration = 0.0
+
+[sub_resource type="Resource" id="Resource_3d2jh"]
+script = ExtResource("2_3j5cw")
+task_id = &"work_inventory"
+task_name = "Kiểm Kê Kiện Hàng"
+type = 2
+arrival_distance = 20.0
+emote_id = &"check"
+dialogue_text = "Kiểm kê danh mục hàng hóa cập cảng hoàn tất!"
+
+[sub_resource type="Resource" id="Resource_8avx0"]
+script = ExtResource("2_3j5cw")
+task_id = &"work_goto_yard"
+task_name = "Đến Bãi Container"
+poi_tag = &"container_yard"
+arrival_distance = 22.0
+duration = 0.0
+
+[sub_resource type="Resource" id="Resource_23lq7"]
+script = ExtResource("2_3j5cw")
+task_id = &"work_lifting"
+task_name = "Bốc Xếp Kiện Hàng"
+type = 2
+arrival_distance = 20.0
+duration = 3.5
+emote_id = &"sweat"
+dialogue_text = "Kiện hàng này nặng thật, cần thêm người trợ giúp!"
+
+[sub_resource type="Resource" id="Resource_74xef"]
+script = ExtResource("2_3j5cw")
+task_id = &"work_goto_ramen"
+task_name = "Đến Quầy Mì Ăn Trưa"
+poi_tag = &"ramen_stand"
+arrival_distance = 24.0
+duration = 0.0
+
+[sub_resource type="Resource" id="Resource_635jd"]
+script = ExtResource("2_3j5cw")
+task_id = &"work_eating"
+task_name = "Ăn Mì Bến Tàu"
+type = 2
+arrival_distance = 20.0
+duration = 4.0
+emote_id = &"heart"
+dialogue_text = "Tô mì hoành thánh nóng hổi tiếp sức cho buổi chiều!"
+
+[resource]
+script = ExtResource("1_qs037")
+routine_id = &"routine_harbor_worker"
+routine_name = "Ca Làm Việc Của Công Nhân Bến Cảng"
+category = &"worker"
+description = "Lộ trình kiểm kê kho hàng, bốc dỡ container và ăn trưa tại quầy mì bến tàu."
+tasks = Array[ExtResource("2_3j5cw")]([SubResource("Resource_rvf18"), SubResource("Resource_3d2jh"), SubResource("Resource_8avx0"), SubResource("Resource_23lq7"), SubResource("Resource_74xef"), SubResource("Resource_635jd")])

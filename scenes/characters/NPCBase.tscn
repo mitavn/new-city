@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://b165b61a7qluq"]
+
+[ext_resource type="Script" uid="uid://dgglnirv5w5tv" path="res://scenes/characters/npc_base.gd" id="1_oapmx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3owqy"]
+radius = 6.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8upip"]
+size = Vector2(28, 36)
+
+[node name="NPCBase" type="CharacterBody2D" unique_id=1858771386]
+y_sort_enabled = true
+collision_layer = 2
+collision_mask = 27
+script = ExtResource("1_oapmx")
+
+[node name="Visual" type="AnimatedSprite2D" parent="." unique_id=416568325]
+position = Vector2(0, -20)
+
+[node name="BodyCollision" type="CollisionShape2D" parent="." unique_id=2036880984]
+position = Vector2(0, -4)
+shape = SubResource("CircleShape2D_3owqy")
+
+[node name="InteractionArea" type="Area2D" parent="." unique_id=1592732800]
+position = Vector2(0, -14)
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea" unique_id=1340509250]
+shape = SubResource("RectangleShape2D_8upip")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=604930821]
+path_desired_distance = 4.0
+target_desired_distance = 8.0

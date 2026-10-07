@@ -1,0 +1,952 @@
+[gd_scene format=3 uid="uid://dnii0nvqilna5"]
+
+[ext_resource type="Script" uid="uid://dqth4aqj40gt5" path="res://scenes/test/npc_test_scene.gd" id="1_testscript"]
+[ext_resource type="PackedScene" uid="uid://b165b61a7qluq" path="res://scenes/characters/NPCBase.tscn" id="2_npcbase"]
+[ext_resource type="Resource" uid="uid://onv6dycr2ulc" path="res://data/npcs/police_male_01.tres" id="3_police"]
+[ext_resource type="Resource" uid="uid://ce7nmeujpdyac" path="res://data/npcs/police_female_01.tres" id="4_police"]
+[ext_resource type="Resource" uid="uid://bjwi2bvhv3ueg" path="res://data/npcs/construction_male_01.tres" id="5_constr"]
+[ext_resource type="Resource" uid="uid://c5nccavv7ult0" path="res://data/npcs/construction_female_01.tres" id="6_constr"]
+[ext_resource type="Resource" uid="uid://bcuoqthmdusmc" path="res://data/npcs/doctor_male_01.tres" id="7_doctor"]
+[ext_resource type="Resource" uid="uid://ce5jqjuoffy67" path="res://data/npcs/doctor_female_01.tres" id="8_doctor"]
+[ext_resource type="Resource" uid="uid://cdki3dyy6mu3p" path="res://data/npcs/chef_male_01.tres" id="9_chef_m"]
+[ext_resource type="Resource" uid="uid://cg5qpg2hniv1a" path="res://data/npcs/chef_female_01.tres" id="10_chef_f"]
+[ext_resource type="Resource" uid="uid://hnuw46hw84pa" path="res://data/npcs/office_male_01.tres" id="11_office"]
+[ext_resource type="Resource" uid="uid://cra6go34gu2r" path="res://data/npcs/office_female_01.tres" id="12_office"]
+[ext_resource type="Resource" uid="uid://dftpmvgajy0kb" path="res://data/npcs/sanitation_male_01.tres" id="13_sanita"]
+[ext_resource type="Resource" uid="uid://bgysnm6kct0mi" path="res://data/npcs/sanitation_female_01.tres" id="14_sanita"]
+[ext_resource type="Resource" uid="uid://de0knvkcnw0jn" path="res://data/npcs/delivery_male_01.tres" id="15_delive"]
+[ext_resource type="Resource" uid="uid://iqssivd222ca" path="res://data/npcs/delivery_female_01.tres" id="16_delive"]
+[ext_resource type="Resource" uid="uid://bh7riyddb0qof" path="res://data/npcs/senior_male_01.tres" id="17_senior"]
+[ext_resource type="Resource" uid="uid://g2nf81hrbs6b" path="res://data/npcs/senior_female_01.tres" id="18_senior"]
+[ext_resource type="Resource" uid="uid://bhfa2gvtwkj2y" path="res://data/npcs/firefighter_male_01.tres" id="19_firefi"]
+[ext_resource type="Resource" uid="uid://dm8ipkhag13pb" path="res://data/npcs/firefighter_female_01.tres" id="20_firefi"]
+[ext_resource type="Resource" uid="uid://bi8lvtefbsqek" path="res://data/npcs/executive_male_01.tres" id="21_execut"]
+[ext_resource type="Resource" uid="uid://dejdgyw6ig2q" path="res://data/npcs/executive_female_01.tres" id="22_execut"]
+[ext_resource type="Resource" uid="uid://cj3skshmov5kl" path="res://data/npcs/citizen_male_01.tres" id="23_citize"]
+[ext_resource type="Resource" uid="uid://dtrtf6716qka" path="res://data/npcs/citizen_female_01.tres" id="24_citize"]
+[ext_resource type="Resource" uid="uid://ci8ln6sllc06x" path="res://data/npcs/citizen_male_02.tres" id="25_citize"]
+[ext_resource type="Resource" uid="uid://db7o4vbq7woe6" path="res://data/npcs/citizen_female_02.tres" id="26_citize"]
+[ext_resource type="Resource" uid="uid://fapoaxthorg0" path="res://data/npcs/citizen_male_03.tres" id="27_citize"]
+[ext_resource type="Resource" uid="uid://cglhaepp8lr3v" path="res://data/npcs/citizen_female_03.tres" id="28_citize"]
+[ext_resource type="Resource" uid="uid://noq5jca1rtwl" path="res://data/npcs/citizen_male_04.tres" id="29_citize"]
+[ext_resource type="Resource" uid="uid://dmvhqv8lfy0pk" path="res://data/npcs/citizen_female_04.tres" id="30_citize"]
+[ext_resource type="Resource" uid="uid://dbaoh6rrderg2" path="res://data/npcs/resident_male_01.tres" id="31_reside"]
+[ext_resource type="Resource" uid="uid://dcbfdw8rv6qcf" path="res://data/npcs/resident_female_01.tres" id="32_reside"]
+[ext_resource type="Resource" uid="uid://cj3hi8wmgot77" path="res://data/npcs/resident_male_02.tres" id="33_reside"]
+[ext_resource type="Resource" uid="uid://bafj87muxrt7q" path="res://data/npcs/resident_female_02.tres" id="34_reside"]
+[ext_resource type="Resource" uid="uid://ce7iwuabcw1qd" path="res://data/npcs/resident_male_03.tres" id="35_reside"]
+[ext_resource type="Resource" uid="uid://citnv52k2g5gj" path="res://data/npcs/resident_female_03.tres" id="36_reside"]
+[ext_resource type="Resource" uid="uid://hvu55te153h8" path="res://data/npcs/resident_male_04.tres" id="37_reside"]
+[ext_resource type="Resource" uid="uid://lsq47tive5gg" path="res://data/npcs/resident_female_04.tres" id="38_reside"]
+[ext_resource type="Resource" uid="uid://c7qsxdbm0smj" path="res://data/npcs/resident_male_05.tres" id="39_reside"]
+[ext_resource type="Resource" uid="uid://dto0e0mw33b6" path="res://data/npcs/resident_female_05.tres" id="40_reside"]
+[ext_resource type="Resource" uid="uid://dcap8w7v2x0hg" path="res://data/npcs/resident_male_06.tres" id="41_reside"]
+[ext_resource type="Resource" uid="uid://djcedm6jt5ndf" path="res://data/npcs/resident_female_06.tres" id="42_reside"]
+[ext_resource type="Resource" uid="uid://mfp2sj7vr2ts" path="res://data/npcs/resident_male_07.tres" id="43_reside"]
+[ext_resource type="Resource" uid="uid://burvnfbnwyqk" path="res://data/npcs/resident_female_07.tres" id="44_reside"]
+[ext_resource type="Resource" uid="uid://cl8em7yoeesea" path="res://data/npcs/resident_male_08.tres" id="45_reside"]
+[ext_resource type="Resource" uid="uid://chmn6h0mwbqjg" path="res://data/npcs/resident_female_08.tres" id="46_reside"]
+
+[node name="NPCTestScene" type="Node2D" unique_id=1562320497]
+script = ExtResource("1_testscript")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1001]
+offset_left = -400.0
+offset_top = -300.0
+offset_right = 1800.0
+offset_bottom = 1000.0
+mouse_filter = 2
+color = Color(0.125, 0.145, 0.176, 1)
+
+[node name="NPCContainer" type="Node2D" parent="." unique_id=1002]
+y_sort_enabled = true
+
+[node name="NPC_001_police_male_01" parent="NPCContainer" unique_id=193812940 instance=ExtResource("2_npcbase")]
+position = Vector2(80, 110)
+data = ExtResource("3_police")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_001_police_male_01" unique_id=1848603364]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "001: Cảnh Sát Nam"
+horizontal_alignment = 1
+
+[node name="NPC_002_police_female_01" parent="NPCContainer" unique_id=866923602 instance=ExtResource("2_npcbase")]
+position = Vector2(195, 110)
+data = ExtResource("4_police")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_002_police_female_01" unique_id=1465272584]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "002: Cảnh Sát Nữ"
+horizontal_alignment = 1
+
+[node name="NPC_003_construction_male_01" parent="NPCContainer" unique_id=1990365472 instance=ExtResource("2_npcbase")]
+position = Vector2(310, 110)
+data = ExtResource("5_constr")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_003_construction_male_01" unique_id=936891102]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "003: Thợ Xây Nam"
+horizontal_alignment = 1
+
+[node name="NPC_004_construction_female_01" parent="NPCContainer" unique_id=361405478 instance=ExtResource("2_npcbase")]
+position = Vector2(425, 110)
+data = ExtResource("6_constr")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_004_construction_female_01" unique_id=549838350]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "004: Thợ Xây Nữ"
+horizontal_alignment = 1
+
+[node name="NPC_005_doctor_male_01" parent="NPCContainer" unique_id=1192632518 instance=ExtResource("2_npcbase")]
+position = Vector2(540, 110)
+data = ExtResource("7_doctor")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_005_doctor_male_01" unique_id=1822136493]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "005: Bác Sĩ Nam"
+horizontal_alignment = 1
+
+[node name="NPC_006_doctor_female_01" parent="NPCContainer" unique_id=1989338434 instance=ExtResource("2_npcbase")]
+position = Vector2(655, 110)
+data = ExtResource("8_doctor")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_006_doctor_female_01" unique_id=1995502466]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "006: Bác Sĩ Nữ"
+horizontal_alignment = 1
+
+[node name="NPC_007_chef_male_01" parent="NPCContainer" unique_id=1165338421 instance=ExtResource("2_npcbase")]
+position = Vector2(770, 110)
+data = ExtResource("9_chef_m")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_007_chef_male_01" unique_id=794458340]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "007: Đầu Bếp Nam"
+horizontal_alignment = 1
+
+[node name="NPC_008_chef_female_01" parent="NPCContainer" unique_id=1410667351 instance=ExtResource("2_npcbase")]
+position = Vector2(885, 110)
+data = ExtResource("10_chef_f")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_008_chef_female_01" unique_id=519961103]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "008: Đầu Bếp Nữ"
+horizontal_alignment = 1
+
+[node name="NPC_009_office_male_01" parent="NPCContainer" unique_id=962082883 instance=ExtResource("2_npcbase")]
+position = Vector2(1000, 110)
+data = ExtResource("11_office")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_009_office_male_01" unique_id=859706349]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "009: Nhân Viên Văn Phòng Nam"
+horizontal_alignment = 1
+
+[node name="NPC_010_office_female_01" parent="NPCContainer" unique_id=622618772 instance=ExtResource("2_npcbase")]
+position = Vector2(1115, 110)
+data = ExtResource("12_office")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_010_office_female_01" unique_id=313685723]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "010: Nhân Viên Văn Phòng Nữ"
+horizontal_alignment = 1
+
+[node name="NPC_011_sanitation_male_01" parent="NPCContainer" unique_id=1583979032 instance=ExtResource("2_npcbase")]
+position = Vector2(1230, 110)
+data = ExtResource("13_sanita")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_011_sanitation_male_01" unique_id=547363793]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "011: Nhân Viên Môi Trường Nam"
+horizontal_alignment = 1
+
+[node name="NPC_012_sanitation_female_01" parent="NPCContainer" unique_id=2134129999 instance=ExtResource("2_npcbase")]
+position = Vector2(80, 235)
+data = ExtResource("14_sanita")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_012_sanitation_female_01" unique_id=34510724]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "012: Nhân Viên Môi Trường Nữ"
+horizontal_alignment = 1
+
+[node name="NPC_013_delivery_male_01" parent="NPCContainer" unique_id=1355262218 instance=ExtResource("2_npcbase")]
+position = Vector2(195, 235)
+data = ExtResource("15_delive")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_013_delivery_male_01" unique_id=1090701071]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "013: Nhân Viên Giao Hàng Nam"
+horizontal_alignment = 1
+
+[node name="NPC_014_delivery_female_01" parent="NPCContainer" unique_id=185133500 instance=ExtResource("2_npcbase")]
+position = Vector2(310, 235)
+data = ExtResource("16_delive")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_014_delivery_female_01" unique_id=135453096]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "014: Nhân Viên Giao Hàng Nữ"
+horizontal_alignment = 1
+
+[node name="NPC_015_senior_male_01" parent="NPCContainer" unique_id=1950399060 instance=ExtResource("2_npcbase")]
+position = Vector2(425, 235)
+data = ExtResource("17_senior")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_015_senior_male_01" unique_id=537410547]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "015: Cụ Ông"
+horizontal_alignment = 1
+
+[node name="NPC_016_senior_female_01" parent="NPCContainer" unique_id=313741709 instance=ExtResource("2_npcbase")]
+position = Vector2(540, 235)
+data = ExtResource("18_senior")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_016_senior_female_01" unique_id=1705865838]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "016: Cụ Bà"
+horizontal_alignment = 1
+
+[node name="NPC_017_firefighter_male_01" parent="NPCContainer" unique_id=1865690945 instance=ExtResource("2_npcbase")]
+position = Vector2(655, 235)
+data = ExtResource("19_firefi")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_017_firefighter_male_01" unique_id=1697595586]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "017: Lính Cứu Hỏa Nam"
+horizontal_alignment = 1
+
+[node name="NPC_018_firefighter_female_01" parent="NPCContainer" unique_id=630535467 instance=ExtResource("2_npcbase")]
+position = Vector2(770, 235)
+data = ExtResource("20_firefi")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_018_firefighter_female_01" unique_id=1025576027]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "018: Lính Cứu Hỏa Nữ"
+horizontal_alignment = 1
+
+[node name="NPC_019_executive_male_01" parent="NPCContainer" unique_id=1347865490 instance=ExtResource("2_npcbase")]
+position = Vector2(885, 235)
+data = ExtResource("21_execut")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_019_executive_male_01" unique_id=265522840]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "019: Doanh Nhân Nam"
+horizontal_alignment = 1
+
+[node name="NPC_020_executive_female_01" parent="NPCContainer" unique_id=206005380 instance=ExtResource("2_npcbase")]
+position = Vector2(1000, 235)
+data = ExtResource("22_execut")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_020_executive_female_01" unique_id=1298261219]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "020: Doanh Nhân Nữ"
+horizontal_alignment = 1
+
+[node name="NPC_021_citizen_male_01" parent="NPCContainer" unique_id=934680200 instance=ExtResource("2_npcbase")]
+position = Vector2(1115, 235)
+data = ExtResource("23_citize")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_021_citizen_male_01" unique_id=123513893]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "021: Cư Dân Nam Áo Xanh"
+horizontal_alignment = 1
+
+[node name="NPC_022_citizen_female_01" parent="NPCContainer" unique_id=691130052 instance=ExtResource("2_npcbase")]
+position = Vector2(1230, 235)
+data = ExtResource("24_citize")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_022_citizen_female_01" unique_id=1936115936]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "022: Cư Dân Nữ Áo Tím"
+horizontal_alignment = 1
+
+[node name="NPC_023_citizen_male_02" parent="NPCContainer" unique_id=125542989 instance=ExtResource("2_npcbase")]
+position = Vector2(80, 360)
+data = ExtResource("25_citize")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_023_citizen_male_02" unique_id=320417712]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "023: Cư Dân Nam Áo Xám"
+horizontal_alignment = 1
+
+[node name="NPC_024_citizen_female_02" parent="NPCContainer" unique_id=850742123 instance=ExtResource("2_npcbase")]
+position = Vector2(195, 360)
+data = ExtResource("26_citize")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_024_citizen_female_02" unique_id=1891230233]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "024: Cư Dân Nữ Áo Nâu"
+horizontal_alignment = 1
+
+[node name="NPC_025_citizen_male_03" parent="NPCContainer" unique_id=1094198820 instance=ExtResource("2_npcbase")]
+position = Vector2(310, 360)
+data = ExtResource("27_citize")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_025_citizen_male_03" unique_id=1416602768]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "025: Cư Dân Nam Áo Rêu"
+horizontal_alignment = 1
+
+[node name="NPC_026_citizen_female_03" parent="NPCContainer" unique_id=1215753115 instance=ExtResource("2_npcbase")]
+position = Vector2(425, 360)
+data = ExtResource("28_citize")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_026_citizen_female_03" unique_id=2124950514]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "026: Cư Dân Nữ Áo Hồng"
+horizontal_alignment = 1
+
+[node name="NPC_027_citizen_male_04" parent="NPCContainer" unique_id=2051878804 instance=ExtResource("2_npcbase")]
+position = Vector2(540, 360)
+data = ExtResource("29_citize")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_027_citizen_male_04" unique_id=1369601112]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "027: Cư Dân Nam Áo Hoodie"
+horizontal_alignment = 1
+
+[node name="NPC_028_citizen_female_04" parent="NPCContainer" unique_id=605484907 instance=ExtResource("2_npcbase")]
+position = Vector2(655, 360)
+data = ExtResource("30_citize")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_028_citizen_female_04" unique_id=856241500]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "028: Cư Dân Nữ Áo Ngọc"
+horizontal_alignment = 1
+
+[node name="NPC_029_resident_male_01" parent="NPCContainer" unique_id=1254015395 instance=ExtResource("2_npcbase")]
+position = Vector2(770, 360)
+data = ExtResource("31_reside")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_029_resident_male_01" unique_id=1499330469]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "029: Thanh Niên Nam Áo Khoác Bò"
+horizontal_alignment = 1
+
+[node name="NPC_030_resident_female_01" parent="NPCContainer" unique_id=871532372 instance=ExtResource("2_npcbase")]
+position = Vector2(885, 360)
+data = ExtResource("32_reside")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_030_resident_female_01" unique_id=247796723]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "030: Thanh Niên Nữ Áo Đỏ Cam"
+horizontal_alignment = 1
+
+[node name="NPC_031_resident_male_02" parent="NPCContainer" unique_id=1238695541 instance=ExtResource("2_npcbase")]
+position = Vector2(1000, 360)
+data = ExtResource("33_reside")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_031_resident_male_02" unique_id=1744946835]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "031: Thanh Niên Nam Áo Lam Nón Vàng"
+horizontal_alignment = 1
+
+[node name="NPC_032_resident_female_02" parent="NPCContainer" unique_id=954044815 instance=ExtResource("2_npcbase")]
+position = Vector2(1115, 360)
+data = ExtResource("34_reside")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_032_resident_female_02" unique_id=477547407]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "032: Thanh Niên Nữ Áo Xanh Biển"
+horizontal_alignment = 1
+
+[node name="NPC_033_resident_male_03" parent="NPCContainer" unique_id=992484883 instance=ExtResource("2_npcbase")]
+position = Vector2(1230, 360)
+data = ExtResource("35_reside")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_033_resident_male_03" unique_id=1045457944]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "033: Thanh Niên Nam Áo Cardigan Xám"
+horizontal_alignment = 1
+
+[node name="NPC_034_resident_female_03" parent="NPCContainer" unique_id=1251043991 instance=ExtResource("2_npcbase")]
+position = Vector2(80, 485)
+data = ExtResource("36_reside")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_034_resident_female_03" unique_id=1625111021]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "034: Thanh Niên Nữ Đồ Thể Thao"
+horizontal_alignment = 1
+
+[node name="NPC_035_resident_male_04" parent="NPCContainer" unique_id=45733403 instance=ExtResource("2_npcbase")]
+position = Vector2(195, 485)
+data = ExtResource("37_reside")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_035_resident_male_04" unique_id=1943359428]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "035: Thanh Niên Nam Đồ Thể Thao Lam"
+horizontal_alignment = 1
+
+[node name="NPC_036_resident_female_04" parent="NPCContainer" unique_id=363347114 instance=ExtResource("2_npcbase")]
+position = Vector2(310, 485)
+data = ExtResource("38_reside")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_036_resident_female_04" unique_id=242029101]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "036: Thanh Niên Nữ Áo Cam Đất"
+horizontal_alignment = 1
+
+[node name="NPC_037_resident_male_05" parent="NPCContainer" unique_id=1794639940 instance=ExtResource("2_npcbase")]
+position = Vector2(425, 485)
+data = ExtResource("39_reside")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_037_resident_male_05" unique_id=343061596]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "037: Thanh Niên Nam Áo Sơ Mi Nâu"
+horizontal_alignment = 1
+
+[node name="NPC_038_resident_female_05" parent="NPCContainer" unique_id=429690700 instance=ExtResource("2_npcbase")]
+position = Vector2(540, 485)
+data = ExtResource("40_reside")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_038_resident_female_05" unique_id=1887577677]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "038: Thanh Niên Nữ Áo Tím Oải Hương"
+horizontal_alignment = 1
+
+[node name="NPC_039_resident_male_06" parent="NPCContainer" unique_id=878753419 instance=ExtResource("2_npcbase")]
+position = Vector2(655, 485)
+data = ExtResource("41_reside")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_039_resident_male_06" unique_id=1638850586]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "039: Thanh Niên Nam Áo Choàng Đỏ"
+horizontal_alignment = 1
+
+[node name="NPC_040_resident_female_06" parent="NPCContainer" unique_id=990910507 instance=ExtResource("2_npcbase")]
+position = Vector2(770, 485)
+data = ExtResource("42_reside")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_040_resident_female_06" unique_id=252081660]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "040: Thanh Niên Nữ Áo Hồng Phấn"
+horizontal_alignment = 1
+
+[node name="NPC_041_resident_male_07" parent="NPCContainer" unique_id=1761084356 instance=ExtResource("2_npcbase")]
+position = Vector2(885, 485)
+data = ExtResource("43_reside")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_041_resident_male_07" unique_id=355367893]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "041: Thanh Niên Nam Áo Khoác Xanh Đậm"
+horizontal_alignment = 1
+
+[node name="NPC_042_resident_female_07" parent="NPCContainer" unique_id=1287305077 instance=ExtResource("2_npcbase")]
+position = Vector2(1000, 485)
+data = ExtResource("44_reside")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_042_resident_female_07" unique_id=604043044]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "042: Thanh Niên Nữ Áo Xanh Cốm"
+horizontal_alignment = 1
+
+[node name="NPC_043_resident_male_08" parent="NPCContainer" unique_id=460811774 instance=ExtResource("2_npcbase")]
+position = Vector2(1115, 485)
+data = ExtResource("45_reside")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_043_resident_male_08" unique_id=1637812164]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "043: Thanh Niên Nam Áo Khoác Xanh Xám"
+horizontal_alignment = 1
+
+[node name="NPC_044_resident_female_08" parent="NPCContainer" unique_id=1641402662 instance=ExtResource("2_npcbase")]
+position = Vector2(1230, 485)
+data = ExtResource("46_reside")
+auto_wander = false
+facing_direction_name = "front_right"
+
+[node name="Label" type="Label" parent="NPCContainer/NPC_044_resident_female_08" unique_id=427105347]
+offset_left = -55.0
+offset_top = -48.0
+offset_right = 55.0
+offset_bottom = -34.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.8)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 9
+text = "044: Thanh Niên Nữ Áo Cam Pastel"
+horizontal_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1003]
+position = Vector2(650, 290)
+zoom = Vector2(1.2, 1.2)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1004]
+
+[node name="TopPanel" type="PanelContainer" parent="CanvasLayer" unique_id=1005]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 50.0
+grow_horizontal = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/TopPanel" unique_id=1018230493]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/TopPanel/MarginContainer" unique_id=1209540582]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="CanvasLayer/TopPanel/MarginContainer/HBoxContainer" unique_id=32120029]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.95, 1, 1)
+theme_override_font_sizes/font_size = 14
+text = "🏙️ 44 NPC"
+
+[node name="StatsLabel" type="Label" parent="CanvasLayer/TopPanel/MarginContainer/HBoxContainer" unique_id=2097473386]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.7, 0.75, 0.85, 1)
+theme_override_font_sizes/font_size = 11
+text = "Phím R / 1-4: Đổi hướng | Click NPC: Nói chuyện | WASD: Camera"
+
+[node name="RotateButton" type="Button" parent="CanvasLayer/TopPanel/MarginContainer/HBoxContainer" unique_id=1007287299]
+layout_mode = 2
+text = "Hướng: Trước-Phải (Phím R)"
+
+[node name="WanderButton" type="Button" parent="CanvasLayer/TopPanel/MarginContainer/HBoxContainer" unique_id=1756509996]
+layout_mode = 2
+text = "Tự do đi dạo: TẮT"
+
+[node name="ResetCamButton" type="Button" parent="CanvasLayer/TopPanel/MarginContainer/HBoxContainer" unique_id=685985040]
+layout_mode = 2
+text = "Camera"
+
+[node name="DialogueBox" type="PanelContainer" parent="CanvasLayer" unique_id=1006]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 60.0
+offset_top = -100.0
+offset_right = -60.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/DialogueBox" unique_id=2078172728]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/DialogueBox/MarginContainer" unique_id=1586066825]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="Header" type="HBoxContainer" parent="CanvasLayer/DialogueBox/MarginContainer/VBoxContainer" unique_id=1976589604]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="NameLabel" type="Label" parent="CanvasLayer/DialogueBox/MarginContainer/VBoxContainer/Header" unique_id=2045904537]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.85, 0.3, 1)
+theme_override_font_sizes/font_size = 14
+text = "Tên NPC"
+
+[node name="RoleLabel" type="Label" parent="CanvasLayer/DialogueBox/MarginContainer/VBoxContainer/Header" unique_id=1905941816]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.8, 1, 1)
+theme_override_font_sizes/font_size = 12
+text = "[ROLE]"
+
+[node name="ContentLabel" type="Label" parent="CanvasLayer/DialogueBox/MarginContainer/VBoxContainer" unique_id=745862096]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 13
+text = "Nội dung đối thoại..."
+autowrap_mode = 2
+
+[connection signal="pressed" from="CanvasLayer/TopPanel/MarginContainer/HBoxContainer/RotateButton" to="." method="_on_rotate_direction_pressed"]
+[connection signal="pressed" from="CanvasLayer/TopPanel/MarginContainer/HBoxContainer/WanderButton" to="." method="_on_wander_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/TopPanel/MarginContainer/HBoxContainer/ResetCamButton" to="." method="_on_reset_camera_pressed"]

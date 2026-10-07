@@ -1,0 +1,155 @@
+[gd_resource type="Resource" script_class="BuildingData" format=3 uid="uid://cdhf2srqyg8f5"]
+
+[ext_resource type="Script" uid="uid://dxjuftm48ae7a" path="res://scripts/buildings/BuildingData.gd" id="1_builddata"]
+[ext_resource type="Texture2D" uid="uid://cweexi2k5xx1m" path="res://assets/spritesheets/buildings/Building Door Animations/Hotel Door Animation.png" id="2_hotel_"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hote_d_cl_3"]
+atlas = ExtResource("2_hotel_")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hote_d_cl_4"]
+atlas = ExtResource("2_hotel_")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hote_d_cl_5"]
+atlas = ExtResource("2_hotel_")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hote_d_cl_0"]
+atlas = ExtResource("2_hotel_")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hote_d_closed"]
+atlas = ExtResource("2_hotel_")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hote_d_cy_0"]
+atlas = ExtResource("2_hotel_")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hote_d_cy_1"]
+atlas = ExtResource("2_hotel_")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hote_d_cy_2"]
+atlas = ExtResource("2_hotel_")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hote_d_cy_3"]
+atlas = ExtResource("2_hotel_")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hote_d_cy_4"]
+atlas = ExtResource("2_hotel_")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hote_d_cy_5"]
+atlas = ExtResource("2_hotel_")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hote_d_op_0"]
+atlas = ExtResource("2_hotel_")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hote_d_op_1"]
+atlas = ExtResource("2_hotel_")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hote_d_op_2"]
+atlas = ExtResource("2_hotel_")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hote_d_op_3"]
+atlas = ExtResource("2_hotel_")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hote_d_opened"]
+atlas = ExtResource("2_hotel_")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hotel_"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hote_d_cl_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hote_d_cl_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hote_d_cl_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hote_d_cl_0")
+}],
+"loop": 0,
+"name": &"door_close",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hote_d_closed")
+}],
+"loop": 0,
+"name": &"door_closed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hote_d_cy_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hote_d_cy_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hote_d_cy_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hote_d_cy_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hote_d_cy_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hote_d_cy_5")
+}],
+"loop": 1,
+"name": &"door_cycle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hote_d_op_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hote_d_op_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hote_d_op_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hote_d_op_3")
+}],
+"loop": 0,
+"name": &"door_open",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hote_d_opened")
+}],
+"loop": 0,
+"name": &"door_opened",
+"speed": 1.0
+}]
+
+[resource]
+script = ExtResource("1_builddata")
+id = &"bld_031"
+display_name = "Khách Sạn Grand Hotel"
+description = "Khách sạn cao cấp sang trọng đón tiếp du khách bốn phương."
+frame_size = Vector2i(192, 192)
+sprite_frames = SubResource("SpriteFrames_hotel_")
+spritesheet_path = "res://assets/spritesheets/buildings/Building Door Animations/Hotel Door Animation.png"
+collision_size = Vector2(163, 67)
+tags = PackedStringArray("commercial", "building", "default")

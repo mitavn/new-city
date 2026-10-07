@@ -1,0 +1,282 @@
+[gd_resource type="Resource" script_class="NPCData" format=3 uid="uid://dmvhqv8lfy0pk"]
+
+[ext_resource type="Script" uid="uid://1jm7l62oqmyb" path="res://scripts/npcs/NPCData.gd" id="1_npcdata"]
+[ext_resource type="Texture2D" uid="uid://b3ulvmu2hkf5" path="res://assets/spritesheets/characters/City-Characters_08.png" id="2_citiz"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_idle_back_left_0"]
+atlas = ExtResource("2_citiz")
+region = Rect2(384, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_idle_back_left_1"]
+atlas = ExtResource("2_citiz")
+region = Rect2(416, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_idle_back_left_2"]
+atlas = ExtResource("2_citiz")
+region = Rect2(448, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_idle_back_left_3"]
+atlas = ExtResource("2_citiz")
+region = Rect2(480, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_idle_back_right_0"]
+atlas = ExtResource("2_citiz")
+region = Rect2(256, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_idle_back_right_1"]
+atlas = ExtResource("2_citiz")
+region = Rect2(288, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_idle_back_right_2"]
+atlas = ExtResource("2_citiz")
+region = Rect2(320, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_idle_back_right_3"]
+atlas = ExtResource("2_citiz")
+region = Rect2(352, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_idle_front_left_0"]
+atlas = ExtResource("2_citiz")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_idle_front_left_1"]
+atlas = ExtResource("2_citiz")
+region = Rect2(32, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_idle_front_left_2"]
+atlas = ExtResource("2_citiz")
+region = Rect2(64, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_idle_front_left_3"]
+atlas = ExtResource("2_citiz")
+region = Rect2(96, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_idle_front_right_0"]
+atlas = ExtResource("2_citiz")
+region = Rect2(128, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_idle_front_right_1"]
+atlas = ExtResource("2_citiz")
+region = Rect2(160, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_idle_front_right_2"]
+atlas = ExtResource("2_citiz")
+region = Rect2(192, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_idle_front_right_3"]
+atlas = ExtResource("2_citiz")
+region = Rect2(224, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_walk_back_left_0"]
+atlas = ExtResource("2_citiz")
+region = Rect2(384, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_walk_back_left_1"]
+atlas = ExtResource("2_citiz")
+region = Rect2(416, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_walk_back_left_2"]
+atlas = ExtResource("2_citiz")
+region = Rect2(448, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_walk_back_left_3"]
+atlas = ExtResource("2_citiz")
+region = Rect2(480, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_walk_back_right_0"]
+atlas = ExtResource("2_citiz")
+region = Rect2(256, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_walk_back_right_1"]
+atlas = ExtResource("2_citiz")
+region = Rect2(288, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_walk_back_right_2"]
+atlas = ExtResource("2_citiz")
+region = Rect2(320, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_walk_back_right_3"]
+atlas = ExtResource("2_citiz")
+region = Rect2(352, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_walk_front_left_0"]
+atlas = ExtResource("2_citiz")
+region = Rect2(0, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_walk_front_left_1"]
+atlas = ExtResource("2_citiz")
+region = Rect2(32, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_walk_front_left_2"]
+atlas = ExtResource("2_citiz")
+region = Rect2(64, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_walk_front_left_3"]
+atlas = ExtResource("2_citiz")
+region = Rect2(96, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_walk_front_right_0"]
+atlas = ExtResource("2_citiz")
+region = Rect2(128, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_walk_front_right_1"]
+atlas = ExtResource("2_citiz")
+region = Rect2(160, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_walk_front_right_2"]
+atlas = ExtResource("2_citiz")
+region = Rect2(192, 48, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_citi_walk_front_right_3"]
+atlas = ExtResource("2_citiz")
+region = Rect2(224, 48, 32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_citiz"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_idle_back_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_idle_back_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_idle_back_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_idle_back_left_3")
+}],
+"loop": 1,
+"name": &"idle_back_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_idle_back_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_idle_back_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_idle_back_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_idle_back_right_3")
+}],
+"loop": 1,
+"name": &"idle_back_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_idle_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_idle_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_idle_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_idle_front_left_3")
+}],
+"loop": 1,
+"name": &"idle_front_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_idle_front_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_idle_front_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_idle_front_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_idle_front_right_3")
+}],
+"loop": 1,
+"name": &"idle_front_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_walk_back_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_walk_back_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_walk_back_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_walk_back_left_3")
+}],
+"loop": 1,
+"name": &"walk_back_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_walk_back_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_walk_back_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_walk_back_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_walk_back_right_3")
+}],
+"loop": 1,
+"name": &"walk_back_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_walk_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_walk_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_walk_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_walk_front_left_3")
+}],
+"loop": 1,
+"name": &"walk_front_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_walk_front_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_walk_front_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_walk_front_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_citi_walk_front_right_3")
+}],
+"loop": 1,
+"name": &"walk_front_right",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("1_npcdata")
+id = &"028"
+display_name = "ID28-Chị Phương"
+gender = &"female"
+description = "Nữ cư dân sành điệu với áo thun xanh ngọc mát mắt."
+sprite_frames = SubResource("SpriteFrames_citiz")
+spritesheet_path = "res://assets/spritesheets/characters/City-Characters_08.png"
+dialogues = Array[String](["Chào bạn! Bạn đã thử đồ uống đá xay ở quán trà mới mở chưa?", "Công viên trung tâm có nhiều bóng mát, ngồi đọc sách rất tuyệt.", "Mỗi ngày ở thành phố đều có những điều bất ngờ thú vị chờ đón."])
+metadata/_custom_type_script = "uid://1jm7l62oqmyb"

@@ -1,0 +1,155 @@
+[gd_resource type="Resource" script_class="BuildingData" format=3 uid="uid://g1k6q7ieachr"]
+
+[ext_resource type="Script" uid="uid://dxjuftm48ae7a" path="res://scripts/buildings/BuildingData.gd" id="1_builddata"]
+[ext_resource type="Texture2D" uid="uid://c2115krhl1pvk" path="res://assets/spritesheets/buildings/Building Door Animations/Burgershop Animation.png" id="2_burger"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_burg_d_cl_3"]
+atlas = ExtResource("2_burger")
+region = Rect2(528, 0, 176, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_burg_d_cl_4"]
+atlas = ExtResource("2_burger")
+region = Rect2(704, 0, 176, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_burg_d_cl_5"]
+atlas = ExtResource("2_burger")
+region = Rect2(880, 0, 176, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_burg_d_cl_0"]
+atlas = ExtResource("2_burger")
+region = Rect2(0, 0, 176, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_burg_d_closed"]
+atlas = ExtResource("2_burger")
+region = Rect2(0, 0, 176, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_burg_d_cy_0"]
+atlas = ExtResource("2_burger")
+region = Rect2(0, 0, 176, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_burg_d_cy_1"]
+atlas = ExtResource("2_burger")
+region = Rect2(176, 0, 176, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_burg_d_cy_2"]
+atlas = ExtResource("2_burger")
+region = Rect2(352, 0, 176, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_burg_d_cy_3"]
+atlas = ExtResource("2_burger")
+region = Rect2(528, 0, 176, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_burg_d_cy_4"]
+atlas = ExtResource("2_burger")
+region = Rect2(704, 0, 176, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_burg_d_cy_5"]
+atlas = ExtResource("2_burger")
+region = Rect2(880, 0, 176, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_burg_d_op_0"]
+atlas = ExtResource("2_burger")
+region = Rect2(0, 0, 176, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_burg_d_op_1"]
+atlas = ExtResource("2_burger")
+region = Rect2(176, 0, 176, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_burg_d_op_2"]
+atlas = ExtResource("2_burger")
+region = Rect2(352, 0, 176, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_burg_d_op_3"]
+atlas = ExtResource("2_burger")
+region = Rect2(528, 0, 176, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_burg_d_opened"]
+atlas = ExtResource("2_burger")
+region = Rect2(528, 0, 176, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_burger"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_burg_d_cl_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_burg_d_cl_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_burg_d_cl_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_burg_d_cl_0")
+}],
+"loop": 0,
+"name": &"door_close",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_burg_d_closed")
+}],
+"loop": 0,
+"name": &"door_closed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_burg_d_cy_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_burg_d_cy_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_burg_d_cy_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_burg_d_cy_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_burg_d_cy_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_burg_d_cy_5")
+}],
+"loop": 1,
+"name": &"door_cycle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_burg_d_op_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_burg_d_op_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_burg_d_op_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_burg_d_op_3")
+}],
+"loop": 0,
+"name": &"door_open",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_burg_d_opened")
+}],
+"loop": 0,
+"name": &"door_opened",
+"speed": 1.0
+}]
+
+[resource]
+script = ExtResource("1_builddata")
+id = &"bld_020"
+display_name = "Tiệm Bánh Burger"
+description = "Quán đồ ăn nhanh phục vụ hamburger và khoai tây chiên."
+frame_size = Vector2i(176, 128)
+sprite_frames = SubResource("SpriteFrames_burger")
+spritesheet_path = "res://assets/spritesheets/buildings/Building Door Animations/Burgershop Animation.png"
+collision_size = Vector2(149, 44)
+tags = PackedStringArray("commercial", "building", "default")

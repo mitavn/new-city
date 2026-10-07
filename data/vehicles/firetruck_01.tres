@@ -1,0 +1,287 @@
+[gd_resource type="Resource" script_class="VehicleData" format=3 uid="uid://dxaamy5v43epb"]
+
+[ext_resource type="Script" uid="uid://dijugjd2akk5r" path="res://scripts/vehicles/VehicleData.gd" id="1_vehdata"]
+[ext_resource type="Texture2D" uid="uid://mbw2umo5fbgu" path="res://assets/spritesheets/vehicles/Firetruck (176x176)-Sheet.png" id="2_firetr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_drive_back_0"]
+atlas = ExtResource("2_firetr")
+region = Rect2(0, 352, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_drive_back_1"]
+atlas = ExtResource("2_firetr")
+region = Rect2(176, 352, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_drive_back_2"]
+atlas = ExtResource("2_firetr")
+region = Rect2(352, 352, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_drive_back_3"]
+atlas = ExtResource("2_firetr")
+region = Rect2(528, 352, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_drive_front_0"]
+atlas = ExtResource("2_firetr")
+region = Rect2(0, 528, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_drive_front_1"]
+atlas = ExtResource("2_firetr")
+region = Rect2(176, 528, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_drive_front_2"]
+atlas = ExtResource("2_firetr")
+region = Rect2(352, 528, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_drive_front_3"]
+atlas = ExtResource("2_firetr")
+region = Rect2(528, 528, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_drive_front_right_0"]
+atlas = ExtResource("2_firetr")
+region = Rect2(0, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_drive_front_right_1"]
+atlas = ExtResource("2_firetr")
+region = Rect2(176, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_drive_front_right_2"]
+atlas = ExtResource("2_firetr")
+region = Rect2(352, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_drive_front_right_3"]
+atlas = ExtResource("2_firetr")
+region = Rect2(528, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_drive_front_left_0"]
+atlas = ExtResource("2_firetr")
+region = Rect2(0, 176, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_drive_front_left_1"]
+atlas = ExtResource("2_firetr")
+region = Rect2(176, 176, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_drive_front_left_2"]
+atlas = ExtResource("2_firetr")
+region = Rect2(352, 176, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_drive_front_left_3"]
+atlas = ExtResource("2_firetr")
+region = Rect2(528, 176, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_siren_back_0"]
+atlas = ExtResource("2_firetr")
+region = Rect2(0, 1056, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_siren_back_1"]
+atlas = ExtResource("2_firetr")
+region = Rect2(176, 1056, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_siren_back_2"]
+atlas = ExtResource("2_firetr")
+region = Rect2(352, 1056, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_siren_back_3"]
+atlas = ExtResource("2_firetr")
+region = Rect2(528, 1056, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_siren_front_0"]
+atlas = ExtResource("2_firetr")
+region = Rect2(0, 1232, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_siren_front_1"]
+atlas = ExtResource("2_firetr")
+region = Rect2(176, 1232, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_siren_front_2"]
+atlas = ExtResource("2_firetr")
+region = Rect2(352, 1232, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_siren_front_3"]
+atlas = ExtResource("2_firetr")
+region = Rect2(528, 1232, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_siren_front_right_0"]
+atlas = ExtResource("2_firetr")
+region = Rect2(0, 704, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_siren_front_right_1"]
+atlas = ExtResource("2_firetr")
+region = Rect2(176, 704, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_siren_front_right_2"]
+atlas = ExtResource("2_firetr")
+region = Rect2(352, 704, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_siren_front_right_3"]
+atlas = ExtResource("2_firetr")
+region = Rect2(528, 704, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_siren_front_left_0"]
+atlas = ExtResource("2_firetr")
+region = Rect2(0, 880, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_siren_front_left_1"]
+atlas = ExtResource("2_firetr")
+region = Rect2(176, 880, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_siren_front_left_2"]
+atlas = ExtResource("2_firetr")
+region = Rect2(352, 880, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fire_siren_front_left_3"]
+atlas = ExtResource("2_firetr")
+region = Rect2(528, 880, 176, 176)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_firetr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_drive_back_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_drive_back_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_drive_back_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_drive_back_3")
+}],
+"loop": 1,
+"name": &"drive_back",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_drive_front_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_drive_front_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_drive_front_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_drive_front_3")
+}],
+"loop": 1,
+"name": &"drive_front",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_drive_front_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_drive_front_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_drive_front_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_drive_front_right_3")
+}],
+"loop": 1,
+"name": &"drive_front_left",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_drive_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_drive_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_drive_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_drive_front_left_3")
+}],
+"loop": 1,
+"name": &"drive_front_right",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_siren_back_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_siren_back_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_siren_back_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_siren_back_3")
+}],
+"loop": 1,
+"name": &"siren_back",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_siren_front_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_siren_front_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_siren_front_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_siren_front_3")
+}],
+"loop": 1,
+"name": &"siren_front",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_siren_front_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_siren_front_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_siren_front_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_siren_front_right_3")
+}],
+"loop": 1,
+"name": &"siren_front_left",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_siren_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_siren_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_siren_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fire_siren_front_left_3")
+}],
+"loop": 1,
+"name": &"siren_front_right",
+"speed": 6.0
+}]
+
+[resource]
+script = ExtResource("1_vehdata")
+id = &"veh_015"
+display_name = "Xe Cứu Hỏa"
+vehicle_type = &"emergency"
+description = "Xe cứu hỏa chuyên dụng trang bị vòi rồng và thang cứu nạn."
+frame_size = Vector2i(176, 176)
+visual_offset = Vector2(0, -61.6)
+sprite_frames = SubResource("SpriteFrames_firetr")
+spritesheet_path = "res://assets/spritesheets/vehicles/Firetruck (176x176)-Sheet.png"
+collision_size = Vector2(76, 36)
+max_speed = 130.0
+has_siren = true
+passenger_capacity = 6
+metadata/_custom_type_script = "uid://dijugjd2akk5r"

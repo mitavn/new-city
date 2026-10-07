@@ -1,0 +1,553 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/test/vehicle_test_scene.gd" id="1_testscript"]
+[ext_resource type="PackedScene" uid="uid://lubgeoikqoxy" path="res://scenes/vehicles/VehicleBase.tscn" id="2_vehbase"]
+[ext_resource type="Resource" path="res://data/vehicles/car_black_01.tres" id="3_car_bl"]
+[ext_resource type="Resource" path="res://data/vehicles/car_dark_blue_01.tres" id="4_car_da"]
+[ext_resource type="Resource" path="res://data/vehicles/car_grey_01.tres" id="5_car_gr"]
+[ext_resource type="Resource" path="res://data/vehicles/car_orange_01.tres" id="6_car_or"]
+[ext_resource type="Resource" path="res://data/vehicles/car_pink_01.tres" id="7_car_pi"]
+[ext_resource type="Resource" path="res://data/vehicles/car_white_01.tres" id="8_car_wh"]
+[ext_resource type="Resource" path="res://data/vehicles/car_blue_01.tres" id="9_car_bl"]
+[ext_resource type="Resource" path="res://data/vehicles/car_green_01.tres" id="10_car_gr"]
+[ext_resource type="Resource" path="res://data/vehicles/car_red_01.tres" id="11_car_re"]
+[ext_resource type="Resource" path="res://data/vehicles/taxi_standard_01.tres" id="12_taxi_s"]
+[ext_resource type="Resource" path="res://data/vehicles/taxi_yellow_01.tres" id="13_taxi_y"]
+[ext_resource type="Resource" path="res://data/vehicles/food_cart_01.tres" id="14_food_c"]
+[ext_resource type="Resource" path="res://data/vehicles/police_car_01.tres" id="15_police"]
+[ext_resource type="Resource" path="res://data/vehicles/ambulance_01.tres" id="16_ambula"]
+[ext_resource type="Resource" path="res://data/vehicles/firetruck_01.tres" id="17_firetr"]
+[ext_resource type="Resource" path="res://data/vehicles/bus_city_01.tres" id="18_bus_ci"]
+[ext_resource type="Resource" path="res://data/vehicles/bulldozer_01.tres" id="19_bulldo"]
+[ext_resource type="Resource" path="res://data/vehicles/foodtruck_moving_01.tres" id="20_foodtr"]
+[ext_resource type="Resource" path="res://data/vehicles/food_truck_shop_01.tres" id="21_food_t"]
+[ext_resource type="Resource" path="res://data/vehicles/helicopter_civilian_01.tres" id="22_helico"]
+[ext_resource type="Resource" path="res://data/vehicles/helicopter_rescue_01.tres" id="23_helico"]
+[ext_resource type="Resource" path="res://data/vehicles/boat_small_01.tres" id="24_boat_s"]
+[ext_resource type="Resource" path="res://data/vehicles/ship_trade_01.tres" id="25_ship_t"]
+[ext_resource type="Resource" path="res://data/vehicles/ship_ferry_01.tres" id="26_ship_f"]
+[ext_resource type="Resource" path="res://data/vehicles/food_truck_shop_02.tres" id="27_food_t"]
+
+[node name="VehicleTestScene" type="Node2D"]
+script = ExtResource("1_testscript")
+
+[node name="Background" type="ColorRect" parent="." unique_id=2001]
+offset_left = -400.0
+offset_top = -300.0
+offset_right = 2200.0
+offset_bottom = 1600.0
+mouse_filter = 2
+color = Color(0.11, 0.13, 0.16, 1)
+
+[node name="VehicleContainer" type="Node2D" parent="." unique_id=2002]
+y_sort_enabled = true
+
+[node name="Veh_veh_001_car_black_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(120.0, 140.0)
+data = ExtResource("3_car_bl")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_001_car_black_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Ô Tô Đen
+(96x96)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_002_car_dark_blue_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(420.0, 140.0)
+data = ExtResource("4_car_da")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_002_car_dark_blue_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Ô Tô Xanh Đậm
+(96x96)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_003_car_grey_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(720.0, 140.0)
+data = ExtResource("5_car_gr")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_003_car_grey_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Ô Tô Xám
+(96x96)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_004_car_orange_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(1020.0, 140.0)
+data = ExtResource("6_car_or")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_004_car_orange_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Ô Tô Cam
+(96x96)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_005_car_pink_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(1400.0, 140.0)
+data = ExtResource("7_car_pi")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_005_car_pink_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Ô Tô Hồng
+(96x96)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_006_car_white_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(120.0, 360.0)
+data = ExtResource("8_car_wh")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_006_car_white_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Ô Tô Trắng
+(96x96)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_007_car_blue_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(420.0, 360.0)
+data = ExtResource("9_car_bl")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_007_car_blue_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Ô Tô Xanh Dương
+(112x112)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_008_car_green_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(720.0, 360.0)
+data = ExtResource("10_car_gr")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_008_car_green_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Ô Tô Xanh Lá
+(112x112)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_009_car_red_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(1020.0, 360.0)
+data = ExtResource("11_car_re")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_009_car_red_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Ô Tô Đỏ Thể Thao
+(112x112)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_010_taxi_standard_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(1400.0, 360.0)
+data = ExtResource("12_taxi_s")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_010_taxi_standard_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Taxi Đô Thị
+(112x112)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_011_taxi_yellow_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(120.0, 580.0)
+data = ExtResource("13_taxi_y")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_011_taxi_yellow_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Taxi Vàng
+(112x112)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_012_food_cart_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(420.0, 580.0)
+data = ExtResource("14_food_c")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_012_food_cart_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Đẩy Đồ Ăn Đường Phố
+(112x112)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_013_police_car_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(720.0, 580.0)
+data = ExtResource("15_police")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_013_police_car_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Cảnh Sát Tuần Tra
+(112x112) [SIREN]"
+horizontal_alignment = 1
+
+[node name="Veh_veh_014_ambulance_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(1020.0, 580.0)
+data = ExtResource("16_ambula")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_014_ambulance_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Cứu Thương Y Tế
+(160x160) [SIREN]"
+horizontal_alignment = 1
+
+[node name="Veh_veh_015_firetruck_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(1400.0, 580.0)
+data = ExtResource("17_firetr")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_015_firetruck_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Cứu Hỏa
+(176x176) [SIREN]"
+horizontal_alignment = 1
+
+[node name="Veh_veh_016_bus_city_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(120.0, 800.0)
+data = ExtResource("18_bus_ci")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_016_bus_city_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Buýt Công Cộng
+(176x176)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_017_bulldozer_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(420.0, 800.0)
+data = ExtResource("19_bulldo")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_017_bulldozer_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Ủi Đất Công Trình
+(160x160)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_018_foodtruck_moving_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(720.0, 800.0)
+data = ExtResource("20_foodtr")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_018_foodtruck_moving_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Tải Ẩm Thực Lưu Động
+(160x160)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_019_food_truck_shop_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(1020.0, 800.0)
+data = ExtResource("21_food_t")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_019_food_truck_shop_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Quầy Rơ-Moóc Ẩm Thực
+(114x96)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_020_helicopter_civilian_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(1400.0, 800.0)
+data = ExtResource("22_helico")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_020_helicopter_civilian_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Trực Thăng Dân Dụng
+(192x128)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_021_helicopter_rescue_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(120.0, 1080.0)
+data = ExtResource("23_helico")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_021_helicopter_rescue_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Trực Thăng Cứu Hộ / Tuần Tra
+(192x128) [SIREN]"
+horizontal_alignment = 1
+
+[node name="Veh_veh_022_boat_small_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(420.0, 1080.0)
+data = ExtResource("24_boat_s")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_022_boat_small_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Thuyền Nhỏ Đường Sông
+(80x80)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_023_ship_trade_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(720.0, 1080.0)
+data = ExtResource("25_ship_t")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_023_ship_trade_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Tàu Chở Hàng Thương Mại
+(192x192)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_024_ship_ferry_01" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(1020.0, 1080.0)
+data = ExtResource("26_ship_f")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_024_ship_ferry_01"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Phà Lớn Chở Khách
+(352x352)"
+horizontal_alignment = 1
+
+[node name="Veh_veh_025_food_truck_shop_02" parent="VehicleContainer" instance=ExtResource("2_vehbase")]
+position = Vector2(1400.0, 1080.0)
+data = ExtResource("27_food_t")
+
+[node name="Label" type="Label" parent="VehicleContainer/Veh_veh_025_food_truck_shop_02"]
+offset_left = -80.0
+offset_top = 22.0
+offset_right = 80.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 10
+text = "Xe Tải Ẩm Thực Mở Quầy
+(154x96)"
+horizontal_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2003]
+position = Vector2(750, 580)
+zoom = Vector2(0.85, 0.85)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2004]
+
+[node name="TopPanel" type="PanelContainer" parent="CanvasLayer" unique_id=2005]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 52.0
+grow_horizontal = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/TopPanel"]
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/TopPanel/MarginContainer"]
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="CanvasLayer/TopPanel/MarginContainer/HBoxContainer"]
+theme_override_colors/font_color = Color(0.9, 0.95, 1.0, 1.0)
+theme_override_font_sizes/font_size = 14
+text = "🚗 25 Phương Tiện"
+
+[node name="StatsLabel" type="Label" parent="CanvasLayer/TopPanel/MarginContainer/HBoxContainer"]
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.7, 0.75, 0.85, 1.0)
+theme_override_font_sizes/font_size = 11
+text = "Phím R / 1-4: Đổi hướng | Phím Space/E: Còi Siren | Click xe: Thông số | WASD: Camera"
+
+[node name="RotateButton" type="Button" parent="CanvasLayer/TopPanel/MarginContainer/HBoxContainer"]
+text = "Hướng: Trước-Phải (Phím R)"
+
+[node name="SirenButton" type="Button" parent="CanvasLayer/TopPanel/MarginContainer/HBoxContainer"]
+text = "Còi Siren: TẮT (Space/E)"
+
+[node name="ResetCamButton" type="Button" parent="CanvasLayer/TopPanel/MarginContainer/HBoxContainer"]
+text = "Camera (F)"
+
+[node name="InfoBox" type="PanelContainer" parent="CanvasLayer" unique_id=2006]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 80.0
+offset_top = -120.0
+offset_right = -80.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/InfoBox"]
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/InfoBox/MarginContainer"]
+theme_override_constants/separation = 4
+
+[node name="Header" type="HBoxContainer" parent="CanvasLayer/InfoBox/MarginContainer/VBoxContainer"]
+theme_override_constants/separation = 10
+
+[node name="NameLabel" type="Label" parent="CanvasLayer/InfoBox/MarginContainer/VBoxContainer/Header"]
+theme_override_colors/font_color = Color(1, 0.85, 0.3, 1)
+theme_override_font_sizes/font_size = 14
+text = "Tên Phương Tiện"
+
+[node name="TypeLabel" type="Label" parent="CanvasLayer/InfoBox/MarginContainer/VBoxContainer/Header"]
+theme_override_colors/font_color = Color(0.4, 0.8, 1, 1)
+theme_override_font_sizes/font_size = 12
+text = "[CAR - LAND]"
+
+[node name="ContentLabel" type="Label" parent="CanvasLayer/InfoBox/MarginContainer/VBoxContainer"]
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 12
+text = "Thông số phương tiện..."
+autowrap_mode = 2
+
+[connection signal="pressed" from="CanvasLayer/TopPanel/MarginContainer/HBoxContainer/RotateButton" to="." method="_on_rotate_direction_pressed"]
+[connection signal="pressed" from="CanvasLayer/TopPanel/MarginContainer/HBoxContainer/SirenButton" to="." method="_on_siren_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/TopPanel/MarginContainer/HBoxContainer/ResetCamButton" to="." method="_on_reset_camera_pressed"]

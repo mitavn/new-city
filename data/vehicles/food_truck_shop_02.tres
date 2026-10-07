@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="VehicleData" format=3 uid="uid://6i18atrba8yl"]
+
+[ext_resource type="Script" uid="uid://dijugjd2akk5r" path="res://scripts/vehicles/VehicleData.gd" id="1_vehdata"]
+[ext_resource type="Texture2D" uid="uid://b2yudjhc10oo7" path="res://assets/spritesheets/vehicles/Food truckshop-Sheet.png" id="2_food_t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_food_idle_0"]
+atlas = ExtResource("2_food_t")
+region = Rect2(118, 0, 154, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_food_t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_food_idle_0")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 6.0
+}]
+
+[resource]
+script = ExtResource("1_vehdata")
+id = &"veh_025"
+display_name = "Xe Tải Ẩm Thực Mở Quầy"
+vehicle_type = &"shop"
+category = &"static"
+description = "Xe tải ẩm thực mở bạt và quầy phục vụ khách ăn uống tại chỗ."
+frame_size = Vector2i(154, 96)
+visual_offset = Vector2(0, -33.6)
+sprite_frames = SubResource("SpriteFrames_food_t")
+spritesheet_path = "res://assets/spritesheets/vehicles/Food truckshop-Sheet.png"
+collision_size = Vector2(70, 28)
+max_speed = 0.0
+passenger_capacity = 2
+metadata/_custom_type_script = "uid://dijugjd2akk5r"

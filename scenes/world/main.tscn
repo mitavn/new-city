@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://e8p86fhilgpl"]
+
+[node name="Main" type="Node2D" unique_id=26039089]
+
+[node name="World" type="Node2D" parent="." unique_id=1211468132]
+
+[node name="Buildings" type="Node2D" parent="World" unique_id=253478986]
+
+[node name="Vehicles" type="Node2D" parent="World" unique_id=1021389403]
+
+[node name="NPCs" type="Node2D" parent="World" unique_id=1918288897]
+
+[node name="Interactables" type="Node2D" parent="World" unique_id=566353476]
+
+[node name="VFX" type="Node2D" parent="World" unique_id=1136079815]

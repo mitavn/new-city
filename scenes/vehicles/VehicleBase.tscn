@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://lubgeoikqoxy"]
+
+[ext_resource type="Script" path="res://scenes/vehicles/vehicle_base.gd" id="1_vehbase"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vcol"]
+size = Vector2(48, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vinter"]
+size = Vector2(56, 32)
+
+[node name="VehicleBase" type="CharacterBody2D"]
+y_sort_enabled = true
+collision_layer = 8
+collision_mask = 27
+script = ExtResource("1_vehbase")
+
+[node name="Visual" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -32)
+
+[node name="BodyCollision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -6)
+shape = SubResource("RectangleShape2D_vcol")
+
+[node name="InteractionArea" type="Area2D" parent="."]
+position = Vector2(0, -10)
+collision_layer = 16
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("RectangleShape2D_vinter")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_desired_distance = 8.0
+target_desired_distance = 16.0

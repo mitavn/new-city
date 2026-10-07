@@ -1,0 +1,2200 @@
+{
+  "_comment": "AI-readable asset registry. Generated for all 44 NPCs in the city game.",
+  "total_npcs": 44,
+  "assets": {
+	"001": {
+	  "id": "001",
+	  "resource_name": "police_male_01",
+	  "display_name": "Cảnh Sát Nam",
+	  "role": "police",
+	  "gender": "male",
+	  "description": "Sĩ quan cảnh sát nam, sắc phục xanh lam, đội mũ kepi tuần tra.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_09.png",
+	  "resource_path": "res://data/npcs/police_male_01.tres",
+	  "speed": 65.0,
+	  "tags": [
+		"police",
+		"law",
+		"officer",
+        "male"
+	  ]
+	},
+	"002": {
+	  "id": "002",
+	  "resource_name": "police_female_01",
+	  "display_name": "Cảnh Sát Nữ",
+	  "role": "police",
+	  "gender": "female",
+	  "description": "Nữ sĩ quan cảnh sát, đồng phục xanh lam, tóc buộc gọn gàng.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_10.png",
+	  "resource_path": "res://data/npcs/police_female_01.tres",
+	  "speed": 65.0,
+	  "tags": [
+		"police",
+		"law",
+		"officer",
+        "female"
+	  ]
+	},
+	"003": {
+	  "id": "003",
+	  "resource_name": "construction_male_01",
+	  "display_name": "Thợ Xây Nam",
+	  "role": "construction",
+	  "gender": "male",
+	  "description": "Công nhân xây dựng nam, áo gile cam dạ quang, đội mũ bảo hộ vàng.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_11.png",
+	  "resource_path": "res://data/npcs/construction_male_01.tres",
+	  "speed": 55.0,
+	  "tags": [
+		"construction",
+		"builder",
+		"worker",
+        "male"
+	  ]
+	},
+	"004": {
+	  "id": "004",
+	  "resource_name": "construction_female_01",
+	  "display_name": "Thợ Xây Nữ",
+	  "role": "construction",
+	  "gender": "female",
+	  "description": "Nữ công nhân xây dựng, áo bảo hộ phản quang, nón bảo hộ công trình.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_12.png",
+	  "resource_path": "res://data/npcs/construction_female_01.tres",
+	  "speed": 55.0,
+	  "tags": [
+		"construction",
+		"builder",
+		"worker",
+        "female"
+	  ]
+	},
+	"005": {
+	  "id": "005",
+	  "resource_name": "doctor_male_01",
+	  "display_name": "Bác Sĩ Nam",
+	  "role": "doctor",
+	  "gender": "male",
+	  "description": "Bác sĩ nam áo blouse trắng, đeo ống nghe y tế, phong thái ân cần.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_13.png",
+	  "resource_path": "res://data/npcs/doctor_male_01.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"doctor",
+		"medical",
+		"hospital",
+        "male"
+	  ]
+	},
+	"006": {
+	  "id": "006",
+	  "resource_name": "doctor_female_01",
+	  "display_name": "Bác Sĩ Nữ",
+	  "role": "doctor",
+	  "gender": "female",
+	  "description": "Nữ bác sĩ / điều dưỡng, áo blouse trắng trang nhã, tóc nâu ngắn.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_14.png",
+	  "resource_path": "res://data/npcs/doctor_female_01.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"doctor",
+		"medical",
+		"nurse",
+        "female"
+	  ]
+	},
+	"007": {
+	  "id": "007",
+	  "resource_name": "chef_male_01",
+	  "display_name": "Đầu Bếp Nam",
+	  "role": "chef",
+	  "gender": "male",
+	  "description": "Đầu bếp trưởng nam, mũ bếp cao màu trắng và tạp dề nấu ăn chuyên nghiệp.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_15.png",
+	  "resource_path": "res://data/npcs/chef_male_01.tres",
+	  "speed": 55.0,
+	  "tags": [
+		"chef",
+		"restaurant",
+		"food",
+		"cook",
+        "male"
+	  ]
+	},
+	"008": {
+	  "id": "008",
+	  "resource_name": "chef_female_01",
+	  "display_name": "Đầu Bếp Nữ",
+	  "role": "chef",
+	  "gender": "female",
+	  "description": "Nữ đầu bếp làm bánh, đội mũ bếp trắng và trang phục bếp gọn gàng.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_16.png",
+	  "resource_path": "res://data/npcs/chef_female_01.tres",
+	  "speed": 55.0,
+	  "tags": [
+		"chef",
+		"bakery",
+		"restaurant",
+		"food",
+        "female"
+	  ]
+	},
+	"009": {
+	  "id": "009",
+	  "resource_name": "office_male_01",
+	  "display_name": "Nhân Viên Văn Phòng Nam",
+	  "role": "office",
+	  "gender": "male",
+	  "description": "Nhân viên công sở nam, mặc vest xanh lịch sự, cà vạt chỉnh chu.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_17.png",
+	  "resource_path": "res://data/npcs/office_male_01.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"office",
+		"business",
+		"worker",
+        "male"
+	  ]
+	},
+	"010": {
+	  "id": "010",
+	  "resource_name": "office_female_01",
+	  "display_name": "Nhân Viên Văn Phòng Nữ",
+	  "role": "office",
+	  "gender": "female",
+	  "description": "Nữ nhân viên văn phòng năng động, áo sơ mi trang nhã và chân váy công sở.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_18.png",
+	  "resource_path": "res://data/npcs/office_female_01.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"office",
+		"business",
+		"worker",
+        "female"
+	  ]
+	},
+	"011": {
+	  "id": "011",
+	  "resource_name": "sanitation_male_01",
+	  "display_name": "Nhân Viên Môi Trường Nam",
+	  "role": "sanitation",
+	  "gender": "male",
+	  "description": "Nhân viên vệ sinh đô thị nam, đồng phục xanh lá cây môi trường sạch đẹp.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_19.png",
+	  "resource_path": "res://data/npcs/sanitation_male_01.tres",
+	  "speed": 55.0,
+	  "tags": [
+		"sanitation",
+		"cleaner",
+		"environment",
+        "male"
+	  ]
+	},
+	"012": {
+	  "id": "012",
+	  "resource_name": "sanitation_female_01",
+	  "display_name": "Nhân Viên Môi Trường Nữ",
+	  "role": "sanitation",
+	  "gender": "female",
+	  "description": "Nữ nhân viên môi trường đô thị, đồng phục bảo hộ xanh lá cây.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_20.png",
+	  "resource_path": "res://data/npcs/sanitation_female_01.tres",
+	  "speed": 55.0,
+	  "tags": [
+		"sanitation",
+		"cleaner",
+		"environment",
+        "female"
+	  ]
+	},
+	"013": {
+	  "id": "013",
+	  "resource_name": "delivery_male_01",
+	  "display_name": "Nhân Viên Giao Hàng Nam",
+	  "role": "delivery",
+	  "gender": "male",
+	  "description": "Shipper giao hàng nam, đội mũ lưỡi trai, áo khoác vàng cam chuyển phát nhanh.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_21.png",
+	  "resource_path": "res://data/npcs/delivery_male_01.tres",
+	  "speed": 70.0,
+	  "tags": [
+		"delivery",
+		"courier",
+		"shipper",
+        "male"
+	  ]
+	},
+	"014": {
+	  "id": "014",
+	  "resource_name": "delivery_female_01",
+	  "display_name": "Nhân Viên Giao Hàng Nữ",
+	  "role": "delivery",
+	  "gender": "female",
+	  "description": "Nữ shipper giao nhận bưu phẩm, mũ lưỡi trai và đồng phục chuyển phát.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_22.png",
+	  "resource_path": "res://data/npcs/delivery_female_01.tres",
+	  "speed": 70.0,
+	  "tags": [
+		"delivery",
+		"courier",
+		"shipper",
+        "female"
+	  ]
+	},
+	"015": {
+	  "id": "015",
+	  "resource_name": "senior_male_01",
+	  "display_name": "Cụ Ông",
+	  "role": "senior",
+	  "gender": "male",
+	  "description": "Cụ ông tóc bạc, đeo kính lão, áo len xám ấm áp và dáng đi khoan thai.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_23.png",
+	  "resource_path": "res://data/npcs/senior_male_01.tres",
+	  "speed": 45.0,
+	  "tags": [
+		"senior",
+		"elderly",
+		"citizen",
+        "male"
+	  ]
+	},
+	"016": {
+	  "id": "016",
+	  "resource_name": "senior_female_01",
+	  "display_name": "Cụ Bà",
+	  "role": "senior",
+	  "gender": "female",
+	  "description": "Cụ bà tóc muối tiêu bới cao, đeo kính tròn, phong thái hiền từ.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_24.png",
+	  "resource_path": "res://data/npcs/senior_female_01.tres",
+	  "speed": 45.0,
+	  "tags": [
+		"senior",
+		"elderly",
+		"citizen",
+        "female"
+	  ]
+	},
+	"017": {
+	  "id": "017",
+	  "resource_name": "firefighter_male_01",
+	  "display_name": "Lính Cứu Hỏa Nam",
+	  "role": "firefighter",
+	  "gender": "male",
+	  "description": "Chiến sĩ cứu hỏa nam, đồ bảo hộ chống cháy màu đỏ cam dũng cảm.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_25.png",
+	  "resource_path": "res://data/npcs/firefighter_male_01.tres",
+	  "speed": 65.0,
+	  "tags": [
+		"firefighter",
+		"rescue",
+		"emergency",
+        "male"
+	  ]
+	},
+	"018": {
+	  "id": "018",
+	  "resource_name": "firefighter_female_01",
+	  "display_name": "Lính Cứu Hỏa Nữ",
+	  "role": "firefighter",
+	  "gender": "female",
+	  "description": "Nữ chiến sĩ cứu hỏa kiên cường, trang phục phòng cháy chữa cháy đỏ rực.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_26.png",
+	  "resource_path": "res://data/npcs/firefighter_female_01.tres",
+	  "speed": 65.0,
+	  "tags": [
+		"firefighter",
+		"rescue",
+		"emergency",
+        "female"
+	  ]
+	},
+	"019": {
+	  "id": "019",
+	  "resource_name": "executive_male_01",
+	  "display_name": "Doanh Nhân Nam",
+	  "role": "executive",
+	  "gender": "male",
+	  "description": "Doanh nhân cấp cao nam, bộ âu phục tuxedo đen sang trọng, phong độ.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_27.png",
+	  "resource_path": "res://data/npcs/executive_male_01.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"executive",
+		"vip",
+		"business",
+        "male"
+	  ]
+	},
+	"020": {
+	  "id": "020",
+	  "resource_name": "executive_female_01",
+	  "display_name": "Doanh Nhân Nữ",
+	  "role": "executive",
+	  "gender": "female",
+	  "description": "Nữ giám đốc điều hành, vest đen quyền lực và thần thái quý phái.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_28.png",
+	  "resource_path": "res://data/npcs/executive_female_01.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"executive",
+		"vip",
+		"business",
+        "female"
+	  ]
+	},
+	"021": {
+	  "id": "021",
+	  "resource_name": "citizen_male_01",
+	  "display_name": "Cư Dân Nam Áo Xanh",
+	  "role": "civilian",
+	  "gender": "male",
+	  "description": "Cư dân thành phố nam trẻ tuổi, áo khoác denim xanh và quần tối màu.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_01.png",
+	  "resource_path": "res://data/npcs/citizen_male_01.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"pedestrian",
+		"citizen",
+        "male"
+	  ]
+	},
+	"022": {
+	  "id": "022",
+	  "resource_name": "citizen_female_01",
+	  "display_name": "Cư Dân Nữ Áo Tím",
+	  "role": "civilian",
+	  "gender": "female",
+	  "description": "Cư dân nữ trẻ trung, áo len tím mận và quần skinny thanh lịch.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_02.png",
+	  "resource_path": "res://data/npcs/citizen_female_01.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"pedestrian",
+		"citizen",
+        "female"
+	  ]
+	},
+	"023": {
+	  "id": "023",
+	  "resource_name": "citizen_male_02",
+	  "display_name": "Cư Dân Nam Áo Xám",
+	  "role": "civilian",
+	  "gender": "male",
+	  "description": "Nam thanh niên dạo phố, áo thun xám hiện đại và quần xanh ngọc.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_03.png",
+	  "resource_path": "res://data/npcs/citizen_male_02.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"pedestrian",
+		"citizen",
+        "male"
+	  ]
+	},
+	"024": {
+	  "id": "024",
+	  "resource_name": "citizen_female_02",
+	  "display_name": "Cư Dân Nữ Áo Nâu",
+	  "role": "civilian",
+	  "gender": "female",
+	  "description": "Cô gái thành thị với áo len nâu ấm áp, mái tóc nâu bồng bềnh.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_04.png",
+	  "resource_path": "res://data/npcs/citizen_female_02.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"pedestrian",
+		"citizen",
+        "female"
+	  ]
+	},
+	"025": {
+	  "id": "025",
+	  "resource_name": "citizen_male_03",
+	  "display_name": "Cư Dân Nam Áo Rêu",
+	  "role": "civilian",
+	  "gender": "male",
+	  "description": "Cư dân nam phong cách đường phố, áo khoác xanh rêu cá tính.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_05.png",
+	  "resource_path": "res://data/npcs/citizen_male_03.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"pedestrian",
+		"citizen",
+        "male"
+	  ]
+	},
+	"026": {
+	  "id": "026",
+	  "resource_name": "citizen_female_03",
+	  "display_name": "Cư Dân Nữ Áo Hồng",
+	  "role": "civilian",
+	  "gender": "female",
+	  "description": "Cô gái dịu dàng trong trang phục áo hồng pastel và váy sẫm màu.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_06.png",
+	  "resource_path": "res://data/npcs/citizen_female_03.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"pedestrian",
+		"citizen",
+        "female"
+	  ]
+	},
+	"027": {
+	  "id": "027",
+	  "resource_name": "citizen_male_04",
+	  "display_name": "Cư Dân Nam Áo Hoodie",
+	  "role": "civilian",
+	  "gender": "male",
+	  "description": "Chàng trai trẻ mặc áo hoodie tím năng động, giày thể thao.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_07.png",
+	  "resource_path": "res://data/npcs/citizen_male_04.tres",
+	  "speed": 65.0,
+	  "tags": [
+		"civilian",
+		"youth",
+		"citizen",
+        "male"
+	  ]
+	},
+	"028": {
+	  "id": "028",
+	  "resource_name": "citizen_female_04",
+	  "display_name": "Cư Dân Nữ Áo Ngọc",
+	  "role": "civilian",
+	  "gender": "female",
+	  "description": "Nữ cư dân sành điệu với áo thun xanh ngọc mát mắt.",
+	  "spritesheet": "res://assets/spritesheets/characters/City-Characters_08.png",
+	  "resource_path": "res://data/npcs/citizen_female_04.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"pedestrian",
+		"citizen",
+        "female"
+	  ]
+	},
+	"029": {
+	  "id": "029",
+	  "resource_name": "resident_male_01",
+	  "display_name": "Thanh Niên Nam Áo Khoác Bò",
+	  "role": "civilian",
+	  "gender": "male",
+	  "description": "Thanh niên dạo phố với áo khoác jeans màu lam nhạt và quần tây.",
+	  "spritesheet": "res://assets/spritesheets/characters/Character-Variation-1_01.png",
+	  "resource_path": "res://data/npcs/resident_male_01.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"resident",
+        "male"
+	  ]
+	},
+	"030": {
+	  "id": "030",
+	  "resource_name": "resident_female_01",
+	  "display_name": "Thanh Niên Nữ Áo Đỏ Cam",
+	  "role": "civilian",
+	  "gender": "female",
+	  "description": "Nữ sinh viên vui vẻ trong chiếc áo len màu cam san hô ấm cúng.",
+	  "spritesheet": "res://assets/spritesheets/characters/Character-Variation-1_02.png",
+	  "resource_path": "res://data/npcs/resident_female_01.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"resident",
+        "female"
+	  ]
+	},
+	"031": {
+	  "id": "031",
+	  "resource_name": "resident_male_02",
+	  "display_name": "Thanh Niên Nam Áo Lam Nón Vàng",
+	  "role": "civilian",
+	  "gender": "male",
+	  "description": "Nam thiếu niên năng động với hoodie xanh biển phối viền vàng.",
+	  "spritesheet": "res://assets/spritesheets/characters/Character-Variation-1_03.png",
+	  "resource_path": "res://data/npcs/resident_male_02.tres",
+	  "speed": 65.0,
+	  "tags": [
+		"civilian",
+		"resident",
+		"teen",
+        "male"
+	  ]
+	},
+	"032": {
+	  "id": "032",
+	  "resource_name": "resident_female_02",
+	  "display_name": "Thanh Niên Nữ Áo Xanh Biển",
+	  "role": "civilian",
+	  "gender": "female",
+	  "description": "Cô gái trẻ trung với áo thun xanh lơ mát mẻ và quần jean tối màu.",
+	  "spritesheet": "res://assets/spritesheets/characters/Character-Variation-1_04.png",
+	  "resource_path": "res://data/npcs/resident_female_02.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"resident",
+        "female"
+	  ]
+	},
+	"033": {
+	  "id": "033",
+	  "resource_name": "resident_male_03",
+	  "display_name": "Thanh Niên Nam Áo Cardigan Xám",
+	  "role": "civilian",
+	  "gender": "male",
+	  "description": "Chàng trai thư sinh, áo len mỏng xám lịch lãm và quần âu.",
+	  "spritesheet": "res://assets/spritesheets/characters/Character-Variation-1_05.png",
+	  "resource_path": "res://data/npcs/resident_male_03.tres",
+	  "speed": 55.0,
+	  "tags": [
+		"civilian",
+		"resident",
+		"scholar",
+        "male"
+	  ]
+	},
+	"034": {
+	  "id": "034",
+	  "resource_name": "resident_female_03",
+	  "display_name": "Thanh Niên Nữ Đồ Thể Thao",
+	  "role": "civilian",
+	  "gender": "female",
+	  "description": "Cô gái yêu thể thao trong bộ đồ tập xanh dương khỏe khoắn.",
+	  "spritesheet": "res://assets/spritesheets/characters/Character-Variation-1_06.png",
+	  "resource_path": "res://data/npcs/resident_female_03.tres",
+	  "speed": 65.0,
+	  "tags": [
+		"civilian",
+		"athlete",
+		"resident",
+        "female"
+	  ]
+	},
+	"035": {
+	  "id": "035",
+	  "resource_name": "resident_male_04",
+	  "display_name": "Thanh Niên Nam Đồ Thể Thao Lam",
+	  "role": "civilian",
+	  "gender": "male",
+	  "description": "Vận động viên trẻ trong trang phục thể thao viền tím sành điệu.",
+	  "spritesheet": "res://assets/spritesheets/characters/Character-Variation-1_07.png",
+	  "resource_path": "res://data/npcs/resident_male_04.tres",
+	  "speed": 65.0,
+	  "tags": [
+		"civilian",
+		"athlete",
+		"resident",
+        "male"
+	  ]
+	},
+	"036": {
+	  "id": "036",
+	  "resource_name": "resident_female_04",
+	  "display_name": "Thanh Niên Nữ Áo Cam Đất",
+	  "role": "civilian",
+	  "gender": "female",
+	  "description": "Cô gái mùa thu trong chiếc áo dài tay màu cam đất dịu ngọt.",
+	  "spritesheet": "res://assets/spritesheets/characters/Character-Variation-1_08.png",
+	  "resource_path": "res://data/npcs/resident_female_04.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"resident",
+        "female"
+	  ]
+	},
+	"037": {
+	  "id": "037",
+	  "resource_name": "resident_male_05",
+	  "display_name": "Thanh Niên Nam Áo Sơ Mi Nâu",
+	  "role": "civilian",
+	  "gender": "male",
+	  "description": "Chàng trai lịch lãm với áo sơ mi màu nâu camel và quần xanh sẫm.",
+	  "spritesheet": "res://assets/spritesheets/characters/Character-Variation-1_09.png",
+	  "resource_path": "res://data/npcs/resident_male_05.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"resident",
+        "male"
+	  ]
+	},
+	"038": {
+	  "id": "038",
+	  "resource_name": "resident_female_05",
+	  "display_name": "Thanh Niên Nữ Áo Tím Oải Hương",
+	  "role": "civilian",
+	  "gender": "female",
+	  "description": "Cô gái nữ tính với áo blouse màu tím lavender ngọt ngào.",
+	  "spritesheet": "res://assets/spritesheets/characters/Character-Variation-1_10.png",
+	  "resource_path": "res://data/npcs/resident_female_05.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"resident",
+        "female"
+	  ]
+	},
+	"039": {
+	  "id": "039",
+	  "resource_name": "resident_male_06",
+	  "display_name": "Thanh Niên Nam Áo Choàng Đỏ",
+	  "role": "civilian",
+	  "gender": "male",
+	  "description": "Nam thanh niên cá tính trong chiếc áo khoác dày đỏ thẫm ấm áp.",
+	  "spritesheet": "res://assets/spritesheets/characters/Character-Variation-1_11.png",
+	  "resource_path": "res://data/npcs/resident_male_06.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"resident",
+        "male"
+	  ]
+	},
+	"040": {
+	  "id": "040",
+	  "resource_name": "resident_female_06",
+	  "display_name": "Thanh Niên Nữ Áo Hồng Phấn",
+	  "role": "civilian",
+	  "gender": "female",
+	  "description": "Nữ sinh dễ thương trong chiếc áo thun hồng phấn và mái tóc búi.",
+	  "spritesheet": "res://assets/spritesheets/characters/Character-Variation-1_12.png",
+	  "resource_path": "res://data/npcs/resident_female_06.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"resident",
+        "female"
+	  ]
+	},
+	"041": {
+	  "id": "041",
+	  "resource_name": "resident_male_07",
+	  "display_name": "Thanh Niên Nam Áo Khoác Xanh Đậm",
+	  "role": "civilian",
+	  "gender": "male",
+	  "description": "Chàng trai phóng khoáng với áo khoác bomber màu xanh navy.",
+	  "spritesheet": "res://assets/spritesheets/characters/Character-Variation-1_13.png",
+	  "resource_path": "res://data/npcs/resident_male_07.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"resident",
+        "male"
+	  ]
+	},
+	"042": {
+	  "id": "042",
+	  "resource_name": "resident_female_07",
+	  "display_name": "Thanh Niên Nữ Áo Xanh Cốm",
+	  "role": "civilian",
+	  "gender": "female",
+	  "description": "Cô gái tươi tắn trong chiếc áo màu xanh cốm mùa xuân rạng rỡ.",
+	  "spritesheet": "res://assets/spritesheets/characters/Character-Variation-1_14.png",
+	  "resource_path": "res://data/npcs/resident_female_07.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"resident",
+        "female"
+	  ]
+	},
+	"043": {
+	  "id": "043",
+	  "resource_name": "resident_male_08",
+	  "display_name": "Thanh Niên Nam Áo Khoác Xanh Xám",
+	  "role": "civilian",
+	  "gender": "male",
+	  "description": "Nam cư dân điềm đạm với áo khoác gió xanh xám nhẹ nhàng.",
+	  "spritesheet": "res://assets/spritesheets/characters/Character-Variation-1_15.png",
+	  "resource_path": "res://data/npcs/resident_male_08.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"resident",
+        "male"
+	  ]
+	},
+	"044": {
+	  "id": "044",
+	  "resource_name": "resident_female_08",
+	  "display_name": "Thanh Niên Nữ Áo Cam Pastel",
+	  "role": "civilian",
+	  "gender": "female",
+	  "description": "Cô gái thanh lịch diện áo len mỏng màu cam phấn nhã nhặn.",
+	  "spritesheet": "res://assets/spritesheets/characters/Character-Variation-1_16.png",
+	  "resource_path": "res://data/npcs/resident_female_08.tres",
+	  "speed": 60.0,
+	  "tags": [
+		"civilian",
+		"resident",
+        "female"
+	  ]
+	}
+  },
+  "vehicles": {
+	"veh_001": {
+	  "id": "veh_001",
+	  "resource_name": "car_black_01",
+	  "display_name": "Xe Ô Tô Đen",
+	  "vehicle_type": "car",
+	  "category": "land",
+	  "frame_size": [
+		96,
+		96
+	  ],
+	  "collision_size": [
+		44,
+		22
+	  ],
+	  "speed": 120.0,
+	  "capacity": 4,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Black Car-(96x96)Sheet.png",
+	  "resource_path": "res://data/vehicles/car_black_01.tres"
+	},
+	"veh_002": {
+	  "id": "veh_002",
+	  "resource_name": "car_dark_blue_01",
+	  "display_name": "Xe Ô Tô Xanh Đậm",
+	  "vehicle_type": "car",
+	  "category": "land",
+	  "frame_size": [
+		96,
+		96
+	  ],
+	  "collision_size": [
+		44,
+		22
+	  ],
+	  "speed": 120.0,
+	  "capacity": 4,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Dark Blue Car-(96x96)Sheet.png",
+	  "resource_path": "res://data/vehicles/car_dark_blue_01.tres"
+	},
+	"veh_003": {
+	  "id": "veh_003",
+	  "resource_name": "car_grey_01",
+	  "display_name": "Xe Ô Tô Xám",
+	  "vehicle_type": "car",
+	  "category": "land",
+	  "frame_size": [
+		96,
+		96
+	  ],
+	  "collision_size": [
+		44,
+		22
+	  ],
+	  "speed": 120.0,
+	  "capacity": 4,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Grey Car-(96x96)Sheet.png",
+	  "resource_path": "res://data/vehicles/car_grey_01.tres"
+	},
+	"veh_004": {
+	  "id": "veh_004",
+	  "resource_name": "car_orange_01",
+	  "display_name": "Xe Ô Tô Cam",
+	  "vehicle_type": "car",
+	  "category": "land",
+	  "frame_size": [
+		96,
+		96
+	  ],
+	  "collision_size": [
+		44,
+		22
+	  ],
+	  "speed": 125.0,
+	  "capacity": 4,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Orange Car-Sheet.png",
+	  "resource_path": "res://data/vehicles/car_orange_01.tres"
+	},
+	"veh_005": {
+	  "id": "veh_005",
+	  "resource_name": "car_pink_01",
+	  "display_name": "Xe Ô Tô Hồng",
+	  "vehicle_type": "car",
+	  "category": "land",
+	  "frame_size": [
+		96,
+		96
+	  ],
+	  "collision_size": [
+		44,
+		22
+	  ],
+	  "speed": 120.0,
+	  "capacity": 4,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Pink Car-(96x96)Sheet.png",
+	  "resource_path": "res://data/vehicles/car_pink_01.tres"
+	},
+	"veh_006": {
+	  "id": "veh_006",
+	  "resource_name": "car_white_01",
+	  "display_name": "Xe Ô Tô Trắng",
+	  "vehicle_type": "car",
+	  "category": "land",
+	  "frame_size": [
+		96,
+		96
+	  ],
+	  "collision_size": [
+		44,
+		22
+	  ],
+	  "speed": 120.0,
+	  "capacity": 4,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/White Car-(96x96)Sheet.png",
+	  "resource_path": "res://data/vehicles/car_white_01.tres"
+	},
+	"veh_007": {
+	  "id": "veh_007",
+	  "resource_name": "car_blue_01",
+	  "display_name": "Xe Ô Tô Xanh Dương",
+	  "vehicle_type": "car",
+	  "category": "land",
+	  "frame_size": [
+		112,
+		112
+	  ],
+	  "collision_size": [
+		48,
+		24
+	  ],
+	  "speed": 125.0,
+	  "capacity": 4,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Blue car-Sheet(112x112).png",
+	  "resource_path": "res://data/vehicles/car_blue_01.tres"
+	},
+	"veh_008": {
+	  "id": "veh_008",
+	  "resource_name": "car_green_01",
+	  "display_name": "Xe Ô Tô Xanh Lá",
+	  "vehicle_type": "car",
+	  "category": "land",
+	  "frame_size": [
+		112,
+		112
+	  ],
+	  "collision_size": [
+		48,
+		24
+	  ],
+	  "speed": 125.0,
+	  "capacity": 4,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Green car-Sheet(112x112).png",
+	  "resource_path": "res://data/vehicles/car_green_01.tres"
+	},
+	"veh_009": {
+	  "id": "veh_009",
+	  "resource_name": "car_red_01",
+	  "display_name": "Xe Ô Tô Đỏ Thể Thao",
+	  "vehicle_type": "car",
+	  "category": "land",
+	  "frame_size": [
+		112,
+		112
+	  ],
+	  "collision_size": [
+		48,
+		24
+	  ],
+	  "speed": 135.0,
+	  "capacity": 4,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Red car-Sheet(112x112).png",
+	  "resource_path": "res://data/vehicles/car_red_01.tres"
+	},
+	"veh_010": {
+	  "id": "veh_010",
+	  "resource_name": "taxi_standard_01",
+	  "display_name": "Xe Taxi Đô Thị",
+	  "vehicle_type": "taxi",
+	  "category": "land",
+	  "frame_size": [
+		112,
+		112
+	  ],
+	  "collision_size": [
+		48,
+		24
+	  ],
+	  "speed": 130.0,
+	  "capacity": 4,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Taxi-Sheet(112x112).png",
+	  "resource_path": "res://data/vehicles/taxi_standard_01.tres"
+	},
+	"veh_011": {
+	  "id": "veh_011",
+	  "resource_name": "taxi_yellow_01",
+	  "display_name": "Xe Taxi Vàng",
+	  "vehicle_type": "taxi",
+	  "category": "land",
+	  "frame_size": [
+		112,
+		112
+	  ],
+	  "collision_size": [
+		48,
+		24
+	  ],
+	  "speed": 130.0,
+	  "capacity": 4,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Taxi Yellow(112x112)t.png",
+	  "resource_path": "res://data/vehicles/taxi_yellow_01.tres"
+	},
+	"veh_012": {
+	  "id": "veh_012",
+	  "resource_name": "food_cart_01",
+	  "display_name": "Xe Đẩy Đồ Ăn Đường Phố",
+	  "vehicle_type": "cart",
+	  "category": "land",
+	  "frame_size": [
+		112,
+		112
+	  ],
+	  "collision_size": [
+		36,
+		22
+	  ],
+	  "speed": 45.0,
+	  "capacity": 1,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/FoodCart-Sheet(112x112).png",
+	  "resource_path": "res://data/vehicles/food_cart_01.tres"
+	},
+	"veh_013": {
+	  "id": "veh_013",
+	  "resource_name": "police_car_01",
+	  "display_name": "Xe Cảnh Sát Tuần Tra",
+	  "vehicle_type": "emergency",
+	  "category": "land",
+	  "frame_size": [
+		112,
+		112
+	  ],
+	  "collision_size": [
+		48,
+		24
+	  ],
+	  "speed": 150.0,
+	  "capacity": 4,
+	  "has_siren": true,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Police car-Sheet(112x112).png",
+	  "resource_path": "res://data/vehicles/police_car_01.tres"
+	},
+	"veh_014": {
+	  "id": "veh_014",
+	  "resource_name": "ambulance_01",
+	  "display_name": "Xe Cứu Thương Y Tế",
+	  "vehicle_type": "emergency",
+	  "category": "land",
+	  "frame_size": [
+		160,
+		160
+	  ],
+	  "collision_size": [
+		64,
+		32
+	  ],
+	  "speed": 140.0,
+	  "capacity": 6,
+	  "has_siren": true,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Ambulance-Sheet(160x160).png",
+	  "resource_path": "res://data/vehicles/ambulance_01.tres"
+	},
+	"veh_015": {
+	  "id": "veh_015",
+	  "resource_name": "firetruck_01",
+	  "display_name": "Xe Cứu Hỏa",
+	  "vehicle_type": "emergency",
+	  "category": "land",
+	  "frame_size": [
+		176,
+		176
+	  ],
+	  "collision_size": [
+		76,
+		36
+	  ],
+	  "speed": 130.0,
+	  "capacity": 6,
+	  "has_siren": true,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Firetruck (176x176)-Sheet.png",
+	  "resource_path": "res://data/vehicles/firetruck_01.tres"
+	},
+	"veh_016": {
+	  "id": "veh_016",
+	  "resource_name": "bus_city_01",
+	  "display_name": "Xe Buýt Công Cộng",
+	  "vehicle_type": "bus",
+	  "category": "land",
+	  "frame_size": [
+		176,
+		176
+	  ],
+	  "collision_size": [
+		80,
+		36
+	  ],
+	  "speed": 95.0,
+	  "capacity": 30,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Bus-Sheet(176x176).png",
+	  "resource_path": "res://data/vehicles/bus_city_01.tres"
+	},
+	"veh_017": {
+	  "id": "veh_017",
+	  "resource_name": "bulldozer_01",
+	  "display_name": "Xe Ủi Đất Công Trình",
+	  "vehicle_type": "heavy",
+	  "category": "land",
+	  "frame_size": [
+		160,
+		160
+	  ],
+	  "collision_size": [
+		60,
+		34
+	  ],
+	  "speed": 60.0,
+	  "capacity": 1,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/BullDozer-Sheet(160x160).png",
+	  "resource_path": "res://data/vehicles/bulldozer_01.tres"
+	},
+	"veh_018": {
+	  "id": "veh_018",
+	  "resource_name": "foodtruck_moving_01",
+	  "display_name": "Xe Tải Ẩm Thực Lưu Động",
+	  "vehicle_type": "truck",
+	  "category": "land",
+	  "frame_size": [
+		160,
+		160
+	  ],
+	  "collision_size": [
+		62,
+		32
+	  ],
+	  "speed": 90.0,
+	  "capacity": 2,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Foodtruck-Sheet.png",
+	  "resource_path": "res://data/vehicles/foodtruck_moving_01.tres"
+	},
+	"veh_019": {
+	  "id": "veh_019",
+	  "resource_name": "food_truck_shop_01",
+	  "display_name": "Quầy Rơ-Moóc Ẩm Thực",
+	  "vehicle_type": "shop",
+	  "category": "static",
+	  "frame_size": [
+		114,
+		96
+	  ],
+	  "collision_size": [
+		48,
+		24
+	  ],
+	  "speed": 0.0,
+	  "capacity": 2,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Food truckshop-Sheet.png",
+	  "resource_path": "res://data/vehicles/food_truck_shop_01.tres"
+	},
+	"veh_025": {
+	  "id": "veh_025",
+	  "resource_name": "food_truck_shop_02",
+	  "display_name": "Xe Tải Ẩm Thực Mở Quầy",
+	  "vehicle_type": "shop",
+	  "category": "static",
+	  "frame_size": [
+		154,
+		96
+	  ],
+	  "collision_size": [
+		62,
+		28
+	  ],
+	  "speed": 0.0,
+	  "capacity": 2,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Food truckshop-Sheet.png",
+	  "resource_path": "res://data/vehicles/food_truck_shop_02.tres"
+	},
+	"veh_020": {
+	  "id": "veh_020",
+	  "resource_name": "helicopter_civilian_01",
+	  "display_name": "Trực Thăng Dân Dụng",
+	  "vehicle_type": "air",
+	  "category": "air",
+	  "frame_size": [
+		192,
+		128
+	  ],
+	  "collision_size": [
+		50,
+		30
+	  ],
+	  "speed": 200.0,
+	  "capacity": 6,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Helicopter sheet.png",
+	  "resource_path": "res://data/vehicles/helicopter_civilian_01.tres"
+	},
+	"veh_021": {
+	  "id": "veh_021",
+	  "resource_name": "helicopter_rescue_01",
+	  "display_name": "Trực Thăng Cứu Hộ / Tuần Tra",
+	  "vehicle_type": "air",
+	  "category": "air",
+	  "frame_size": [
+		192,
+		128
+	  ],
+	  "collision_size": [
+		50,
+		30
+	  ],
+	  "speed": 210.0,
+	  "capacity": 6,
+	  "has_siren": true,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Helicopter sheet1.png",
+	  "resource_path": "res://data/vehicles/helicopter_rescue_01.tres"
+	},
+	"veh_022": {
+	  "id": "veh_022",
+	  "resource_name": "boat_small_01",
+	  "display_name": "Thuyền Nhỏ Đường Sông",
+	  "vehicle_type": "water",
+	  "category": "water",
+	  "frame_size": [
+		80,
+		80
+	  ],
+	  "collision_size": [
+		36,
+		20
+	  ],
+	  "speed": 85.0,
+	  "capacity": 4,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Small Boat(80x80)-Sheet.png",
+	  "resource_path": "res://data/vehicles/boat_small_01.tres"
+	},
+	"veh_023": {
+	  "id": "veh_023",
+	  "resource_name": "ship_trade_01",
+	  "display_name": "Tàu Chở Hàng Thương Mại",
+	  "vehicle_type": "water",
+	  "category": "water",
+	  "frame_size": [
+		192,
+		192
+	  ],
+	  "collision_size": [
+		90,
+		42
+	  ],
+	  "speed": 70.0,
+	  "capacity": 12,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Trade Ship-Sheet(192x192).png",
+	  "resource_path": "res://data/vehicles/ship_trade_01.tres"
+	},
+	"veh_024": {
+	  "id": "veh_024",
+	  "resource_name": "ship_ferry_01",
+	  "display_name": "Phà Lớn Chở Khách",
+	  "vehicle_type": "water",
+	  "category": "water",
+	  "frame_size": [
+		352,
+		352
+	  ],
+	  "collision_size": [
+		160,
+		75
+	  ],
+	  "speed": 65.0,
+	  "capacity": 100,
+	  "has_siren": false,
+	  "spritesheet": "res://assets/spritesheets/vehicles/Ferry(352x352)-Sheet.png",
+	  "resource_path": "res://data/vehicles/ship_ferry_01.tres"
+	}
+  },
+  "total_vehicles": 25,
+  "buildings": {
+	"bld_001": {
+	  "id": "bld_001",
+	  "resource_name": "firestation_01",
+	  "display_name": "Trạm Cứu Hỏa Thành Phố",
+	  "building_type": "emergency",
+	  "door_count": 2,
+	  "door_names": [
+		"Cửa Nhân Viên",
+        "Cửa Cuốn Gara Xe"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		304,
+		224
+	  ],
+	  "collision_size": [
+		270,
+		70
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Firestation Animation.png",
+	  "resource_path": "res://data/buildings/firestation_01.tres"
+	},
+	"bld_002": {
+	  "id": "bld_002",
+	  "resource_name": "police_station_01",
+	  "display_name": "Đồn Cảnh Sát Thành Phố",
+	  "building_type": "emergency",
+	  "door_count": 2,
+	  "door_names": [
+		"Cửa Văn Phòng",
+        "Cửa Cuốn Gara Xe"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		224,
+		160
+	  ],
+	  "collision_size": [
+		200,
+		50
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/PoliceStation Animation.png",
+	  "resource_path": "res://data/buildings/police_station_01.tres"
+	},
+	"bld_003": {
+	  "id": "bld_003",
+	  "resource_name": "library_city_01",
+	  "display_name": "Thư Viện Trung Tâm",
+	  "building_type": "public",
+	  "door_count": 2,
+	  "door_names": [
+		"Cửa Cánh Trái",
+        "Cửa Cánh Phải"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		224,
+		160
+	  ],
+	  "collision_size": [
+		200,
+		50
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Library Sheet.png",
+	  "resource_path": "res://data/buildings/library_city_01.tres"
+	},
+	"bld_004": {
+	  "id": "bld_004",
+	  "resource_name": "prison_city_01",
+	  "display_name": "Trại Giam / Nhà Tù",
+	  "building_type": "public",
+	  "door_count": 2,
+	  "door_names": [
+		"Cổng Sắt Trái",
+        "Cổng Sắt Phải"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		272,
+		176
+	  ],
+	  "collision_size": [
+		245,
+		60
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Prison-Sheet.png",
+	  "resource_path": "res://data/buildings/prison_city_01.tres"
+	},
+	"bld_005": {
+	  "id": "bld_005",
+	  "resource_name": "restroom_public_01",
+	  "display_name": "Nhà Vệ Sinh Công Cộng",
+	  "building_type": "amenity",
+	  "door_count": 2,
+	  "door_names": [
+		"Cửa Nam (Trái)",
+        "Cửa Nữ (Phải)"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		112,
+		96
+	  ],
+	  "collision_size": [
+		100,
+		36
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Restroom Animation.png",
+	  "resource_path": "res://data/buildings/restroom_public_01.tres"
+	},
+	"bld_006": {
+	  "id": "bld_006",
+	  "resource_name": "beachhouse_blue_01",
+	  "display_name": "Nhà Bãi Biển Xanh Dương",
+	  "building_type": "residential",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "blue",
+	  "frame_size": [
+		176,
+		176
+	  ],
+	  "collision_size": [
+		150,
+		50
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Beachhouseblue Animation.png",
+	  "resource_path": "res://data/buildings/beachhouse_blue_01.tres"
+	},
+	"bld_007": {
+	  "id": "bld_007",
+	  "resource_name": "beachhouse_yellow_01",
+	  "display_name": "Nhà Bãi Biển Vàng Kem",
+	  "building_type": "residential",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "yellow",
+	  "frame_size": [
+		176,
+		176
+	  ],
+	  "collision_size": [
+		150,
+		50
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Beachhouseblue Animation.png",
+	  "resource_path": "res://data/buildings/beachhouse_yellow_01.tres"
+	},
+	"bld_008": {
+	  "id": "bld_008",
+	  "resource_name": "beachhouse_pink_01",
+	  "display_name": "Nhà Bãi Biển Hồng Pastel",
+	  "building_type": "residential",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "pink",
+	  "frame_size": [
+		176,
+		176
+	  ],
+	  "collision_size": [
+		150,
+		50
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Beachhouseblue Animation.png",
+	  "resource_path": "res://data/buildings/beachhouse_pink_01.tres"
+	},
+	"bld_009": {
+	  "id": "bld_009",
+	  "resource_name": "small_beachhouse_yellow_01",
+	  "display_name": "Nhà Gỗ Bãi Biển Vàng",
+	  "building_type": "residential",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "yellow",
+	  "frame_size": [
+		128,
+		144
+	  ],
+	  "collision_size": [
+		110,
+		44
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Small Beach House-Sheet.png",
+	  "resource_path": "res://data/buildings/small_beachhouse_yellow_01.tres"
+	},
+	"bld_010": {
+	  "id": "bld_010",
+	  "resource_name": "small_beachhouse_red_01",
+	  "display_name": "Nhà Gỗ Bãi Biển Đỏ",
+	  "building_type": "residential",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "red",
+	  "frame_size": [
+		128,
+		144
+	  ],
+	  "collision_size": [
+		110,
+		44
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Small Beach House-Sheet.png",
+	  "resource_path": "res://data/buildings/small_beachhouse_red_01.tres"
+	},
+	"bld_011": {
+	  "id": "bld_011",
+	  "resource_name": "small_beachhouse_blue_01",
+	  "display_name": "Nhà Gỗ Bãi Biển Xanh",
+	  "building_type": "residential",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "blue",
+	  "frame_size": [
+		128,
+		144
+	  ],
+	  "collision_size": [
+		110,
+		44
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Small Beach House-Sheet.png",
+	  "resource_path": "res://data/buildings/small_beachhouse_blue_01.tres"
+	},
+	"bld_012": {
+	  "id": "bld_012",
+	  "resource_name": "bakery_standard_01",
+	  "display_name": "Tiệm Bánh Mì Cổ Điển",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		112,
+		160
+	  ],
+	  "collision_size": [
+		95,
+		56
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Bakery Animation.png",
+	  "resource_path": "res://data/buildings/bakery_standard_01.tres"
+	},
+	"bld_013": {
+	  "id": "bld_013",
+	  "resource_name": "bakery_clean_01",
+	  "display_name": "Tiệm Bánh Mì Hiện Đại",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		112,
+		144
+	  ],
+	  "collision_size": [
+		95,
+		50
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Bakery Clean Animation.png",
+	  "resource_path": "res://data/buildings/bakery_clean_01.tres"
+	},
+	"bld_014": {
+	  "id": "bld_014",
+	  "resource_name": "bank_central_01",
+	  "display_name": "Ngân Hàng Trung Tâm",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		208,
+		208
+	  ],
+	  "collision_size": [
+		176,
+		72
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Bank Animation.png",
+	  "resource_path": "res://data/buildings/bank_central_01.tres"
+	},
+	"bld_015": {
+	  "id": "bld_015",
+	  "resource_name": "bar_pub_01",
+	  "display_name": "Quán Rượu / Bar Phố",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		96,
+		144
+	  ],
+	  "collision_size": [
+		81,
+		50
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Bar Animation.png",
+	  "resource_path": "res://data/buildings/bar_pub_01.tres"
+	},
+	"bld_016": {
+	  "id": "bld_016",
+	  "resource_name": "bar_clean_01",
+	  "display_name": "Quán Bar Hiện Đại Clean",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		96,
+		144
+	  ],
+	  "collision_size": [
+		81,
+		50
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Bar Clean Animation.png",
+	  "resource_path": "res://data/buildings/bar_clean_01.tres"
+	},
+	"bld_017": {
+	  "id": "bld_017",
+	  "resource_name": "barbershop_01",
+	  "display_name": "Tiệm Cắt Tóc Barbershop",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		144,
+		128
+	  ],
+	  "collision_size": [
+		122,
+		44
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Barbershop Animation.png",
+	  "resource_path": "res://data/buildings/barbershop_01.tres"
+	},
+	"bld_018": {
+	  "id": "bld_018",
+	  "resource_name": "barbershop_clean_01",
+	  "display_name": "Tiệm Cắt Tóc Hiện Đại",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		144,
+		128
+	  ],
+	  "collision_size": [
+		122,
+		44
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Barbershop Clean Animation.png",
+	  "resource_path": "res://data/buildings/barbershop_clean_01.tres"
+	},
+	"bld_019": {
+	  "id": "bld_019",
+	  "resource_name": "brick_building_01",
+	  "display_name": "Tòa Nhà Gạch Nâu",
+	  "building_type": "residential",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		112,
+		208
+	  ],
+	  "collision_size": [
+		95,
+		72
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Brick Building Animation.png",
+	  "resource_path": "res://data/buildings/brick_building_01.tres"
+	},
+	"bld_020": {
+	  "id": "bld_020",
+	  "resource_name": "burgershop_01",
+	  "display_name": "Tiệm Bánh Burger",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		176,
+		128
+	  ],
+	  "collision_size": [
+		149,
+		44
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Burgershop Animation.png",
+	  "resource_path": "res://data/buildings/burgershop_01.tres"
+	},
+	"bld_021": {
+	  "id": "bld_021",
+	  "resource_name": "cafe_shop_01",
+	  "display_name": "Quán Cà Phê Phố",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		144,
+		112
+	  ],
+	  "collision_size": [
+		122,
+		39
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Cafe Animation.png",
+	  "resource_path": "res://data/buildings/cafe_shop_01.tres"
+	},
+	"bld_022": {
+	  "id": "bld_022",
+	  "resource_name": "cafe_clean_01",
+	  "display_name": "Quán Cà Phê Hiện Đại",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		144,
+		112
+	  ],
+	  "collision_size": [
+		122,
+		39
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Cafe Clean Animation.png",
+	  "resource_path": "res://data/buildings/cafe_clean_01.tres"
+	},
+	"bld_023": {
+	  "id": "bld_023",
+	  "resource_name": "campus_building_01",
+	  "display_name": "Tòa Giảng Đường Campus",
+	  "building_type": "public",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		112,
+		208
+	  ],
+	  "collision_size": [
+		95,
+		72
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Campus Building Animation.png",
+	  "resource_path": "res://data/buildings/campus_building_01.tres"
+	},
+	"bld_024": {
+	  "id": "bld_024",
+	  "resource_name": "cinema_theater_01",
+	  "display_name": "Rạp Chiếu Phim Cinema",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		208,
+		224
+	  ],
+	  "collision_size": [
+		176,
+		78
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Cinema Door Animation.png",
+	  "resource_path": "res://data/buildings/cinema_theater_01.tres"
+	},
+	"bld_025": {
+	  "id": "bld_025",
+	  "resource_name": "convenient_store_01",
+	  "display_name": "Cửa Hàng Tiện Lợi 24/7",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		160,
+		160
+	  ],
+	  "collision_size": [
+		136,
+		56
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Convenient Store Animation.png",
+	  "resource_path": "res://data/buildings/convenient_store_01.tres"
+	},
+	"bld_026": {
+	  "id": "bld_026",
+	  "resource_name": "convenient_store_clean_01",
+	  "display_name": "Cửa Hàng Tiện Lợi Clean",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		160,
+		160
+	  ],
+	  "collision_size": [
+		136,
+		56
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Convenient Store Clean Animation.png",
+	  "resource_path": "res://data/buildings/convenient_store_clean_01.tres"
+	},
+	"bld_027": {
+	  "id": "bld_027",
+	  "resource_name": "fast_food_restaurant_01",
+	  "display_name": "Nhà Hàng Thức Ăn Nhanh",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		176,
+		128
+	  ],
+	  "collision_size": [
+		149,
+		44
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Fast food restaurant Animation.png",
+	  "resource_path": "res://data/buildings/fast_food_restaurant_01.tres"
+	},
+	"bld_028": {
+	  "id": "bld_028",
+	  "resource_name": "gas_station_01",
+	  "display_name": "Trạm Xăng Đô Thị",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		208,
+		160
+	  ],
+	  "collision_size": [
+		176,
+		56
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Gas Station-Sheet.png",
+	  "resource_path": "res://data/buildings/gas_station_01.tres"
+	},
+	"bld_029": {
+	  "id": "bld_029",
+	  "resource_name": "green_brick_building_01",
+	  "display_name": "Tòa Nhà Gạch Xanh Lá",
+	  "building_type": "residential",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		112,
+		192
+	  ],
+	  "collision_size": [
+		95,
+		67
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Green Brick building Animation.png",
+	  "resource_path": "res://data/buildings/green_brick_building_01.tres"
+	},
+	"bld_030": {
+	  "id": "bld_030",
+	  "resource_name": "hospital_city_01",
+	  "display_name": "Bệnh Viện Đa Khoa",
+	  "building_type": "emergency",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		144,
+		320
+	  ],
+	  "collision_size": [
+		122,
+		112
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Hospital-Sheet.png",
+	  "resource_path": "res://data/buildings/hospital_city_01.tres"
+	},
+	"bld_031": {
+	  "id": "bld_031",
+	  "resource_name": "hotel_grand_01",
+	  "display_name": "Khách Sạn Grand Hotel",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		192,
+		192
+	  ],
+	  "collision_size": [
+		163,
+		67
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Hotel Door Animation.png",
+	  "resource_path": "res://data/buildings/hotel_grand_01.tres"
+	},
+	"bld_032": {
+	  "id": "bld_032",
+	  "resource_name": "inn_hotel_01",
+	  "display_name": "Quán Trọ Lữ Hành Inn",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		144,
+		176
+	  ],
+	  "collision_size": [
+		122,
+		61
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Inn Animation.png",
+	  "resource_path": "res://data/buildings/inn_hotel_01.tres"
+	},
+	"bld_033": {
+	  "id": "bld_033",
+	  "resource_name": "japanese_restaurant_01",
+	  "display_name": "Nhà Hàng Nhật Bản",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		160,
+		112
+	  ],
+	  "collision_size": [
+		136,
+		39
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Japanese Restaurant Animation.png",
+	  "resource_path": "res://data/buildings/japanese_restaurant_01.tres"
+	},
+	"bld_034": {
+	  "id": "bld_034",
+	  "resource_name": "lightblue_building_01",
+	  "display_name": "Tòa Nhà Xanh Nhạt",
+	  "building_type": "residential",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		144,
+		224
+	  ],
+	  "collision_size": [
+		122,
+		78
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Lightblue Building-Sheet.png",
+	  "resource_path": "res://data/buildings/lightblue_building_01.tres"
+	},
+	"bld_035": {
+	  "id": "bld_035",
+	  "resource_name": "lighthouse_01",
+	  "display_name": "Ngọn Hải Đăng Cảng Biển",
+	  "building_type": "public",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		128,
+		288
+	  ],
+	  "collision_size": [
+		108,
+		100
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Lighthouse-Sheet.png",
+	  "resource_path": "res://data/buildings/lighthouse_01.tres"
+	},
+	"bld_036": {
+	  "id": "bld_036",
+	  "resource_name": "mall_shopping_01",
+	  "display_name": "Trung Tâm Thương Mại Mall",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		224,
+		304
+	  ],
+	  "collision_size": [
+		190,
+		106
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Mall Door Animation.png",
+	  "resource_path": "res://data/buildings/mall_shopping_01.tres"
+	},
+	"bld_037": {
+	  "id": "bld_037",
+	  "resource_name": "motel_lodge_01",
+	  "display_name": "Nhà Nghỉ Ven Đường Motel",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		208,
+		176
+	  ],
+	  "collision_size": [
+		176,
+		61
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Motel-Sheet.png",
+	  "resource_path": "res://data/buildings/motel_lodge_01.tres"
+	},
+	"bld_038": {
+	  "id": "bld_038",
+	  "resource_name": "pizza_shop_01",
+	  "display_name": "Tiệm Pizza Ý",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		144,
+		128
+	  ],
+	  "collision_size": [
+		122,
+		44
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Pizza shop Animation.png",
+	  "resource_path": "res://data/buildings/pizza_shop_01.tres"
+	},
+	"bld_039": {
+	  "id": "bld_039",
+	  "resource_name": "pizza_shop_clean_01",
+	  "display_name": "Tiệm Pizza Hiện Đại",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		144,
+		128
+	  ],
+	  "collision_size": [
+		122,
+		44
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Pizza shop Clean Animation.png",
+	  "resource_path": "res://data/buildings/pizza_shop_clean_01.tres"
+	},
+	"bld_040": {
+	  "id": "bld_040",
+	  "resource_name": "portable_office_01",
+	  "display_name": "Văn Phòng Di Động",
+	  "building_type": "industrial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		128,
+		112
+	  ],
+	  "collision_size": [
+		108,
+		39
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Portable Office-sheet.png",
+	  "resource_path": "res://data/buildings/portable_office_01.tres"
+	},
+	"bld_041": {
+	  "id": "bld_041",
+	  "resource_name": "portable_toilet_01",
+	  "display_name": "Nhà Vệ Sinh Lưu Động",
+	  "building_type": "amenity",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		32,
+		96
+	  ],
+	  "collision_size": [
+		27,
+		33
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Portable Toilet-sheet.png",
+	  "resource_path": "res://data/buildings/portable_toilet_01.tres"
+	},
+	"bld_042": {
+	  "id": "bld_042",
+	  "resource_name": "ramen_stand_01",
+	  "display_name": "Quán Mì Ramen Nhật",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		128,
+		128
+	  ],
+	  "collision_size": [
+		108,
+		44
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Ramen stand Animation.png",
+	  "resource_path": "res://data/buildings/ramen_stand_01.tres"
+	},
+	"bld_043": {
+	  "id": "bld_043",
+	  "resource_name": "supermarket_city_01",
+	  "display_name": "Siêu Thị Đô Thị Supermarket",
+	  "building_type": "commercial",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		304,
+		176
+	  ],
+	  "collision_size": [
+		258,
+		61
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Supermarket Animation.png",
+	  "resource_path": "res://data/buildings/supermarket_city_01.tres"
+	},
+	"bld_044": {
+	  "id": "bld_044",
+	  "resource_name": "wood_building_01",
+	  "display_name": "Tòa Nhà Gỗ Truyền Thống",
+	  "building_type": "residential",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		112,
+		176
+	  ],
+	  "collision_size": [
+		95,
+		61
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Wood Building-Sheet.png",
+	  "resource_path": "res://data/buildings/wood_building_01.tres"
+	},
+	"bld_045": {
+	  "id": "bld_045",
+	  "resource_name": "yellow_building_01",
+	  "display_name": "Tòa Nhà Màu Vàng",
+	  "building_type": "residential",
+	  "door_count": 1,
+	  "door_names": [
+        "Cửa Chính"
+	  ],
+	  "color_variant": "default",
+	  "frame_size": [
+		112,
+		192
+	  ],
+	  "collision_size": [
+		95,
+		67
+	  ],
+	  "spritesheet": "res://assets/spritesheets/buildings/Building Door Animations/Yellow Building-Sheet.png",
+	  "resource_path": "res://data/buildings/yellow_building_01.tres"
+	}
+  },
+  "total_buildings": 45
+}

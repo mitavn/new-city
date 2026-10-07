@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="EmoteData" format=3]
+
+[ext_resource type="Script" path="res://scripts/emotes/EmoteData.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/spritesheets/characters/Character Emoteicon-Sheet.png" id="2_tex"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_happy_0"]
+atlas = ExtResource("2_tex")
+region = Rect2(0, 16, 32, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_happy_1"]
+atlas = ExtResource("2_tex")
+region = Rect2(32, 16, 32, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_happy_2"]
+atlas = ExtResource("2_tex")
+region = Rect2(64, 16, 32, 16)
+[sub_resource type="AtlasTexture" id="AtlasTexture_happy_3"]
+atlas = ExtResource("2_tex")
+region = Rect2(96, 16, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_happy"]
+animations = [{
+"frames": [{"duration": 1.0, "texture": SubResource("AtlasTexture_happy_0")}, {"duration": 1.0, "texture": SubResource("AtlasTexture_happy_1")}, {"duration": 1.0, "texture": SubResource("AtlasTexture_happy_2")}, {"duration": 1.0, "texture": SubResource("AtlasTexture_happy_3")}],
+"loop": true,
+"name": &"play",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("1_script")
+id = &"happy"
+display_name = "Vui Vẻ / Thân Thiện"
+category = &"mood"
+row_index = 1
+description = "Mặt cười vui vẻ, chào đón thân thiện khi tiếp nhận hoặc giao tiếp."
+frame_size = Vector2i(32, 16)
+frame_count = 4
+fps = 5.0
+loop = true
+offset_y = -42.0
+default_duration = 2.2
+sprite_frames = SubResource("SpriteFrames_happy")
+spritesheet_path = "res://assets/spritesheets/characters/Character Emoteicon-Sheet.png"
+tags = PackedStringArray("smile", "friendly", "boarded")

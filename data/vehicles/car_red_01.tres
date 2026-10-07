@@ -1,0 +1,150 @@
+[gd_resource type="Resource" script_class="VehicleData" format=3 uid="uid://5b0heg6fk5n8"]
+
+[ext_resource type="Script" uid="uid://dijugjd2akk5r" path="res://scripts/vehicles/VehicleData.gd" id="1_vehdata"]
+[ext_resource type="Texture2D" uid="uid://bai3cdljmn1l" path="res://assets/spritesheets/vehicles/Red car-Sheet(112x112).png" id="2_car_re"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_car__drive_back_0"]
+atlas = ExtResource("2_car_re")
+region = Rect2(0, 224, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_car__drive_back_1"]
+atlas = ExtResource("2_car_re")
+region = Rect2(112, 224, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_car__drive_back_2"]
+atlas = ExtResource("2_car_re")
+region = Rect2(224, 224, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_car__drive_back_3"]
+atlas = ExtResource("2_car_re")
+region = Rect2(336, 224, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_car__drive_front_0"]
+atlas = ExtResource("2_car_re")
+region = Rect2(0, 336, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_car__drive_front_1"]
+atlas = ExtResource("2_car_re")
+region = Rect2(112, 336, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_car__drive_front_2"]
+atlas = ExtResource("2_car_re")
+region = Rect2(224, 336, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_car__drive_front_3"]
+atlas = ExtResource("2_car_re")
+region = Rect2(336, 336, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_car__drive_front_left_0"]
+atlas = ExtResource("2_car_re")
+region = Rect2(0, 112, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_car__drive_front_left_1"]
+atlas = ExtResource("2_car_re")
+region = Rect2(112, 112, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_car__drive_front_left_2"]
+atlas = ExtResource("2_car_re")
+region = Rect2(224, 112, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_car__drive_front_left_3"]
+atlas = ExtResource("2_car_re")
+region = Rect2(336, 112, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_car__drive_front_right_0"]
+atlas = ExtResource("2_car_re")
+region = Rect2(0, 0, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_car__drive_front_right_1"]
+atlas = ExtResource("2_car_re")
+region = Rect2(112, 0, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_car__drive_front_right_2"]
+atlas = ExtResource("2_car_re")
+region = Rect2(224, 0, 112, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_car__drive_front_right_3"]
+atlas = ExtResource("2_car_re")
+region = Rect2(336, 0, 112, 112)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_car_re"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_car__drive_back_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_car__drive_back_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_car__drive_back_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_car__drive_back_3")
+}],
+"loop": 1,
+"name": &"drive_back",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_car__drive_front_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_car__drive_front_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_car__drive_front_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_car__drive_front_3")
+}],
+"loop": 1,
+"name": &"drive_front",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_car__drive_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_car__drive_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_car__drive_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_car__drive_front_left_3")
+}],
+"loop": 1,
+"name": &"drive_front_left",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_car__drive_front_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_car__drive_front_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_car__drive_front_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_car__drive_front_right_3")
+}],
+"loop": 1,
+"name": &"drive_front_right",
+"speed": 6.0
+}]
+
+[resource]
+script = ExtResource("1_vehdata")
+id = &"veh_009"
+display_name = "Xe Ô Tô Đỏ Thể Thao"
+description = "Xe ô tô đỏ thể thao tốc độ cao đầy lôi cuốn."
+visual_offset = Vector2(0, -39.2)
+sprite_frames = SubResource("SpriteFrames_car_re")
+spritesheet_path = "res://assets/spritesheets/vehicles/Red car-Sheet(112x112).png"
+max_speed = 135.0
+metadata/_custom_type_script = "uid://dijugjd2akk5r"

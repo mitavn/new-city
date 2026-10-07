@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="NPCRoutineData" format=3]
+
+[ext_resource type="Script" path="res://scripts/ai/tasks/NPCRoutineData.gd" id="1_46wih"]
+[ext_resource type="Script" path="res://scripts/ai/tasks/NPCTaskData.gd" id="2_u8l7y"]
+
+[sub_resource type="Resource" id="Resource_wk5jx"]
+script = ExtResource("2_u8l7y")
+task_id = &"patrol_police"
+task_name = "Về Đồn Cảnh Sát"
+poi_tag = &"police_station"
+arrival_distance = 20.0
+duration = 0.0
+
+[sub_resource type="Resource" id="Resource_ub164"]
+script = ExtResource("2_u8l7y")
+task_id = &"patrol_briefing"
+task_name = "Ghi Nhận Nhiệm Vụ"
+type = 2
+arrival_distance = 20.0
+duration = 2.5
+emote_id = &"idea"
+dialogue_text = "Bắt đầu ca tuần tra an ninh trật tự bến cảng Thượng Hải!"
+
+[sub_resource type="Resource" id="Resource_kn1op"]
+script = ExtResource("2_u8l7y")
+task_id = &"patrol_customs"
+task_name = "Kiểm Tra Trạm Hải Quan"
+poi_tag = &"customs_office"
+arrival_distance = 20.0
+duration = 0.0
+
+[sub_resource type="Resource" id="Resource_x84we"]
+script = ExtResource("2_u8l7y")
+task_id = &"patrol_inspect"
+task_name = "Kiểm Soát Giấy Tờ"
+type = 2
+arrival_distance = 20.0
+emote_id = &"exclamation"
+dialogue_text = "Kiểm tra chứng từ xuất nhập bến của tàu buôn."
+
+[sub_resource type="Resource" id="Resource_srf8u"]
+script = ExtResource("2_u8l7y")
+task_id = &"patrol_ferry"
+task_name = "Kiểm Tra Bến Phà"
+poi_tag = &"ferry_pier"
+arrival_distance = 25.0
+duration = 0.0
+
+[sub_resource type="Resource" id="Resource_ej8df"]
+script = ExtResource("2_u8l7y")
+task_id = &"patrol_secure"
+task_name = "Xác Nhận An Toàn"
+type = 2
+arrival_distance = 20.0
+duration = 2.5
+emote_id = &"star"
+dialogue_text = "Khu vực phà Hoàng Phố hành khách trật tự an toàn."
+
+[resource]
+script = ExtResource("1_46wih")
+routine_id = &"routine_patrol_officer"
+routine_name = "Ca Tuần Tra An Ninh Cảng"
+category = &"patrol"
+description = "Lộ trình kiểm tra trạm hải quan, cầu cảng và bến phà Hoàng Phố."
+tasks = Array[ExtResource("2_u8l7y")]([SubResource("Resource_wk5jx"), SubResource("Resource_ub164"), SubResource("Resource_kn1op"), SubResource("Resource_x84we"), SubResource("Resource_srf8u"), SubResource("Resource_ej8df")])

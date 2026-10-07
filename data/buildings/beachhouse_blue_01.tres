@@ -1,0 +1,161 @@
+[gd_resource type="Resource" script_class="BuildingData" format=3 uid="uid://c8feyiqx7kfbc"]
+
+[ext_resource type="Script" path="res://scripts/buildings/BuildingData.gd" id="1_builddata"]
+[ext_resource type="Texture2D" uid="uid://3iyvidqvays2" path="res://assets/spritesheets/buildings/Building Door Animations/Beachhouseblue Animation.png" id="2_beachh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beac_d_closed"]
+atlas = ExtResource("2_beachh")
+region = Rect2(0, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beac_d_opened"]
+atlas = ExtResource("2_beachh")
+region = Rect2(528, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beac_d_op_0"]
+atlas = ExtResource("2_beachh")
+region = Rect2(0, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beac_d_op_1"]
+atlas = ExtResource("2_beachh")
+region = Rect2(176, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beac_d_op_2"]
+atlas = ExtResource("2_beachh")
+region = Rect2(352, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beac_d_op_3"]
+atlas = ExtResource("2_beachh")
+region = Rect2(528, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beac_d_cl_3"]
+atlas = ExtResource("2_beachh")
+region = Rect2(528, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beac_d_cl_4"]
+atlas = ExtResource("2_beachh")
+region = Rect2(704, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beac_d_cl_5"]
+atlas = ExtResource("2_beachh")
+region = Rect2(880, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beac_d_cl_0"]
+atlas = ExtResource("2_beachh")
+region = Rect2(0, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beac_d_cy_0"]
+atlas = ExtResource("2_beachh")
+region = Rect2(0, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beac_d_cy_1"]
+atlas = ExtResource("2_beachh")
+region = Rect2(176, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beac_d_cy_2"]
+atlas = ExtResource("2_beachh")
+region = Rect2(352, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beac_d_cy_3"]
+atlas = ExtResource("2_beachh")
+region = Rect2(528, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beac_d_cy_4"]
+atlas = ExtResource("2_beachh")
+region = Rect2(704, 0, 176, 176)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_beac_d_cy_5"]
+atlas = ExtResource("2_beachh")
+region = Rect2(880, 0, 176, 176)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_beachh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beac_d_cl_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beac_d_cl_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beac_d_cl_5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beac_d_cl_0")
+}],
+"loop": 0,
+"name": &"door_close",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beac_d_closed")
+}],
+"loop": 0,
+"name": &"door_closed",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beac_d_cy_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beac_d_cy_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beac_d_cy_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beac_d_cy_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beac_d_cy_4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beac_d_cy_5")
+}],
+"loop": 1,
+"name": &"door_cycle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beac_d_op_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beac_d_op_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beac_d_op_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beac_d_op_3")
+}],
+"loop": 0,
+"name": &"door_open",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_beac_d_opened")
+}],
+"loop": 0,
+"name": &"door_opened",
+"speed": 1.0
+}]
+
+[resource]
+script = ExtResource("1_builddata")
+id = &"bld_006"
+display_name = "Nhà Bãi Biển Xanh Dương"
+building_type = &"residential"
+description = "Biệt thự nghỉ dưỡng bãi biển sơn màu xanh dương ven bờ biển."
+frame_size = Vector2i(176, 176)
+door_count = 1
+door_names = ["Cửa Chính"]
+color_variant = "blue"
+sprite_frames = SubResource("SpriteFrames_beachh")
+spritesheet_path = "res://assets/spritesheets/buildings/Building Door Animations/Beachhouseblue Animation.png"
+collision_size = Vector2(150, 50)
+collision_offset = Vector2(0, -10)
+door_positions = [Vector2(0, -8)]
+tags = PackedStringArray("residential", "building", "blue")

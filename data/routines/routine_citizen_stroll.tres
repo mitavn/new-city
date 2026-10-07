@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="NPCRoutineData" format=3]
+
+[ext_resource type="Script" path="res://scripts/ai/tasks/NPCRoutineData.gd" id="1_xkvoc"]
+[ext_resource type="Script" path="res://scripts/ai/tasks/NPCTaskData.gd" id="2_ptsyu"]
+
+[sub_resource type="Resource" id="Resource_y6k15"]
+script = ExtResource("2_ptsyu")
+task_id = &"cit_bank"
+task_name = "Ghé Ngân Hàng The Bund"
+poi_tag = &"the_bund_bank"
+arrival_distance = 20.0
+duration = 0.0
+
+[sub_resource type="Resource" id="Resource_rhumv"]
+script = ExtResource("2_ptsyu")
+task_id = &"cit_transact"
+task_name = "Giao Dịch Ngân Hàng"
+type = 2
+arrival_distance = 20.0
+duration = 2.5
+emote_id = &"speech_dots"
+dialogue_text = "Rút tiền lương để chuẩn bị mua sắm bến cảng."
+
+[sub_resource type="Resource" id="Resource_pb5bn"]
+script = ExtResource("2_ptsyu")
+task_id = &"cit_ramen"
+task_name = "Ghé Quầy Điểm Tâm"
+poi_tag = &"ramen_stand"
+arrival_distance = 22.0
+duration = 0.0
+
+[sub_resource type="Resource" id="Resource_48j25"]
+script = ExtResource("2_ptsyu")
+task_id = &"cit_snack"
+task_name = "Ăn Bánh Bao Bến Tàu"
+type = 2
+arrival_distance = 20.0
+emote_id = &"happy"
+dialogue_text = "Bánh bao xá xíu thơm phức, ăn lót dạ rất tuyệt!"
+
+[sub_resource type="Resource" id="Resource_hydsw"]
+script = ExtResource("2_ptsyu")
+task_id = &"cit_taxi"
+task_name = "Ra Trạm Đón Taxi"
+poi_tag = &"taxi_stand"
+arrival_distance = 20.0
+duration = 0.0
+
+[sub_resource type="Resource" id="Resource_nxtvn"]
+script = ExtResource("2_ptsyu")
+task_id = &"cit_wait_taxi"
+task_name = "Vẫy Xe Taxi"
+type = 2
+arrival_distance = 20.0
+duration = 3.5
+emote_id = &"exclamation"
+dialogue_text = "Bác tài ơi, cho tôi về phố Nam Kinh nhé!"
+
+[resource]
+script = ExtResource("1_xkvoc")
+routine_id = &"routine_citizen_stroll"
+routine_name = "Tản Bộ & Sinh Hoạt Đô Thị"
+category = &"citizen"
+description = "Lộ trình giao dịch tại ngân hàng The Bund, thưởng thức ẩm thực và đón xe taxi."
+tasks = Array[ExtResource("2_ptsyu")]([SubResource("Resource_y6k15"), SubResource("Resource_rhumv"), SubResource("Resource_pb5bn"), SubResource("Resource_48j25"), SubResource("Resource_hydsw"), SubResource("Resource_nxtvn")])

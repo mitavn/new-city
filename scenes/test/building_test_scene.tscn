@@ -1,0 +1,917 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scenes/test/building_test_scene.gd" id="1_testscript"]
+[ext_resource type="PackedScene" uid="uid://c5q3xrvq8bl4v" path="res://scenes/buildings/BuildingBase.tscn" id="2_bldbase"]
+[ext_resource type="Resource" path="res://data/buildings/firestation_01.tres" id="3_firest"]
+[ext_resource type="Resource" path="res://data/buildings/police_station_01.tres" id="4_police"]
+[ext_resource type="Resource" path="res://data/buildings/library_city_01.tres" id="5_librar"]
+[ext_resource type="Resource" path="res://data/buildings/prison_city_01.tres" id="6_prison"]
+[ext_resource type="Resource" path="res://data/buildings/restroom_public_01.tres" id="7_restro"]
+[ext_resource type="Resource" path="res://data/buildings/beachhouse_blue_01.tres" id="8_beachh"]
+[ext_resource type="Resource" path="res://data/buildings/beachhouse_yellow_01.tres" id="9_beachh"]
+[ext_resource type="Resource" path="res://data/buildings/beachhouse_pink_01.tres" id="10_beachh"]
+[ext_resource type="Resource" path="res://data/buildings/small_beachhouse_yellow_01.tres" id="11_small_"]
+[ext_resource type="Resource" path="res://data/buildings/small_beachhouse_red_01.tres" id="12_small_"]
+[ext_resource type="Resource" path="res://data/buildings/small_beachhouse_blue_01.tres" id="13_small_"]
+[ext_resource type="Resource" path="res://data/buildings/bakery_standard_01.tres" id="14_bakery"]
+[ext_resource type="Resource" path="res://data/buildings/bakery_clean_01.tres" id="15_bakery"]
+[ext_resource type="Resource" path="res://data/buildings/bank_central_01.tres" id="16_bank_c"]
+[ext_resource type="Resource" path="res://data/buildings/bar_pub_01.tres" id="17_bar_pu"]
+[ext_resource type="Resource" path="res://data/buildings/bar_clean_01.tres" id="18_bar_cl"]
+[ext_resource type="Resource" path="res://data/buildings/barbershop_01.tres" id="19_barber"]
+[ext_resource type="Resource" path="res://data/buildings/barbershop_clean_01.tres" id="20_barber"]
+[ext_resource type="Resource" path="res://data/buildings/brick_building_01.tres" id="21_brick_"]
+[ext_resource type="Resource" path="res://data/buildings/burgershop_01.tres" id="22_burger"]
+[ext_resource type="Resource" path="res://data/buildings/cafe_shop_01.tres" id="23_cafe_s"]
+[ext_resource type="Resource" path="res://data/buildings/cafe_clean_01.tres" id="24_cafe_c"]
+[ext_resource type="Resource" path="res://data/buildings/campus_building_01.tres" id="25_campus"]
+[ext_resource type="Resource" path="res://data/buildings/cinema_theater_01.tres" id="26_cinema"]
+[ext_resource type="Resource" path="res://data/buildings/convenient_store_01.tres" id="27_conven"]
+[ext_resource type="Resource" path="res://data/buildings/convenient_store_clean_01.tres" id="28_conven"]
+[ext_resource type="Resource" path="res://data/buildings/fast_food_restaurant_01.tres" id="29_fast_f"]
+[ext_resource type="Resource" path="res://data/buildings/gas_station_01.tres" id="30_gas_st"]
+[ext_resource type="Resource" path="res://data/buildings/green_brick_building_01.tres" id="31_green_"]
+[ext_resource type="Resource" path="res://data/buildings/hospital_city_01.tres" id="32_hospit"]
+[ext_resource type="Resource" path="res://data/buildings/hotel_grand_01.tres" id="33_hotel_"]
+[ext_resource type="Resource" path="res://data/buildings/inn_hotel_01.tres" id="34_inn_ho"]
+[ext_resource type="Resource" path="res://data/buildings/japanese_restaurant_01.tres" id="35_japane"]
+[ext_resource type="Resource" path="res://data/buildings/lightblue_building_01.tres" id="36_lightb"]
+[ext_resource type="Resource" path="res://data/buildings/lighthouse_01.tres" id="37_lighth"]
+[ext_resource type="Resource" path="res://data/buildings/mall_shopping_01.tres" id="38_mall_s"]
+[ext_resource type="Resource" path="res://data/buildings/motel_lodge_01.tres" id="39_motel_"]
+[ext_resource type="Resource" path="res://data/buildings/pizza_shop_01.tres" id="40_pizza_"]
+[ext_resource type="Resource" path="res://data/buildings/pizza_shop_clean_01.tres" id="41_pizza_"]
+[ext_resource type="Resource" path="res://data/buildings/portable_office_01.tres" id="42_portab"]
+[ext_resource type="Resource" path="res://data/buildings/portable_toilet_01.tres" id="43_portab"]
+[ext_resource type="Resource" path="res://data/buildings/ramen_stand_01.tres" id="44_ramen_"]
+[ext_resource type="Resource" path="res://data/buildings/supermarket_city_01.tres" id="45_superm"]
+[ext_resource type="Resource" path="res://data/buildings/wood_building_01.tres" id="46_wood_b"]
+[ext_resource type="Resource" path="res://data/buildings/yellow_building_01.tres" id="47_yellow"]
+
+[node name="BuildingTestScene" type="Node2D"]
+script = ExtResource("1_testscript")
+
+[node name="Background" type="ColorRect" parent="." unique_id=3001]
+offset_left = -500.0
+offset_top = -400.0
+offset_right = 3800.0
+offset_bottom = 2600.0
+mouse_filter = 2
+color = Color(0.12, 0.14, 0.17, 1)
+
+[node name="BuildingContainer" type="Node2D" parent="." unique_id=3002]
+y_sort_enabled = true
+
+[node name="Bld_bld_001_firestation_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(200.0, 260.0)
+data = ExtResource("3_firest")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_001_firestation_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Trạm Cứu Hỏa Thành Phố
+(304x224) [2 CỬA]"
+horizontal_alignment = 1
+
+[node name="Bld_bld_002_police_station_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(580.0, 260.0)
+data = ExtResource("4_police")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_002_police_station_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Đồn Cảnh Sát Thành Phố
+(224x160) [2 CỬA]"
+horizontal_alignment = 1
+
+[node name="Bld_bld_003_library_city_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(960.0, 260.0)
+data = ExtResource("5_librar")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_003_library_city_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Thư Viện Trung Tâm
+(224x160) [2 CỬA]"
+horizontal_alignment = 1
+
+[node name="Bld_bld_004_prison_city_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(1340.0, 260.0)
+data = ExtResource("6_prison")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_004_prison_city_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Trại Giam / Nhà Tù
+(272x176) [2 CỬA]"
+horizontal_alignment = 1
+
+[node name="Bld_bld_005_restroom_public_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(1720.0, 260.0)
+data = ExtResource("7_restro")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_005_restroom_public_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Nhà Vệ Sinh Công Cộng
+(112x96) [2 CỬA]"
+horizontal_alignment = 1
+
+[node name="Bld_bld_006_beachhouse_blue_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(2100.0, 260.0)
+data = ExtResource("8_beachh")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_006_beachhouse_blue_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Nhà Bãi Biển Xanh Dương (blue)
+(176x176)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_007_beachhouse_yellow_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(2480.0, 260.0)
+data = ExtResource("9_beachh")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_007_beachhouse_yellow_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Nhà Bãi Biển Vàng Kem (yellow)
+(176x176)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_008_beachhouse_pink_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(2860.0, 260.0)
+data = ExtResource("10_beachh")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_008_beachhouse_pink_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Nhà Bãi Biển Hồng Pastel (pink)
+(176x176)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_009_small_beachhouse_yellow_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(3240.0, 260.0)
+data = ExtResource("11_small_")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_009_small_beachhouse_yellow_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Nhà Gỗ Bãi Biển Vàng (yellow)
+(128x144)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_010_small_beachhouse_red_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(200.0, 680.0)
+data = ExtResource("12_small_")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_010_small_beachhouse_red_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Nhà Gỗ Bãi Biển Đỏ (red)
+(128x144)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_011_small_beachhouse_blue_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(580.0, 680.0)
+data = ExtResource("13_small_")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_011_small_beachhouse_blue_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Nhà Gỗ Bãi Biển Xanh (blue)
+(128x144)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_012_bakery_standard_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(960.0, 680.0)
+data = ExtResource("14_bakery")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_012_bakery_standard_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Tiệm Bánh Mì Cổ Điển
+(112x160)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_013_bakery_clean_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(1340.0, 680.0)
+data = ExtResource("15_bakery")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_013_bakery_clean_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Tiệm Bánh Mì Hiện Đại
+(112x144)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_014_bank_central_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(1720.0, 680.0)
+data = ExtResource("16_bank_c")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_014_bank_central_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Ngân Hàng Trung Tâm
+(208x208)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_015_bar_pub_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(2100.0, 680.0)
+data = ExtResource("17_bar_pu")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_015_bar_pub_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Quán Rượu / Bar Phố
+(96x144)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_016_bar_clean_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(2480.0, 680.0)
+data = ExtResource("18_bar_cl")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_016_bar_clean_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Quán Bar Hiện Đại Clean
+(96x144)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_017_barbershop_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(2860.0, 680.0)
+data = ExtResource("19_barber")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_017_barbershop_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Tiệm Cắt Tóc Barbershop
+(144x128)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_018_barbershop_clean_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(3240.0, 680.0)
+data = ExtResource("20_barber")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_018_barbershop_clean_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Tiệm Cắt Tóc Hiện Đại
+(144x128)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_019_brick_building_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(200.0, 1100.0)
+data = ExtResource("21_brick_")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_019_brick_building_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Tòa Nhà Gạch Nâu
+(112x208)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_020_burgershop_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(580.0, 1100.0)
+data = ExtResource("22_burger")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_020_burgershop_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Tiệm Bánh Burger
+(176x128)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_021_cafe_shop_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(960.0, 1100.0)
+data = ExtResource("23_cafe_s")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_021_cafe_shop_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Quán Cà Phê Phố
+(144x112)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_022_cafe_clean_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(1340.0, 1100.0)
+data = ExtResource("24_cafe_c")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_022_cafe_clean_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Quán Cà Phê Hiện Đại
+(144x112)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_023_campus_building_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(1720.0, 1100.0)
+data = ExtResource("25_campus")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_023_campus_building_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Tòa Giảng Đường Campus
+(112x208)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_024_cinema_theater_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(2100.0, 1100.0)
+data = ExtResource("26_cinema")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_024_cinema_theater_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Rạp Chiếu Phim Cinema
+(208x224)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_025_convenient_store_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(2480.0, 1100.0)
+data = ExtResource("27_conven")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_025_convenient_store_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Cửa Hàng Tiện Lợi 24/7
+(160x160)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_026_convenient_store_clean_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(2860.0, 1100.0)
+data = ExtResource("28_conven")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_026_convenient_store_clean_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Cửa Hàng Tiện Lợi Clean
+(160x160)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_027_fast_food_restaurant_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(3240.0, 1100.0)
+data = ExtResource("29_fast_f")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_027_fast_food_restaurant_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Nhà Hàng Thức Ăn Nhanh
+(176x128)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_028_gas_station_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(200.0, 1520.0)
+data = ExtResource("30_gas_st")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_028_gas_station_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Trạm Xăng Đô Thị
+(208x160)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_029_green_brick_building_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(580.0, 1520.0)
+data = ExtResource("31_green_")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_029_green_brick_building_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Tòa Nhà Gạch Xanh Lá
+(112x192)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_030_hospital_city_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(960.0, 1520.0)
+data = ExtResource("32_hospit")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_030_hospital_city_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Bệnh Viện Đa Khoa
+(144x320)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_031_hotel_grand_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(1340.0, 1520.0)
+data = ExtResource("33_hotel_")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_031_hotel_grand_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Khách Sạn Grand Hotel
+(192x192)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_032_inn_hotel_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(1720.0, 1520.0)
+data = ExtResource("34_inn_ho")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_032_inn_hotel_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Quán Trọ Lữ Hành Inn
+(144x176)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_033_japanese_restaurant_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(2100.0, 1520.0)
+data = ExtResource("35_japane")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_033_japanese_restaurant_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Nhà Hàng Nhật Bản
+(160x112)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_034_lightblue_building_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(2480.0, 1520.0)
+data = ExtResource("36_lightb")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_034_lightblue_building_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Tòa Nhà Xanh Nhạt
+(144x224)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_035_lighthouse_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(2860.0, 1520.0)
+data = ExtResource("37_lighth")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_035_lighthouse_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Ngọn Hải Đăng Cảng Biển
+(128x288)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_036_mall_shopping_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(3240.0, 1520.0)
+data = ExtResource("38_mall_s")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_036_mall_shopping_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Trung Tâm Thương Mại Mall
+(224x304)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_037_motel_lodge_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(200.0, 1940.0)
+data = ExtResource("39_motel_")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_037_motel_lodge_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Nhà Nghỉ Ven Đường Motel
+(208x176)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_038_pizza_shop_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(580.0, 1940.0)
+data = ExtResource("40_pizza_")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_038_pizza_shop_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Tiệm Pizza Ý
+(144x128)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_039_pizza_shop_clean_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(960.0, 1940.0)
+data = ExtResource("41_pizza_")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_039_pizza_shop_clean_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Tiệm Pizza Hiện Đại
+(144x128)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_040_portable_office_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(1340.0, 1940.0)
+data = ExtResource("42_portab")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_040_portable_office_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Văn Phòng Di Động
+(128x112)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_041_portable_toilet_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(1720.0, 1940.0)
+data = ExtResource("43_portab")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_041_portable_toilet_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Nhà Vệ Sinh Lưu Động
+(32x96)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_042_ramen_stand_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(2100.0, 1940.0)
+data = ExtResource("44_ramen_")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_042_ramen_stand_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Quán Mì Ramen Nhật
+(128x128)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_043_supermarket_city_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(2480.0, 1940.0)
+data = ExtResource("45_superm")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_043_supermarket_city_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Siêu Thị Đô Thị Supermarket
+(304x176)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_044_wood_building_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(2860.0, 1940.0)
+data = ExtResource("46_wood_b")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_044_wood_building_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Tòa Nhà Gỗ Truyền Thống
+(112x176)"
+horizontal_alignment = 1
+
+[node name="Bld_bld_045_yellow_building_01" parent="BuildingContainer" instance=ExtResource("2_bldbase")]
+position = Vector2(3240.0, 1940.0)
+data = ExtResource("47_yellow")
+
+[node name="Label" type="Label" parent="BuildingContainer/Bld_bld_045_yellow_building_01"]
+offset_left = -120.0
+offset_top = 18.0
+offset_right = 120.0
+offset_bottom = 54.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.85)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 11
+text = "Tòa Nhà Màu Vàng
+(112x192)"
+horizontal_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=3003]
+position = Vector2(1700, 1100)
+zoom = Vector2(0.55, 0.55)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=3004]
+
+[node name="TopPanel" type="PanelContainer" parent="CanvasLayer" unique_id=3005]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 54.0
+grow_horizontal = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/TopPanel"]
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/TopPanel/MarginContainer"]
+theme_override_constants/separation = 10
+
+[node name="TitleLabel" type="Label" parent="CanvasLayer/TopPanel/MarginContainer/HBoxContainer"]
+theme_override_colors/font_color = Color(0.95, 0.9, 0.6, 1.0)
+theme_override_font_sizes/font_size = 14
+text = "🏢 45 Tòa Nhà"
+
+[node name="StatsLabel" type="Label" parent="CanvasLayer/TopPanel/MarginContainer/HBoxContainer"]
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.7, 0.75, 0.85, 1.0)
+theme_override_font_sizes/font_size = 11
+text = "Space/E: Mở/Đóng Tất Cả | Phím 1/2: Mở Cửa 1 / Cửa 2 | Phím 3: Đóng Hết | Click cửa: Tương tác"
+
+[node name="ToggleAllButton" type="Button" parent="CanvasLayer/TopPanel/MarginContainer/HBoxContainer"]
+text = "Mở/Đóng Hết (Space)"
+
+[node name="DoorLeftButton" type="Button" parent="CanvasLayer/TopPanel/MarginContainer/HBoxContainer"]
+text = "Mở Cửa 1 (Phím 1)"
+
+[node name="DoorRightButton" type="Button" parent="CanvasLayer/TopPanel/MarginContainer/HBoxContainer"]
+text = "Mở Cửa 2 (Phím 2)"
+
+[node name="ResetCamButton" type="Button" parent="CanvasLayer/TopPanel/MarginContainer/HBoxContainer"]
+text = "Camera (F)"
+
+[node name="InfoBox" type="PanelContainer" parent="CanvasLayer" unique_id=3006]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 100.0
+offset_top = -140.0
+offset_right = -100.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/InfoBox"]
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/InfoBox/MarginContainer"]
+theme_override_constants/separation = 4
+
+[node name="Header" type="HBoxContainer" parent="CanvasLayer/InfoBox/MarginContainer/VBoxContainer"]
+theme_override_constants/separation = 10
+
+[node name="NameLabel" type="Label" parent="CanvasLayer/InfoBox/MarginContainer/VBoxContainer/Header"]
+theme_override_colors/font_color = Color(1, 0.85, 0.3, 1)
+theme_override_font_sizes/font_size = 14
+text = "Tên Tòa Nhà"
+
+[node name="TypeLabel" type="Label" parent="CanvasLayer/InfoBox/MarginContainer/VBoxContainer/Header"]
+theme_override_colors/font_color = Color(0.4, 0.8, 1, 1)
+theme_override_font_sizes/font_size = 12
+text = "[COMMERCIAL]"
+
+[node name="ContentLabel" type="Label" parent="CanvasLayer/InfoBox/MarginContainer/VBoxContainer"]
+theme_override_colors/font_color = Color(0.95, 0.95, 0.95, 1)
+theme_override_font_sizes/font_size = 12
+text = "Thông số tòa nhà..."
+autowrap_mode = 2
+
+[connection signal="pressed" from="CanvasLayer/TopPanel/MarginContainer/HBoxContainer/ToggleAllButton" to="." method="_on_toggle_all_doors_pressed"]
+[connection signal="pressed" from="CanvasLayer/TopPanel/MarginContainer/HBoxContainer/DoorLeftButton" to="." method="_on_door_left_pressed"]
+[connection signal="pressed" from="CanvasLayer/TopPanel/MarginContainer/HBoxContainer/DoorRightButton" to="." method="_on_door_right_pressed"]
+[connection signal="pressed" from="CanvasLayer/TopPanel/MarginContainer/HBoxContainer/ResetCamButton" to="." method="_on_reset_camera_pressed"]

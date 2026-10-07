@@ -1,0 +1,154 @@
+[gd_resource type="Resource" script_class="VehicleData" format=3 uid="uid://caob3l6rnu4tp"]
+
+[ext_resource type="Script" uid="uid://dijugjd2akk5r" path="res://scripts/vehicles/VehicleData.gd" id="1_vehdata"]
+[ext_resource type="Texture2D" uid="uid://di1u77ywd25sd" path="res://assets/spritesheets/vehicles/BullDozer-Sheet(160x160).png" id="2_bulldo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bull_drive_back_0"]
+atlas = ExtResource("2_bulldo")
+region = Rect2(0, 320, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bull_drive_back_1"]
+atlas = ExtResource("2_bulldo")
+region = Rect2(160, 320, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bull_drive_back_2"]
+atlas = ExtResource("2_bulldo")
+region = Rect2(320, 320, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bull_drive_back_3"]
+atlas = ExtResource("2_bulldo")
+region = Rect2(480, 320, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bull_drive_front_0"]
+atlas = ExtResource("2_bulldo")
+region = Rect2(0, 480, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bull_drive_front_1"]
+atlas = ExtResource("2_bulldo")
+region = Rect2(160, 480, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bull_drive_front_2"]
+atlas = ExtResource("2_bulldo")
+region = Rect2(320, 480, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bull_drive_front_3"]
+atlas = ExtResource("2_bulldo")
+region = Rect2(480, 480, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bull_drive_front_left_0"]
+atlas = ExtResource("2_bulldo")
+region = Rect2(0, 160, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bull_drive_front_left_1"]
+atlas = ExtResource("2_bulldo")
+region = Rect2(160, 160, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bull_drive_front_left_2"]
+atlas = ExtResource("2_bulldo")
+region = Rect2(320, 160, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bull_drive_front_left_3"]
+atlas = ExtResource("2_bulldo")
+region = Rect2(480, 160, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bull_drive_front_right_0"]
+atlas = ExtResource("2_bulldo")
+region = Rect2(0, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bull_drive_front_right_1"]
+atlas = ExtResource("2_bulldo")
+region = Rect2(160, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bull_drive_front_right_2"]
+atlas = ExtResource("2_bulldo")
+region = Rect2(320, 0, 160, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bull_drive_front_right_3"]
+atlas = ExtResource("2_bulldo")
+region = Rect2(480, 0, 160, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bulldo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bull_drive_back_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bull_drive_back_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bull_drive_back_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bull_drive_back_3")
+}],
+"loop": 1,
+"name": &"drive_back",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bull_drive_front_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bull_drive_front_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bull_drive_front_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bull_drive_front_3")
+}],
+"loop": 1,
+"name": &"drive_front",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bull_drive_front_left_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bull_drive_front_left_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bull_drive_front_left_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bull_drive_front_left_3")
+}],
+"loop": 1,
+"name": &"drive_front_left",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bull_drive_front_right_0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bull_drive_front_right_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bull_drive_front_right_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bull_drive_front_right_3")
+}],
+"loop": 1,
+"name": &"drive_front_right",
+"speed": 6.0
+}]
+
+[resource]
+script = ExtResource("1_vehdata")
+id = &"veh_017"
+display_name = "Xe Ủi Đất Công Trình"
+vehicle_type = &"heavy"
+description = "Xe cơ giới hạng nặng phục vụ san lấp và thi công công trình."
+frame_size = Vector2i(160, 160)
+visual_offset = Vector2(0, -56)
+sprite_frames = SubResource("SpriteFrames_bulldo")
+spritesheet_path = "res://assets/spritesheets/vehicles/BullDozer-Sheet(160x160).png"
+collision_size = Vector2(60, 34)
+max_speed = 60.0
+passenger_capacity = 1
+metadata/_custom_type_script = "uid://dijugjd2akk5r"
